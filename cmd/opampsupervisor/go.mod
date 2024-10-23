@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor
+module github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor
 
 go 1.22.0
 
@@ -10,7 +10,7 @@ require (
 	github.com/knadh/koanf/providers/file v1.1.2
 	github.com/knadh/koanf/providers/rawbytes v0.1.0
 	github.com/knadh/koanf/v2 v2.1.1
-	github.com/open-telemetry/opamp-go v0.15.0
+	github.com/GlancingMind/opamp-go v0.15.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/config/configopaque v1.18.0
 	go.opentelemetry.io/collector/config/configtls v1.18.0

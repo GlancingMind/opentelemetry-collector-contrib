@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package grafanacloudconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/grafanacloudconnector"
+package grafanacloudconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/grafanacloudconnector"
 
 import (
 	"context"
@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/grafanacloudconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/grafanacloudconnector/internal/metadata"
 )
 
 const (

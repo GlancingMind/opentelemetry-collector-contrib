@@ -29,7 +29,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
 )
 
 func TestPayloadToLogRecord(t *testing.T) {
@@ -49,7 +49,7 @@ func TestPayloadToLogRecord(t *testing.T) {
 				logs := plog.NewLogs()
 				rl := logs.ResourceLogs().AppendEmpty()
 				sl := rl.ScopeLogs().AppendEmpty()
-				sl.Scope().SetName("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver")
+				sl.Scope().SetName("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver")
 
 				for idx, line := range strings.Split(payload, "\n") {
 					lr := sl.LogRecords().AppendEmpty()
@@ -87,7 +87,7 @@ func TestPayloadToLogRecord(t *testing.T) {
 				}))
 
 				sl := rl.ScopeLogs().AppendEmpty()
-				sl.Scope().SetName("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver")
+				sl.Scope().SetName("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver")
 				lr := sl.LogRecords().AppendEmpty()
 
 				require.NoError(t, lr.Attributes().FromRaw(map[string]any{

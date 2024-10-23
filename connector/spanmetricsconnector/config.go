@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package spanmetricsconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector"
+package spanmetricsconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector"
 
 import (
 	"errors"
@@ -11,7 +11,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
 )
 
 const (
@@ -39,7 +39,7 @@ type Config struct {
 	// - span.kind
 	// - status.code
 	// The dimensions will be fetched from the span's attributes. Examples of some conventionally used attributes:
-	// https://github.com/open-telemetry/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
+	// https://github.com/GlancingMind/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
 	Dimensions        []Dimension `mapstructure:"dimensions"`
 	ExcludeDimensions []string    `mapstructure:"exclude_dimensions"`
 

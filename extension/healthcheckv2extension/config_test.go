@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package healthcheckv2extension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension"
+package healthcheckv2extension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension"
 
 import (
 	"path/filepath"
@@ -17,11 +17,11 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
 )
 
 func TestLoadConfig(t *testing.T) {

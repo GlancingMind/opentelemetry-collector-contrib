@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package helper // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+package helper // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
 
 import (
 	"context"
@@ -10,8 +10,8 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 // LogEmitter is a stanza operator that emits log entries to a channel

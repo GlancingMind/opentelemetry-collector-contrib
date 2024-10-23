@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen/internal/e2etest
+module github.com/GlancingMind/opentelemetry-collector-contrib/cmd/telemetrygen/internal/e2etest
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen v0.111.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.111.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/cmd/telemetrygen v0.111.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.111.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/consumer/consumertest v0.112.0
@@ -94,6 +94,6 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen => ../..
+replace github.com/GlancingMind/opentelemetry-collector-contrib/cmd/telemetrygen => ../..

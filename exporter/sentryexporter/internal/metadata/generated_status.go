@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("sentry")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sentryexporter"
 )
 
 const (

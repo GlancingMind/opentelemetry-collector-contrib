@@ -13,10 +13,10 @@ import (
 	"go.uber.org/zap/zaptest"
 	"golang.org/x/text/encoding/unicode"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/keyvalue"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/keyvalue"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
 )
 
 func TestReader(t *testing.T) {

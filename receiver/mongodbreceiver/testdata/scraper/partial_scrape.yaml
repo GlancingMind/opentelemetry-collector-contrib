@@ -243,5 +243,5 @@ resourceMetrics:
               isMonotonic: true
             unit: ms
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/mongodbreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/mongodbreceiver
           version: latest

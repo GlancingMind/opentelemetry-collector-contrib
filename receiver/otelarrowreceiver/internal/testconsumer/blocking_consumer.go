@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package testconsumer // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/testconsumer"
+package testconsumer // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/testconsumer"
 
 import (
 	"context"

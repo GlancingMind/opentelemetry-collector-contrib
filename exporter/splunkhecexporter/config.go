@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package splunkhecexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter"
+package splunkhecexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter"
 
 import (
 	"errors"
@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterbatcher"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 const (
@@ -70,7 +70,7 @@ type Config struct {
 	configretry.BackOffConfig `mapstructure:"retry_on_failure"`
 
 	// Experimental: This configuration is at the early stage of development and may change without backward compatibility
-	// until https://github.com/open-telemetry/opentelemetry-collector/issues/8122 is resolved.
+	// until https://github.com/GlancingMind/opentelemetry-collector/issues/8122 is resolved.
 	BatcherConfig exporterbatcher.Config `mapstructure:"batcher"`
 
 	// LogDataEnabled can be used to disable sending logs by the exporter.

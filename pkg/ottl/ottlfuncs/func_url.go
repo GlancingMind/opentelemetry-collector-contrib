@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package ottlfuncs // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
+package ottlfuncs // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
 
 import (
 	"context"
 	"fmt"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/parseutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/parseutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 type URLArguments[K any] struct {

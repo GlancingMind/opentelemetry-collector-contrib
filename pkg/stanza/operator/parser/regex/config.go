@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package regex // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
+package regex // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
 
 import (
 	"fmt"
@@ -10,9 +10,9 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/errors"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/errors"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
 )
 
 const operatorType = "regex_parser"

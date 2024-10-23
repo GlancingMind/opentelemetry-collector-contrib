@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metrics // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
+package metrics // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
 
 import (
 	"context"
@@ -11,8 +11,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"golang.org/x/exp/rand"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
 )
 
 type convertExponentialHistToExplicitHistArguments struct {
@@ -150,7 +150,7 @@ func calculateBucketCounts(dp pmetric.ExponentialHistogramDataPoint, boundaries 
 
 // upperAlgorithm function calculates the bucket counts for a given exponential histogram data point.
 // The algorithm is inspired by the logExponentialHistogramDataPoints function used to Print Exponential Histograms in Otel.
-// found here: https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/internal/otlptext/databuffer.go#L144-L201
+// found here: https://github.com/GlancingMind/opentelemetry-collector/blob/main/exporter/internal/otlptext/databuffer.go#L144-L201
 //
 // - factor is calculated as math.Ldexp(math.Ln2, -scale)
 //

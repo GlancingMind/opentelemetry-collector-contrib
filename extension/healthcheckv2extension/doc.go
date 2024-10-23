@@ -5,4 +5,4 @@
 
 // Package healthcheckv2extension implements an extension that enables HTTP
 // and or GRPC health checks for a collector.
-package healthcheckv2extension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension"
+package healthcheckv2extension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension"

@@ -158,6 +158,6 @@ func TestUnmarshalConfigInvalidProtocol(t *testing.T) {
 func TestUnmarshalConfigNoProtocols(t *testing.T) {
 	cfg := Config{}
 	// This now produces an error due to breaking change.
-	// https://github.com/open-telemetry/opentelemetry-collector/pull/9385
+	// https://github.com/GlancingMind/opentelemetry-collector/pull/9385
 	assert.ErrorContains(t, component.ValidateConfig(cfg), "invalid transport type")
 }

@@ -10,13 +10,13 @@ import (
 	"go.opentelemetry.io/collector/component/componenttest"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/delta"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/streams"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/telemetry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testdata/random"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/delta"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/streams"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testdata/random"
 )
 
 // TestFaults verifies certain non-fatal errors are actually caused and

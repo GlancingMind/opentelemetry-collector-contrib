@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package zipkinreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver"
+package zipkinreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/zipkinreceiver"
 
 import (
 	"compress/gzip"
@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receiverhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv1"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv2"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv1"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv2"
 )
 
 const (

@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("healthcheckv2")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension"
 )
 
 const (

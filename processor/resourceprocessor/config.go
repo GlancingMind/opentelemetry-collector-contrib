@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package resourceprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourceprocessor"
+package resourceprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourceprocessor"
 
 import (
 	"errors"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/attraction"
 )
 
 // Config defines configuration for Resource processor.

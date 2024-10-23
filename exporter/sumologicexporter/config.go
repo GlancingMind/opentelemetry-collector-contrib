@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package sumologicexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter"
+package sumologicexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter"
 
 import (
 	"errors"
@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/collector/config/configretry"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension"
 )
 
 // Config defines configuration for Sumo Logic exporter.

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package lokireceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/lokireceiver"
+package lokireceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/lokireceiver"
 
 import (
 	"context"
@@ -21,9 +21,9 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/lokireceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/loki"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/lokireceiver/internal"
 )
 
 const (

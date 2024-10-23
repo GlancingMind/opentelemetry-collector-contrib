@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package sumologicexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter"
+package sumologicexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/pipeline"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension"
 )
 
 const (

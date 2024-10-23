@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/sumologicprocessor
+module github.com/GlancingMind/opentelemetry-collector-contrib/processor/sumologicprocessor
 
 go 1.22.0
 

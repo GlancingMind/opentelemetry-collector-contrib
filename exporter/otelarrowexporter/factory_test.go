@@ -21,9 +21,9 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.opentelemetry.io/collector/exporter/exportertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testutil"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

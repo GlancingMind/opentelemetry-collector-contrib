@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package node // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/node"
+package node // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/node"
 
 import (
 	"fmt"
@@ -16,10 +16,10 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/maps"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
-	imetadata "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/maps"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
+	imetadata "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
 )
 
 const (
@@ -106,7 +106,7 @@ func CustomMetrics(set receiver.Settings, rb *metadata.ResourceBuilder, node *co
 
 	// TODO: Generate a schema URL for the node metrics in the metadata package and use them here.
 	rm.SetSchemaUrl(conventions.SchemaURL)
-	sm.Scope().SetName("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver")
+	sm.Scope().SetName("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver")
 	sm.Scope().SetVersion(set.BuildInfo.Version)
 
 	rb.SetK8sNodeUID(string(node.UID))

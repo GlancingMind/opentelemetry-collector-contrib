@@ -12,8 +12,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/datatest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/expo"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/datatest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/expo"
 )
 
 func TestDownscale(t *testing.T) {

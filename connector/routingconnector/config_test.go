@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package routingconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/routingconnector"
+package routingconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/routingconnector"
 
 import (
 	"path/filepath"
@@ -13,8 +13,8 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/pipeline"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/routingconnector/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/routingconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 func TestLoadConfig(t *testing.T) {

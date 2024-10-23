@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package collection // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/collection"
+package collection // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/collection"
 
 import (
 	"time"
@@ -15,21 +15,21 @@ import (
 	batchv1 "k8s.io/api/batch/v1"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/clusterresourcequota"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/cronjob"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/demonset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/deployment"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/gvk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/hpa"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/jobs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/namespace"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/node"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/pod"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/replicaset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/replicationcontroller"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/resourcequota"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/statefulset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/clusterresourcequota"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/cronjob"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/demonset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/deployment"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/gvk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/hpa"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/jobs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/namespace"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/node"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/pod"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/replicaset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/replicationcontroller"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/resourcequota"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/statefulset"
 )
 
 // TODO: Consider moving some of these constants to

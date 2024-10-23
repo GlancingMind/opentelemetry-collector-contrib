@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/metadata"
 )
 
 var encodingComponentID = component.NewIDWithName(component.MustNewType("otlp_encoding"), "rabbitmq123")

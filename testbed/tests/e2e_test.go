@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 )
 
 func TestIdleMode(t *testing.T) {

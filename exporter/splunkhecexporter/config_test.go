@@ -19,8 +19,8 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterbatcher"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 func TestLoadConfig(t *testing.T) {

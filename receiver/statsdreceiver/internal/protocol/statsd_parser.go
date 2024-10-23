@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package protocol // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/protocol"
+package protocol // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/protocol"
 
 import (
 	"errors"
@@ -54,7 +54,7 @@ const (
 
 	DefaultObserverType = DisableObserver
 
-	receiverName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver"
+	receiverName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver"
 )
 
 type TimerHistogramMapping struct {

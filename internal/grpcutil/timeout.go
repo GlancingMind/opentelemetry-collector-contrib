@@ -7,7 +7,7 @@
 // This DecodeTimeout function is forked and modified from the original
 // https://github.com/grpc/grpc-go/blob/master/internal/transport/http_util.go
 
-package grpcutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil"
+package grpcutil // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil"
 
 import (
 	"fmt"

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package textencodingextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/textencodingextension"
+package textencodingextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/textencodingextension"
 
 import (
 	"bufio"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/textutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/textutils"
 )
 
 type textLogCodec struct {

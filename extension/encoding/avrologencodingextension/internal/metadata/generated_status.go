@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("avro_log_encoding")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/avrologencodingextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/avrologencodingextension"
 )
 
 const (

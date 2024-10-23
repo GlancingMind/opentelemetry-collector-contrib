@@ -11,7 +11,7 @@ CORE_VERSIONS=$(SRC_PARENT_DIR)/opentelemetry-collector/versions.yaml
 GOMOD=$(SRC_ROOT)/cmd/otelcontribcol/go.mod
 
 COMP_REL_PATH=cmd/otelcontribcol/components.go
-MOD_NAME=github.com/open-telemetry/opentelemetry-collector-contrib
+MOD_NAME=github.com/GlancingMind/opentelemetry-collector-contrib
 
 GROUP ?= all
 FOR_GROUP_TARGET=for-$(GROUP)-target

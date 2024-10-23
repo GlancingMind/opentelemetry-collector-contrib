@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package stdout // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/output/stdout"
+package stdout // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/output/stdout"
 
 import (
 	"context"
@@ -10,8 +10,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
 )
 
 // Output is an operator that logs entries using stdout.

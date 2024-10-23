@@ -15,9 +15,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/azure"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/azure/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/metadataproviders/azure"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/azure/internal/metadata"
 )
 
 func TestNewDetector(t *testing.T) {

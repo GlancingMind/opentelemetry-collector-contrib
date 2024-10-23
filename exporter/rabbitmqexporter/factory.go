@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package rabbitmqexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/rabbitmqexporter"
+package rabbitmqexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/rabbitmqexporter"
 
 import (
 	"context"
@@ -14,9 +14,9 @@ import (
 	"go.opentelemetry.io/collector/exporter"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/publisher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/rabbitmq"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/publisher"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/rabbitmq"
 )
 
 const (

@@ -17,8 +17,8 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/dockerstatsreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/docker"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/dockerstatsreceiver/internal/metadata"
 )
 
 func loadConf(t testing.TB, path string, id component.ID) *confmap.Conf {

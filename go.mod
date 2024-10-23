@@ -3,10 +3,10 @@ module github.com/GlancingMind/opentelemetry-collector-contrib
 // NOTE:
 // This go.mod is NOT used to build any official binary.
 // To see the builder manifests used for official binaries,
-// check https://github.com/open-telemetry/opentelemetry-collector-releases
+// check https://github.com/GlancingMind/opentelemetry-collector-releases
 //
 // For the OpenTelemetry Collector Contrib distribution specifically, see
-// https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol-contrib
+// https://github.com/GlancingMind/opentelemetry-collector-releases/tree/main/distributions/otelcol-contrib
 
 go 1.22.0
 

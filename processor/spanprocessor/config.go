@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package spanprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor"
+package spanprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/spanprocessor"
 
 import (
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
 )
 
 // Config is the configuration for the span processor.
@@ -72,7 +72,7 @@ type ToAttributes struct {
 
 type Status struct {
 	// Code is one of three values "Ok" or "Error" or "Unset". Please check:
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/api.md#set-status
 	Code string `mapstructure:"code"`
 
 	// Description is an optional field documenting Error statuses.

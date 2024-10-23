@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
-	arrowRecord "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record"
-	arrowRecordMock "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record/mock"
-	otelAssert "github.com/open-telemetry/otel-arrow/pkg/otel/assert"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
+	arrowRecord "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record"
+	arrowRecordMock "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record/mock"
+	otelAssert "github.com/GlancingMind/otel-arrow/pkg/otel/assert"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/pdata/plog"
@@ -32,9 +32,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testdata"
 )
 
 var AllPrioritizers = []PrioritizerName{LeastLoadedPrioritizer, LeastLoadedTwoPrioritizer}

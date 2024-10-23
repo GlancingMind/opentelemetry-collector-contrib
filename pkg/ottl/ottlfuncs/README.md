@@ -1,7 +1,7 @@
 # OTTL Functions
 
 The following functions are intended to be used in implementations of the OpenTelemetry Transformation Language that
-interact with OTel data via the Collector's internal data model, [pdata](https://github.com/open-telemetry/opentelemetry-collector/tree/main/pdata).
+interact with OTel data via the Collector's internal data model, [pdata](https://github.com/GlancingMind/opentelemetry-collector/tree/main/pdata).
 
 This document contains documentation for both types of OTTL functions:
 
@@ -29,9 +29,9 @@ In these situations the function will error if it does not know how to do the co
 Use `ErrorMode` to determine how the `Statement` handles these errors.
 See the component-specific guides for how each uses error mode:
 
-- [filterprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/filterprocessor#ottl)
-- [routingprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/routingprocessor#tech-preview-opentelemetry-transformation-language-statements-as-routing-conditions)
-- [transformprocessor](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/processor/transformprocessor#config)
+- [filterprocessor](https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/processor/filterprocessor#ottl)
+- [routingprocessor](https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/processor/routingprocessor#tech-preview-opentelemetry-transformation-language-statements-as-routing-conditions)
+- [transformprocessor](https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/processor/transformprocessor#config)
 
 ## Editors
 
@@ -1772,7 +1772,7 @@ The `Time` Converter takes a string representation of a time and converts it to 
 
 `target` is a string. `format` is a string, `location` is an optional string, `locale` is an optional string.
 
-If either `target` or `format` are nil, an error is returned. The parser used is the parser at [internal/coreinternal/parser](https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/internal/coreinternal/timeutils). If the `target` and `format` do not follow the parsing rules used by this parser, an error is returned.
+If either `target` or `format` are nil, an error is returned. The parser used is the parser at [internal/coreinternal/parser](https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/internal/coreinternal/timeutils). If the `target` and `format` do not follow the parsing rules used by this parser, an error is returned.
 
 `format` denotes a textual representation of the time value formatted according to ctime-like format string. It follows [standard Go Layout formatting](https://pkg.go.dev/time#pkg-constants) with few additional substitutes:
 | substitution | description | examples |

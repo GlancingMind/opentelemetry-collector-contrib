@@ -3,7 +3,7 @@
 
 //go:build !race
 
-package integrationtest // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/integrationtest"
+package integrationtest // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/integrationtest"
 
 import (
 	"context"
@@ -18,7 +18,7 @@ import (
 
 func TestIntegrationInternalMetrics(t *testing.T) {
 	if runtime.GOOS == "windows" {
-		t.Skip("flaky test on windows https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/34836")
+		t.Skip("flaky test on windows https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/34836")
 	}
 
 	// 1. Set up mock Datadog server

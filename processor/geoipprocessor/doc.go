@@ -4,4 +4,4 @@
 //go:generate mdatagen metadata.yaml
 
 // Package geoipprocessor.
-package geoipprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor"
+package geoipprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor"

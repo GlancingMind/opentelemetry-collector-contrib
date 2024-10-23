@@ -34,10 +34,10 @@ import (
 	"github.com/knadh/koanf/providers/file"
 	"github.com/knadh/koanf/providers/rawbytes"
 	"github.com/knadh/koanf/v2"
-	clientTypes "github.com/open-telemetry/opamp-go/client/types"
-	"github.com/open-telemetry/opamp-go/protobufs"
-	"github.com/open-telemetry/opamp-go/server"
-	"github.com/open-telemetry/opamp-go/server/types"
+	clientTypes "github.com/GlancingMind/opamp-go/client/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/server"
+	"github.com/GlancingMind/opamp-go/server/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	semconv "go.opentelemetry.io/collector/semconv/v1.21.0"
@@ -45,9 +45,9 @@ import (
 	"go.uber.org/zap/zapcore"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/telemetry"
 )
 
 var _ clientTypes.Logger = testLogger{}

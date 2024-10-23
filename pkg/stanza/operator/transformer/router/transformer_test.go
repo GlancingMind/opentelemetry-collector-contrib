@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/component/componenttest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/errors"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/errors"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/testutil"
 )
 
 func TestTransformer(t *testing.T) {

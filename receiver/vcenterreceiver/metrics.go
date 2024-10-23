@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package vcenterreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver"
+package vcenterreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver"
 
 import (
 	"github.com/vmware/govmomi/performance"
@@ -10,7 +10,7 @@ import (
 	"go.opentelemetry.io/collector/featuregate"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
 )
 
 var enableResourcePoolMemoryUsageAttr = featuregate.GlobalRegistry().MustRegister(

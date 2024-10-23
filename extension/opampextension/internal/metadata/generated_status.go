@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("opamp")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampextension"
 )
 
 const (

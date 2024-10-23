@@ -27,7 +27,7 @@ resourceMetrics:
             name: file.size
             unit: b
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filestatsreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/filestatsreceiver
           version: latest
   - resource:
       attributes:
@@ -57,5 +57,5 @@ resourceMetrics:
             name: file.size
             unit: b
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/filestatsreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/filestatsreceiver
           version: latest

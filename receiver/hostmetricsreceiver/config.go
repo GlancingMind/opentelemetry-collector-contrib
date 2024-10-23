@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package hostmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
+package hostmetricsreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
 
 import (
 	"errors"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
 )
 
 const (

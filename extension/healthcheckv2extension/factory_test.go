@@ -15,9 +15,9 @@ import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.opentelemetry.io/collector/extension/extensiontest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

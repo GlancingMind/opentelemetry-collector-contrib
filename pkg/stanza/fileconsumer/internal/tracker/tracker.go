@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracker // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/tracker"
+package tracker // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/tracker"
 
 import (
 	"context"
@@ -10,11 +10,11 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/checkpoint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/fileset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/fingerprint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/checkpoint"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/fileset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/fingerprint"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 // Interface for tracking files that are being consumed.

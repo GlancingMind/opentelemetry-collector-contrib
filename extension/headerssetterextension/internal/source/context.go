@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package source // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension/internal/source"
+package source // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/headerssetterextension/internal/source"
 
 import (
 	"context"

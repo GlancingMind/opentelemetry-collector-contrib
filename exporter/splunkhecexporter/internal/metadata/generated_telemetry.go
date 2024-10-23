@@ -9,9 +9,9 @@ import (
 )
 
 func Meter(settings component.TelemetrySettings) metric.Meter {
-	return settings.MeterProvider.Meter("github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter")
+	return settings.MeterProvider.Meter("github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter")
 }
 
 func Tracer(settings component.TelemetrySettings) trace.Tracer {
-	return settings.TracerProvider.Tracer("github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter")
+	return settings.TracerProvider.Tracer("github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter")
 }

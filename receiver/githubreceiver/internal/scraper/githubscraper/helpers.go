@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package githubscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
+package githubscraper // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
 
 import (
 	"context"
@@ -221,7 +221,7 @@ func (ghs *githubScraper) evalCommits(
 	var cursor *string
 	items := defaultReturnItems
 
-	// See https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
+	// See https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
 	// for more information as to why `BehindBy` and `AheadBy` are
 	// swapped.
 	pages := getNumPages(float64(defaultReturnItems), float64(branch.Compare.BehindBy))

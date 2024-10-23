@@ -89,20 +89,20 @@
       },
       {
         "matchManagers": ["gomod"],
-        "matchSourceUrls": ["https://github.com/open-telemetry/opentelemetry-collector"],
+        "matchSourceUrls": ["https://github.com/GlancingMind/opentelemetry-collector"],
         "groupName": "All OpenTelemetry Collector dev packages",
         "matchUpdateTypes": ["digest"]
       },
       {
         "matchManagers": ["gomod"],
-        "matchSourceUrls": ["https://github.com/open-telemetry/opentelemetry-collector"],
+        "matchSourceUrls": ["https://github.com/GlancingMind/opentelemetry-collector"],
         "groupName": "All OpenTelemetry Collector packages",
         "matchUpdateTypes": ["major", "minor", "patch"]
       },
       {
         "matchManagers": ["gomod"],
         "matchSourceUrls": [
-          "https://github.com/open-telemetry/opentelemetry-go-contrib"
+          "https://github.com/GlancingMind/opentelemetry-go-contrib"
         ],
         "groupName": "All opentelemetry-go-contrib packages"
       }

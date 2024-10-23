@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package loadbalancingexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
+package loadbalancingexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
 )
 
 const (
@@ -227,7 +227,7 @@ func (lb *loadBalancer) Shutdown(ctx context.Context) error {
 func (lb *loadBalancer) exporterAndEndpoint(identifier []byte) (*wrappedExporter, string, error) {
 	// NOTE: make rolling updates of next tier of collectors work. currently, this may cause
 	// data loss because the latest batches sent to outdated backend will never find their way out.
-	// for details: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/1690
+	// for details: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/1690
 	lb.updateLock.RLock()
 	defer lb.updateLock.RUnlock()
 	endpoint := lb.ring.endpointFor(identifier)

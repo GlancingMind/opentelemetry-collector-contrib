@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package zipkinv1 // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv1"
+package zipkinv1 // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv1"
 
 import (
 	"fmt"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
 )
 
 type status struct {
@@ -151,7 +151,7 @@ func toInt32(i int64) (int32, error) {
 }
 
 // statusCodeFromHTTP takes an HTTP status code and return the appropriate OpenTelemetry status code
-// See: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md
+// See: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md
 func statusCodeFromHTTP(code int32) ptrace.StatusCode {
 	if code >= 100 && code < 400 {
 		return ptrace.StatusCodeUnset

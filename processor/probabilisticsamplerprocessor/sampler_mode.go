@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package probabilisticsamplerprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+package probabilisticsamplerprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
 
 import (
 	"context"
@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/otel/metric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/sampling"
 )
 
 const (

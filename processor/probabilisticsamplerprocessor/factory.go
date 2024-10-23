@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package probabilisticsamplerprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+package probabilisticsamplerprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
 
 import (
 	"context"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/processor"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor/internal/metadata"
 )
 
 // The default precision is 4 hex digits, slightly more the original

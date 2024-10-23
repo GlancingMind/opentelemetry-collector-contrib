@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/connector/roundrobinconnector
+module github.com/GlancingMind/opentelemetry-collector-contrib/connector/roundrobinconnector
 
 go 1.22.0
 

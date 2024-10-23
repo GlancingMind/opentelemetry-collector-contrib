@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
+package internal // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
 
 import (
 	"errors"
@@ -13,7 +13,7 @@ import (
 	semconv "go.opentelemetry.io/collector/semconv/v1.27.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil"
 )
 
 // Notes on garbage collection (gc):

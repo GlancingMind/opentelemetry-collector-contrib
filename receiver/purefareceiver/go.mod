@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/purefareceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/purefareceiver
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/bearertokenauthextension v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver v0.112.0
 	github.com/prometheus/common v0.60.0
 	github.com/prometheus/prometheus v0.54.1
 	github.com/stretchr/testify v1.9.0
@@ -118,8 +118,8 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mwitkow/go-conntrack v0.0.0-20190716064945-2f068394615f // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus v0.112.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
 	github.com/ovh/go-ovh v1.6.0 // indirect
@@ -191,29 +191,29 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../prometheusreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../prometheusreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/bearertokenauthextension => ../../extension/bearertokenauthextension
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/bearertokenauthextension => ../../extension/bearertokenauthextension
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../pkg/translator/prometheus
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../pkg/translator/prometheus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../../pkg/translator/prometheusremotewrite
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../../pkg/translator/prometheusremotewrite
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../../pkg/resourcetotelemetry
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../../pkg/resourcetotelemetry
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../../exporter/prometheusremotewriteexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../../exporter/prometheusremotewriteexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
 retract (
 	v0.76.2
 	v0.76.1
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

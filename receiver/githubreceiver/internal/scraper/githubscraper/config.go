@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package githubscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
+package githubscraper // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
 
 import (
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
 )
 
 // Config relating to Github Metric Scraper.

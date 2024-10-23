@@ -4,4 +4,4 @@
 //go:generate mdatagen metadata.yaml
 
 // Package dorisexporter exports trace, metric and log data to an Apache Doris instance.
-package dorisexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/dorisexporter"
+package dorisexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/dorisexporter"

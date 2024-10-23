@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package googlecloudmonitoringreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver"
+package googlecloudmonitoringreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver"
 
 import (
 	"errors"

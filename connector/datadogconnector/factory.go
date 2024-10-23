@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package datadogconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/datadogconnector"
+package datadogconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/datadogconnector"
 
 import (
 	"context"
@@ -17,8 +17,8 @@ import (
 	"go.opentelemetry.io/collector/featuregate"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/datadogconnector/internal/metadata"
-	datadogconfig "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/datadog/config"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/datadogconnector/internal/metadata"
+	datadogconfig "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/datadog/config"
 )
 
 const nativeIngestFeatureGateName = "connector.datadogconnector.NativeIngest"

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package translation // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
+package translation // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
 
 import (
 	"fmt"
@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation/dpfilters"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation/dpfilters"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/signalfx"
 )
 
 // Some fields on SignalFx protobuf are pointers, in order to reduce

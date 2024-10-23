@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package azuremonitorexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/azuremonitorexporter"
+package azuremonitorexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/azuremonitorexporter"
 
 import (
 	"github.com/microsoft/ApplicationInsights-Go/appinsights/contracts"
@@ -26,7 +26,7 @@ func applyResourcesToDataProperties(dataProperties map[string]string, resourceAt
 // Sets important ai.cloud.* tags on the envelope
 func applyCloudTagsToEnvelope(envelope *contracts.Envelope, resourceAttributes pcommon.Map) {
 	// Extract key service.* labels from the Resource labels and construct CloudRole and CloudRoleInstance envelope tags
-	// https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/resource/semantic_conventions
+	// https://github.com/GlancingMind/opentelemetry-specification/tree/main/specification/resource/semantic_conventions
 	if serviceName, serviceNameExists := resourceAttributes.Get(conventions.AttributeServiceName); serviceNameExists {
 		cloudRole := serviceName.Str()
 

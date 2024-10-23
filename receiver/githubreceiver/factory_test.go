@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pipeline"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
 )
 
 var creationSet = receivertest.NewNopSettings()

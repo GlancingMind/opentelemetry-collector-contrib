@@ -9,11 +9,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/streams"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testdata/random"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/streams"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testdata/random"
 )
 
 var rdp data.Number

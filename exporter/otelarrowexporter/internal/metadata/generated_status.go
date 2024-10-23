@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("otelarrow")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter"
 )
 
 const (

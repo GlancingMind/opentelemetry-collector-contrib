@@ -14,15 +14,15 @@ import (
 
 // Deprecated: [v0.108.0] use LeveledMeter instead.
 func Meter(settings component.TelemetrySettings) metric.Meter {
-	return settings.MeterProvider.Meter("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
+	return settings.MeterProvider.Meter("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
 }
 
 func LeveledMeter(settings component.TelemetrySettings, level configtelemetry.Level) metric.Meter {
-	return settings.LeveledMeterProvider(level).Meter("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
+	return settings.LeveledMeterProvider(level).Meter("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
 }
 
 func Tracer(settings component.TelemetrySettings) trace.Tracer {
-	return settings.TracerProvider.Tracer("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
+	return settings.TracerProvider.Tracer("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver")
 }
 
 // TelemetryBuilder provides an interface for components to report telemetry

@@ -27,20 +27,20 @@ import (
 	"github.com/knadh/koanf/parsers/yaml"
 	"github.com/knadh/koanf/providers/rawbytes"
 	"github.com/knadh/koanf/v2"
-	"github.com/open-telemetry/opamp-go/client"
-	"github.com/open-telemetry/opamp-go/client/types"
-	"github.com/open-telemetry/opamp-go/protobufs"
-	"github.com/open-telemetry/opamp-go/server"
-	serverTypes "github.com/open-telemetry/opamp-go/server/types"
+	"github.com/GlancingMind/opamp-go/client"
+	"github.com/GlancingMind/opamp-go/client/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/server"
+	serverTypes "github.com/GlancingMind/opamp-go/server/types"
 	"go.opentelemetry.io/collector/config/configopaque"
 	"go.opentelemetry.io/collector/config/configtls"
 	semconv "go.opentelemetry.io/collector/semconv/v1.21.0"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/commander"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/healthchecker"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/commander"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/healthchecker"
 )
 
 var (
@@ -111,7 +111,7 @@ type Supervisor struct {
 	// A config section to be added to the Collector's config to fetch its own metrics.
 	// TODO: store this persistently so that when starting we can compose the effective
 	// config correctly.
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/21078
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/21078
 	agentConfigOwnMetricsSection *atomic.Value
 
 	// agentHealthCheckEndpoint is the endpoint the Collector's health check extension
@@ -300,7 +300,7 @@ func (s *Supervisor) getBootstrapInfo() (err error) {
 				for _, attr := range identAttr {
 					if attr.Key == semconv.AttributeServiceInstanceID {
 						// TODO: Consider whether to attempt restarting the Collector.
-						// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/29864
+						// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/29864
 						if attr.Value.GetStringValue() != s.persistentState.InstanceID.String() {
 							done <- fmt.Errorf(
 								"the Collector's instance ID (%s) does not match with the instance ID set by the Supervisor (%s)",
@@ -421,7 +421,7 @@ func (s *Supervisor) startOpAMPClient() error {
 				return nil
 			},
 			SaveRemoteConfigStatusFunc: func(_ context.Context, _ *protobufs.RemoteConfigStatus) {
-				// TODO: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/21079
+				// TODO: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/21079
 			},
 			GetEffectiveConfigFunc: func(_ context.Context) (*protobufs.EffectiveConfig, error) {
 				return s.createEffectiveConfigMsg(), nil
@@ -604,7 +604,7 @@ func (s *Supervisor) stopOpAMPClient() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancel()
 	err := s.opampClient.Stop(ctx)
-	// TODO(srikanthccv): remove context.DeadlineExceeded after https://github.com/open-telemetry/opamp-go/pull/213
+	// TODO(srikanthccv): remove context.DeadlineExceeded after https://github.com/GlancingMind/opamp-go/pull/213
 	if err != nil && !errors.Is(err, context.DeadlineExceeded) {
 		return err
 	}
@@ -1101,7 +1101,7 @@ func (s *Supervisor) runAgentProcess() {
 			}
 
 			// TODO: decide why the agent stopped. If it was due to bad config, report it to server.
-			// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/21079
+			// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/21079
 
 			// Wait 5 seconds before starting again.
 			if !restartTimer.Stop() {
@@ -1366,7 +1366,7 @@ func (s *Supervisor) findRandomPort() (int, error) {
 // The default koanf behavior is to override lists in the config.
 // Instead, we provide this function, which merges the source and destination config's
 // extension lists by concatenating the two.
-// Will be resolved by https://github.com/open-telemetry/opentelemetry-collector/issues/8754
+// Will be resolved by https://github.com/GlancingMind/opentelemetry-collector/issues/8754
 func configMergeFunc(src, dest map[string]any) error {
 	srcExtensions := maps.Search(src, []string{"service", "extensions"})
 	destExtensions := maps.Search(dest, []string{"service", "extensions"})

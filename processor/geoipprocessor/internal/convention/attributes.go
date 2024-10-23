@@ -1,9 +1,9 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package conventions // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
+package conventions // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
 
-// TODO: replace for semconv once https://github.com/open-telemetry/semantic-conventions/issues/1033 is closed.
+// TODO: replace for semconv once https://github.com/GlancingMind/semantic-conventions/issues/1033 is closed.
 const (
 	// AttributeGeoCityName represents the attribute name for the city name in geographical data.
 	AttributeGeoCityName = "geo.city_name"

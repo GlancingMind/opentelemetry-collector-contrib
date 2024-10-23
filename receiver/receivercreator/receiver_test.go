@@ -22,9 +22,9 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	semconv "go.opentelemetry.io/collector/semconv/v1.27.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/receivercreator/internal/metadata"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

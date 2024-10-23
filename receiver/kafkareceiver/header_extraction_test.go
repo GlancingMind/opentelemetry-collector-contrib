@@ -20,7 +20,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kafkareceiver/internal/metadata"
 )
 
 func TestHeaderExtractionTraces(t *testing.T) {

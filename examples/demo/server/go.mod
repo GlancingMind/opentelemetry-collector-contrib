@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/examples/demo/server
+module github.com/GlancingMind/opentelemetry-collector-contrib/examples/demo/server
 
 go 1.22.0
 

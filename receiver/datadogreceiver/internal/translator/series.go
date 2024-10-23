@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package translator // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
+package translator // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
 
 import (
 	"io"
@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
 )
 
 const (

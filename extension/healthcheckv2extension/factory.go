@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package healthcheckv2extension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension"
+package healthcheckv2extension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension"
 
 import (
 	"context"
@@ -14,10 +14,10 @@ import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.opentelemetry.io/collector/extension"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
 )
 
 const (

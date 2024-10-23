@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logzioexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter"
+package logzioexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/logzioexporter"
 
 import (
 	"bytes"
@@ -28,7 +28,7 @@ import (
 	"google.golang.org/genproto/googleapis/rpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger"
 )
 
 const (
@@ -224,7 +224,7 @@ func (exporter *logzioExporter) pushTraceData(ctx context.Context, traces ptrace
 }
 
 // export is similar to otlphttp export method with changes in log messages + Permanent error for `StatusUnauthorized` and `StatusForbidden`
-// https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/otlphttpexporter/otlp.go#L127
+// https://github.com/GlancingMind/opentelemetry-collector/blob/main/exporter/otlphttpexporter/otlp.go#L127
 func (exporter *logzioExporter) export(ctx context.Context, url string, request []byte) error {
 	exporter.logger.Debug(fmt.Sprintf("Preparing to make HTTP request with %d bytes", len(request)))
 	req, err := http.NewRequestWithContext(ctx, http.MethodPost, url, bytes.NewReader(request))
@@ -261,7 +261,7 @@ func (exporter *logzioExporter) export(ctx context.Context, url string, request 
 	}
 
 	// Check if the server is overwhelmed.
-	// See spec https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/otlp.md#throttling-1
+	// See spec https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/protocol/otlp.md#throttling-1
 	if resp.StatusCode == http.StatusTooManyRequests || resp.StatusCode == http.StatusServiceUnavailable {
 		// Fallback to 0 if the Retry-After header is not present. This will trigger the
 		// default backoff policy by our caller (retry handler).
@@ -297,7 +297,7 @@ func readResponse(resp *http.Response) *status.Status {
 		respBytes := make([]byte, maxRead)
 		n, err := io.ReadFull(resp.Body, respBytes)
 		if err == nil && n > 0 {
-			// Decode it as Status struct. See https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/protocol/otlp.md#failures
+			// Decode it as Status struct. See https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/protocol/otlp.md#failures
 			respStatus = &status.Status{}
 			err = proto.Unmarshal(respBytes, respStatus)
 			if err != nil {

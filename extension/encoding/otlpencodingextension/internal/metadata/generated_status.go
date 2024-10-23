@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("otlp_encoding")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/otlpencodingextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/otlpencodingextension"
 )
 
 const (

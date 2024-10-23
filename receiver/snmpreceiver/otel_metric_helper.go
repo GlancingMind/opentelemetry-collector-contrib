@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package snmpreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/snmpreceiver"
+package snmpreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/snmpreceiver"
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/snmpreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/snmpreceiver/internal/metadata"
 )
 
 // generalResourceKey is the resource key for the no general "no attribute" resource

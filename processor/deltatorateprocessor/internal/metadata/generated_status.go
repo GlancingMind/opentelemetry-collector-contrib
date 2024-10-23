@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("deltatorate")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatorateprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatorateprocessor"
 )
 
 const (

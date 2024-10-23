@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package grafanacloudconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/grafanacloudconnector"
+package grafanacloudconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/grafanacloudconnector"

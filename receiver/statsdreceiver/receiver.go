@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package statsdreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver"
+package statsdreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver"
 
 import (
 	"context"
@@ -20,9 +20,9 @@ import (
 	"go.opentelemetry.io/collector/receiver/receiverhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/protocol"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/transport"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/protocol"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/statsdreceiver/internal/transport"
 )
 
 var _ receiver.Metrics = (*statsdReceiver)(nil)

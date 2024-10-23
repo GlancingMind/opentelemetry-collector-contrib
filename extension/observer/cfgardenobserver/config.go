@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package cfgardenobserver // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/cfgardenobserver"
+package cfgardenobserver // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/cfgardenobserver"
 
 import (
 	"time"

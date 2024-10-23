@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package observer // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+package observer // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer"
 
 import (
 	"errors"
@@ -345,7 +345,7 @@ func (c *Container) Type() EndpointType {
 }
 
 // K8sNode represents a Kubernetes Node object:
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/k8s.md#node
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/k8s.md#node
 type K8sNode struct {
 	// Name is the name of the Kubernetes Node.
 	Name string

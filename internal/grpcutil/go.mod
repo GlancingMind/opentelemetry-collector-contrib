@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil
+module github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil
 
 go 1.22.0
 

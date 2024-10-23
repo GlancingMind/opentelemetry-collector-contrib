@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("remotetap")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/remotetapprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/remotetapprocessor"
 )
 
 const (

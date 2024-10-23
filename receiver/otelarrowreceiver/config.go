@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otelarrowreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
+package otelarrowreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"go.opentelemetry.io/collector/config/configgrpc"
 	"go.opentelemetry.io/collector/confmap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
 )
 
 // Protocols is the configuration for the supported protocols.

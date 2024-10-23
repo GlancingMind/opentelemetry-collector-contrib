@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray/testdata/sampleapp
+module github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray/testdata/sampleapp
 
 go 1.22.0
 

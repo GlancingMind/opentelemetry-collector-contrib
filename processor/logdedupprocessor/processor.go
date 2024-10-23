@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logdedupprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor"
+package logdedupprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/logdedupprocessor"
 
 import (
 	"context"
@@ -16,9 +16,9 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/expr"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/expr"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/logdedupprocessor/internal/metadata"
 )
 
 // logDedupProcessor is a logDedupProcessor that counts duplicate instances of logs.

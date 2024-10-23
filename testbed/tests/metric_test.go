@@ -14,10 +14,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/pipeline"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datareceivers"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datasenders"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/datareceivers"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/datasenders"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 )
 
 func TestMetric10kDPS(t *testing.T) {

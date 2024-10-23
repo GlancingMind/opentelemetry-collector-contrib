@@ -14,8 +14,8 @@ import (
 	"go.opentelemetry.io/collector/component/componentstatus"
 	"go.opentelemetry.io/collector/pipeline"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status/testhelpers"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status/testhelpers"
 )
 
 func TestAggregateStatus(t *testing.T) {

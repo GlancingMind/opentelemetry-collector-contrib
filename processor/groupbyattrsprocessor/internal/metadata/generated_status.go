@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("groupbyattrs")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbyattrsprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/groupbyattrsprocessor"
 )
 
 const (

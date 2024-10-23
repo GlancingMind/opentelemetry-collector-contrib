@@ -1,7 +1,7 @@
 # Contributing
 
 If you would like to contribute please read OpenTelemetry Collector [contributing
-guidelines](https://github.com/open-telemetry/opentelemetry-collector/blob/main/CONTRIBUTING.md) before you begin your
+guidelines](https://github.com/GlancingMind/opentelemetry-collector/blob/main/CONTRIBUTING.md) before you begin your
 work.
 
 ## Pull-requests
@@ -110,7 +110,7 @@ With above guidelines, you can write code that is more portable and easier to ma
 ## Adding New Components
 
 **Before** any code is written, [open an
-issue](https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/new?assignees=&labels=Sponsor+Needed%2Cneeds+triage&projects=&template=new_component.yaml&title=New+component%3A+)
+issue](https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/new?assignees=&labels=Sponsor+Needed%2Cneeds+triage&projects=&template=new_component.yaml&title=New+component%3A+)
 providing the following information:
 
 * Who's the sponsor for your component. A sponsor is an approver or maintainer who will be the official reviewer of the code and a code owner
@@ -136,7 +136,7 @@ Components refer to connectors, exporters, extensions, processors, and receivers
 * Implement the [component.Component](https://pkg.go.dev/go.opentelemetry.io/collector/component#Component) interface
 * Provide a configuration structure which defines the configuration of the component
 * Provide the implementation which performs the component operation
-* Have a `metadata.yaml` file and its generated code (using [mdatadgen](https://github.com/open-telemetry/opentelemetry-collector/blob/main/cmd/mdatagen/README.md)).
+* Have a `metadata.yaml` file and its generated code (using [mdatadgen](https://github.com/GlancingMind/opentelemetry-collector/blob/main/cmd/mdatagen/README.md)).
 
 Familiarize yourself with the interface of the component that you want to write, and use existing implementations as a reference.
 [Building a Trace Receiver](https://opentelemetry.io/docs/collector/trace-receiver/) tutorial provides a detailed example of building a component.
@@ -175,7 +175,7 @@ and its contributors.
   not automatically include any components in official release binaries. See
   [Releasing new components](#releasing-new-components).)**
 
-- Create a `metadata.yaml` file with at minimum the required fields defined in [metadata-schema.yaml](https://github.com/open-telemetry/opentelemetry-collector/blob/main/cmd/mdatagen/metadata-schema.yaml).
+- Create a `metadata.yaml` file with at minimum the required fields defined in [metadata-schema.yaml](https://github.com/GlancingMind/opentelemetry-collector/blob/main/cmd/mdatagen/metadata-schema.yaml).
 Here is a minimal representation:
 ```
 type: <name of your component, such as apache, http, haproxy, postgresql>
@@ -202,9 +202,9 @@ status:
 //go:generate mdatagen metadata.yaml
 
 // Package fooreceiver bars.
-package fooreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fooreceiver"
+package fooreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/fooreceiver"
 ```
-- Type `make update-codeowners`. This will trigger the regeneration of the `.github/CODEOWNERS` file and the [metadata generator](https://github.com/open-telemetry/opentelemetry-collector/blob/main/cmd/mdatagen/README.md#using-the-metadata-generator) to generate the associated code/documentation.
+- Type `make update-codeowners`. This will trigger the regeneration of the `.github/CODEOWNERS` file and the [metadata generator](https://github.com/GlancingMind/opentelemetry-collector/blob/main/cmd/mdatagen/README.md#using-the-metadata-generator) to generate the associated code/documentation.
 
 When submitting a component to the community, consider breaking it down into separate PRs as follows:
 
@@ -213,7 +213,7 @@ When submitting a component to the community, consider breaking it down into sep
     factory structs.
   * This PR is usually trivial to review, so the size limit does not apply to
     it.
-  * The component should use [`In Development` Stability](https://github.com/open-telemetry/opentelemetry-collector#development) in its README.
+  * The component should use [`In Development` Stability](https://github.com/GlancingMind/opentelemetry-collector#development) in its README.
   * Before submitting a PR, run the following commands from the root of the repository to ensure your new component is meeting the repo linting expectations:
     * `make checkdoc`
     * `make checkmetadata`
@@ -239,15 +239,15 @@ When submitting a component to the community, consider breaking it down into sep
     - `make generate`
     - `make genotelcontribcol`
   * The component's tests must also be added as a part of its respective `component_type_tests.go` file in the `cmd/otelcontribcol` directory.
-  * The component must be enabled only after sufficient testing and only when it meets [`Alpha` stability requirements](https://github.com/open-telemetry/opentelemetry-collector#alpha).
-* Once your component has reached `Alpha` stability, you may also submit a PR to the [OpenTelemetry Collector Releases](https://github.com/open-telemetry/opentelemetry-collector-releases) repository to include your component in future releases of the OpenTelemetry Collector `contrib` distribution.
+  * The component must be enabled only after sufficient testing and only when it meets [`Alpha` stability requirements](https://github.com/GlancingMind/opentelemetry-collector#alpha).
+* Once your component has reached `Alpha` stability, you may also submit a PR to the [OpenTelemetry Collector Releases](https://github.com/GlancingMind/opentelemetry-collector-releases) repository to include your component in future releases of the OpenTelemetry Collector `contrib` distribution.
 * Once a new component has been added to the executable:
   * Please add the component
-    to the [OpenTelemetry.io registry](https://github.com/open-telemetry/opentelemetry.io#adding-a-project-to-the-opentelemetry-registry).
+    to the [OpenTelemetry.io registry](https://github.com/GlancingMind/opentelemetry.io#adding-a-project-to-the-opentelemetry-registry).
 
 ### Releasing New Components
 After a component has been merged it must be added to the
-[OpenTelemetry Collector Contrib's release manifest.yaml](https://github.com/open-telemetry/opentelemetry-collector-releases/blob/main/distributions/otelcol-contrib/manifest.yaml)
+[OpenTelemetry Collector Contrib's release manifest.yaml](https://github.com/GlancingMind/opentelemetry-collector-releases/blob/main/distributions/otelcol-contrib/manifest.yaml)
 to be included in the distributed otelcol-contrib binaries and docker images.
 
 ### Rotating sponsors
@@ -275,7 +275,7 @@ Whenever a sponsor is picked from the top of this list, please move them to the 
 
 ## Adding metrics to existing receivers
 Following these steps for contributing additional metrics to existing receivers.
- - Read instructions [here](https://github.com/open-telemetry/opentelemetry-collector/blob/main/CONTRIBUTING.md#fork) on how to
+ - Read instructions [here](https://github.com/GlancingMind/opentelemetry-collector/blob/main/CONTRIBUTING.md#fork) on how to
    fork, build and create PRs. The only difference is to change repository name from `opentelemetry-collector` to `opentelemetry-collector-contrib`
  - Edit `metadata.yaml` of your metrics receiver to add new metrics, e.g.: `redisreceiver/metadata.yaml`
  - To generate new metrics on top of this updated YAML file.
@@ -291,10 +291,10 @@ in general try to follow them.
 - Avoid introducing batching, retries or worker pools directly on receivers and exporters. Typically, these are general
   cases that can be better handled via processors (that also can be reused by other receivers and exporters).
 - When implementing exporters try to leverage the exporter helpers from the core repo, see [exporterhelper
-  package](https://github.com/open-telemetry/opentelemetry-collector/tree/main/exporter/exporterhelper). This will
+  package](https://github.com/GlancingMind/opentelemetry-collector/tree/main/exporter/exporterhelper). This will
   ensure that the exporter provides [zPages](https://opencensus.io/zpages/) and a standard set of metrics.
 - `replace` statements in `go.mod` files can be automatically inserted by running `make crosslink`. For more information
-  on the `crosslink` tool see the README [here](https://github.com/open-telemetry/opentelemetry-go-build-tools/tree/main/crosslink).
+  on the `crosslink` tool see the README [here](https://github.com/GlancingMind/opentelemetry-go-build-tools/tree/main/crosslink).
 
 ## Issue Triaging
 
@@ -308,7 +308,7 @@ OpenTelemetry community members, issue authors, and anyone else who would like t
 
 #### Triagers
 
-Contributors with [triager](https://github.com/open-telemetry/opentelemetry-collector-contrib/#contributing) permissions can help move
+Contributors with [triager](https://github.com/GlancingMind/opentelemetry-collector-contrib/#contributing) permissions can help move
 issues along by adding missing component labels, which help organize issues and trigger automations to notify code owners. They can
 also use their familiarity with the Collector and its components to investigate issues themselves. Alternatively, they may point issue
 authors to another resource or someone else who may know more.
@@ -399,17 +399,17 @@ Example label comment:
 
 ### Membership levels
 
-See the [OpenTelemetry membership guide](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md) for information on how to become a member of the OpenTelemetry organization and the different roles available. In addition to the roles listed there we also have a Collector-specific role: code owners.
+See the [OpenTelemetry membership guide](https://github.com/GlancingMind/community/blob/main/guides/contributor/membership.md) for information on how to become a member of the OpenTelemetry organization and the different roles available. In addition to the roles listed there we also have a Collector-specific role: code owners.
 
 ### Becoming a Code Owner
 
-A Code Owner is responsible for a component within Collector Contrib, as indicated by the [CODEOWNERS file](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/.github/CODEOWNERS). That responsibility includes maintaining the component, triaging and responding to issues, and reviewing pull requests.
+A Code Owner is responsible for a component within Collector Contrib, as indicated by the [CODEOWNERS file](https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/.github/CODEOWNERS). That responsibility includes maintaining the component, triaging and responding to issues, and reviewing pull requests.
 
 Sometimes a component may be in need of a new or additional Code Owner. A few reasons this situation may arise would be:
 
 - The existing Code Owners are actively looking for more help.
 - A previous Code Owner stepped down.
-- An existing Code Owner has become unresponsive. See [unmaintained stability status](https://github.com/open-telemetry/opentelemetry-collector#unmaintained).
+- An existing Code Owner has become unresponsive. See [unmaintained stability status](https://github.com/GlancingMind/opentelemetry-collector#unmaintained).
 - The component was never assigned a Code Owner.
 
 Code Ownership does not have to be a full-time job. If you can find a couple hours to help out on a recurring basis, please consider pursuing Code Ownership.
@@ -418,7 +418,7 @@ Code Ownership does not have to be a full-time job. If you can find a couple hou
 
 If you would like to help and become a Code Owner you must meet the following requirements:
 
-1. [Be a member of the OpenTelemetry organization.](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#member)
+1. [Be a member of the OpenTelemetry organization.](https://github.com/GlancingMind/community/blob/main/guides/contributor/membership.md#member)
 2. (Code Owner Discretion) It is best to have resolved an issue related to the component, contributed directly to the component, and/or review component PRs. How much interaction with the component is required before becoming a Code Owner is up to any existing Code Owners.
 
 Code Ownership is ultimately up to the judgement of the existing Code Owners and Collector Contrib Maintainers. Meeting the above requirements is not a guarantee to be granted Code Ownership.
@@ -436,7 +436,7 @@ Be sure to tag the existing Code Owners, if any, within the PR to ensure they re
 
 ### Emeritus roles
 
-Contributors who are unable to meet the responsibilities of their role are encouraged to move to [emeritus](https://github.com/open-telemetry/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager). In case of long temporary absences, contributors are encouraged to let maintainers know on the CNCF Slack (e.g. on the #otel-collector-dev channel or privately via DM) and to mark themselves as 'Busy' on Github.
+Contributors who are unable to meet the responsibilities of their role are encouraged to move to [emeritus](https://github.com/GlancingMind/community/blob/main/guides/contributor/membership.md#emeritus-maintainerapprovertriager). In case of long temporary absences, contributors are encouraged to let maintainers know on the CNCF Slack (e.g. on the #otel-collector-dev channel or privately via DM) and to mark themselves as 'Busy' on Github.
 
 In the event that a contributor becomes inactive without prior notice, the maintainers will attempt to contact the contributor via both Github and the CNCF Slack to confirm their status. After two weeks, if the contributor is an approver or maintainer, they may be removed from the Github review auto-assignment.
 

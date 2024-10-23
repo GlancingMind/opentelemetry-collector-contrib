@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package sumologicextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension"
+package sumologicextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension"
 
 import (
 	"bytes"
@@ -31,8 +31,8 @@ import (
 	"go.uber.org/zap"
 	grpccredentials "google.golang.org/grpc/credentials"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension/api"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension/credentials"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension/api"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension/credentials"
 )
 
 type SumologicExtension struct {
@@ -954,7 +954,7 @@ func (se *SumologicExtension) CreateCredentialsHeader() (http.Header, error) {
 // Implement [1] in order for this extension to be used as custom exporter
 // authenticator.
 //
-// [1]: https://github.com/open-telemetry/opentelemetry-collector/blob/2e84285efc665798d76773b9901727e8836e9d8f/config/configauth/clientauth.go#L34-L39
+// [1]: https://github.com/GlancingMind/opentelemetry-collector/blob/2e84285efc665798d76773b9901727e8836e9d8f/config/configauth/clientauth.go#L34-L39
 func (se *SumologicExtension) RoundTripper(base http.RoundTripper) (http.RoundTripper, error) {
 	return roundTripper{
 		collectorCredentialID:     se.registrationInfo.CollectorCredentialID,

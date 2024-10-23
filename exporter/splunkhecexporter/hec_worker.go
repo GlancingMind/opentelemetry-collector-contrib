@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package splunkhecexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter"
+package splunkhecexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter"
 
 import (
 	"bytes"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 type hecWorker interface {
@@ -69,7 +69,7 @@ func (hec *defaultHecWorker) send(ctx context.Context, buf buffer, headers map[s
 
 	// Do not drain the response when 429 or 502 status code is returned.
 	// HTTP client will not reuse the same connection unless it is drained.
-	// See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/18281 for more details.
+	// See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/18281 for more details.
 	if resp.StatusCode != http.StatusTooManyRequests && resp.StatusCode != http.StatusBadGateway {
 		if _, errCopy := io.Copy(io.Discard, resp.Body); errCopy != nil {
 			return errCopy

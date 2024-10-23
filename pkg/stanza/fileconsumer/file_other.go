@@ -3,7 +3,7 @@
 
 //go:build !windows
 
-package fileconsumer // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
+package fileconsumer // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
 )
 
 // Take care of files which disappeared from the pattern since the last poll cycle

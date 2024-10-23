@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
+package internal // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
 
 import (
 	"net"
@@ -21,7 +21,7 @@ var removeOldSemconvFeatureGate = featuregate.GlobalRegistry().MustRegister(
 	featuregate.StageAlpha,
 	featuregate.WithRegisterFromVersion("v0.101.0"),
 	featuregate.WithRegisterDescription("When enabled, the net.host.name, net.host.port, and http.scheme resource attributes are no longer added to metrics. Use server.address, server.port, and url.scheme instead."),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32814"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32814"),
 )
 
 // isDiscernibleHost checks if a host can be used as a value for the 'host.name' key.

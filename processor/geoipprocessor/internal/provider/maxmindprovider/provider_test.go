@@ -14,8 +14,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/otel/attribute"
 
-	conventions "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider/testdata"
+	conventions "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider/testdata"
 )
 
 func TestInvalidNewProvider(t *testing.T) {

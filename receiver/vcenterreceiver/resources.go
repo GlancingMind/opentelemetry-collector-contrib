@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package vcenterreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver"
+package vcenterreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver"
 
 import (
 	"fmt"
 
 	"github.com/vmware/govmomi/vim25/mo"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
 )
 
 // createDatastoreResourceBuilder returns a ResourceBuilder with

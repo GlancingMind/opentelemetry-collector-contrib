@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package elasticsearchexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
+package elasticsearchexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
 
 import (
 	"context"
@@ -18,7 +18,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterbatcher"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/metadata"
 )
 
 const (

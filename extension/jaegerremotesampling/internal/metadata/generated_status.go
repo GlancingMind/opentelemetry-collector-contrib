@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("jaegerremotesampling")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/jaegerremotesampling"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/jaegerremotesampling"
 )
 
 const (

@@ -18,8 +18,8 @@ import (
 	rcvr "go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/receivercreator/internal/metadata"
 )
 
 type mockHostFactories struct {
@@ -145,7 +145,7 @@ func TestInvalidResourceAttributeEndpointType(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Receivers[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	cfg, err := otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "invalid-resource-attributes.yaml"), factories)
 	require.ErrorContains(t, err, "error reading configuration for \"receiver_creator\": resource attributes for unsupported endpoint type \"not.a.real.type\"")
@@ -160,7 +160,7 @@ func TestInvalidReceiverResourceAttributeValueType(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Receivers[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	cfg, err := otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "invalid-receiver-resource-attributes.yaml"), factories)
 	require.ErrorContains(t, err, "error reading configuration for \"receiver_creator\": unsupported `resource_attributes` \"one\" value <nil> in examplereceiver/1")

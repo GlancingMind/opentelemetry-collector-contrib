@@ -18,8 +18,8 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 type logNameTest struct {

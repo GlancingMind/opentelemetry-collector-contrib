@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package lambda // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/lambda"
+package lambda // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/lambda"
 
 import (
 	"context"
@@ -12,8 +12,8 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.16.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/lambda/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/aws/lambda/internal/metadata"
 )
 
 const (
@@ -49,21 +49,21 @@ func (d *detector) Detect(_ context.Context) (resource pcommon.Resource, schemaU
 		return pcommon.NewResource(), "", err
 	}
 
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud.md
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud.md
 	d.rb.SetCloudProvider(conventions.AttributeCloudProviderAWS)
 	d.rb.SetCloudPlatform(conventions.AttributeCloudPlatformAWSLambda)
 	if value, ok := os.LookupEnv(awsRegionEnvVar); ok {
 		d.rb.SetCloudRegion(value)
 	}
 
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/faas.md
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/instrumentation/aws-lambda.md#resource-detector
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/faas.md
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/instrumentation/aws-lambda.md#resource-detector
 	d.rb.SetFaasName(functionName)
 	if value, ok := os.LookupEnv(awsLambdaFunctionVersionEnvVar); ok {
 		d.rb.SetFaasVersion(value)
 	}
 
-	// Note: The FaaS spec (https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/faas.md)
+	// Note: The FaaS spec (https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/faas.md)
 	//       recommends setting faas.instance to the full log stream name for AWS Lambda.
 	if value, ok := os.LookupEnv(awsLambdaLogStreamNameEnvVar); ok {
 		d.rb.SetFaasInstance(value)
@@ -72,7 +72,7 @@ func (d *detector) Detect(_ context.Context) (resource pcommon.Resource, schemaU
 		d.rb.SetFaasMaxMemory(value)
 	}
 
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud_provider/aws/logs.md
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud_provider/aws/logs.md
 	if value, ok := os.LookupEnv(awsLambdaLogGroupNameEnvVar); ok {
 		d.rb.SetAwsLogGroupNames([]any{value})
 	}

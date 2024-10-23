@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package countconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/countconnector"
+package countconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/countconnector"
 
 import (
 	"context"
@@ -15,12 +15,12 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/countconnector/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspanevent"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/countconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottldatapoint"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottllog"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlmetric"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspanevent"
 )
 
 // count can count spans, span event, metrics, data points, or log records

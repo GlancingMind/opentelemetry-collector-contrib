@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("opencensus")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/opencensusexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/opencensusexporter"
 )
 
 const (

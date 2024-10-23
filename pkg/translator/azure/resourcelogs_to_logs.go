@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package azure // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/azure"
+package azure // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/azure"
 
 import (
 	"bytes"
@@ -20,7 +20,7 @@ import (
 
 const (
 	// Constants for OpenTelemetry Specs
-	scopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/azure"
+	scopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/azure"
 
 	// Constants for Azure Log Records
 	azureCategory          = "azure.category"

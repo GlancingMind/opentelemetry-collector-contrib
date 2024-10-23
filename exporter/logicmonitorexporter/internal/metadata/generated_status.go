@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("logicmonitor")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logicmonitorexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/logicmonitorexporter"
 )
 
 const (

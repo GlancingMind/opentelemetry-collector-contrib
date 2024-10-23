@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("logzio")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/logzioexporter"
 )
 
 const (

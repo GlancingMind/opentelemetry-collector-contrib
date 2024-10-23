@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/open-telemetry/otel-arrow/pkg/datagen"
-	otel_assert "github.com/open-telemetry/otel-arrow/pkg/otel/assert"
+	"github.com/GlancingMind/otel-arrow/pkg/datagen"
+	otel_assert "github.com/GlancingMind/otel-arrow/pkg/otel/assert"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/component"
@@ -40,9 +40,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
 )
 
 type testParams struct {
@@ -325,7 +325,7 @@ func standardEnding(t *testing.T, _ testParams, testCon *testConsumer, expect []
 		eops[fmt.Sprintf("%v/%v", span.Name, span.Status.Code)]++
 
 		// This span has a recognized span error which we can't easily fix. See
-		// https://github.com/open-telemetry/opentelemetry-go-contrib/issues/2644
+		// https://github.com/GlancingMind/opentelemetry-go-contrib/issues/2644
 		if span.Name == "opentelemetry.proto.experimental.arrow.v1.ArrowTracesService/ArrowTraces" {
 			continue
 		}
@@ -543,7 +543,7 @@ func multiStreamEnding(t *testing.T, p testParams, testCon *testConsumer, td [][
 	//
 	// This span is the Arrow gRPC server stream, instrumented by
 	// otelgrpc.  Because of
-	// https://github.com/open-telemetry/opentelemetry-go-contrib/issues/2644
+	// https://github.com/GlancingMind/opentelemetry-go-contrib/issues/2644
 	// we expect either an error or unset.  There should be > 1
 	// streams.
 	recvStreamsUnset := recvOps[streamName+"/Unset"]

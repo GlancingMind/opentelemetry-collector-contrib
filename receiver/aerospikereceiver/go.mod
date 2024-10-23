@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/aerospikereceiver
 
 go 1.22.0
 
@@ -6,8 +6,8 @@ require (
 	github.com/aerospike/aerospike-client-go/v7 v7.7.1
 	github.com/docker/go-connections v0.5.0
 	github.com/google/go-cmp v0.6.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
 	github.com/stretchr/testify v1.9.0
 	github.com/testcontainers/testcontainers-go v0.31.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -63,8 +63,8 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/morikuni/aec v1.0.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.1.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -104,11 +104,11 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
 retract (
 	v0.76.2
@@ -116,4 +116,4 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

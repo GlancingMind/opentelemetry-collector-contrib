@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package ecsobserver // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver"
+package ecsobserver // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/ecsobserver"
 
 import (
 	"fmt"
@@ -29,7 +29,7 @@ type Config struct {
 	// This is mainly used in conjunction with the Prometheus receiver.
 	ResultFile string `mapstructure:"result_file" yaml:"result_file"`
 	// JobLabelName is the override for prometheus job label, using `job` literal will cause error
-	// in otel prometheus receiver. See https://github.com/open-telemetry/opentelemetry-collector/issues/575
+	// in otel prometheus receiver. See https://github.com/GlancingMind/opentelemetry-collector/issues/575
 	JobLabelName string `mapstructure:"job_label_name" yaml:"job_label_name"`
 	// Services is a list of service name patterns for filtering tasks.
 	Services []ServiceConfig `mapstructure:"services" yaml:"services"`
@@ -43,7 +43,7 @@ type Config struct {
 // our own validation logic.
 func (c *Config) Validate() error {
 	if c.ClusterName == "" {
-		// TODO: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/3188
+		// TODO: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/3188
 		// would allow auto detect cluster name in extension
 		return fmt.Errorf("must specify ECS cluster name directly")
 	}

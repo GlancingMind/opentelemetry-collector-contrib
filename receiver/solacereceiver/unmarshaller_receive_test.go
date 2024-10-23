@@ -15,8 +15,8 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
-	receive_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/receive/v1"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	receive_v1 "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/receive/v1"
 )
 
 func TestReceiveUnmarshallerMapResourceSpan(t *testing.T) {

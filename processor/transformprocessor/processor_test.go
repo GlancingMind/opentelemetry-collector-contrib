@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
 )
 
 func TestFlattenDataDisabledByDefault(t *testing.T) {

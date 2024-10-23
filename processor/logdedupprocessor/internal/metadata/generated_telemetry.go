@@ -13,11 +13,11 @@ import (
 )
 
 func Meter(settings component.TelemetrySettings) metric.Meter {
-	return settings.MeterProvider.Meter("github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor")
+	return settings.MeterProvider.Meter("github.com/GlancingMind/opentelemetry-collector-contrib/processor/logdedupprocessor")
 }
 
 func Tracer(settings component.TelemetrySettings) trace.Tracer {
-	return settings.TracerProvider.Tracer("github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor")
+	return settings.TracerProvider.Tracer("github.com/GlancingMind/opentelemetry-collector-contrib/processor/logdedupprocessor")
 }
 
 // TelemetryBuilder provides an interface for components to report telemetry

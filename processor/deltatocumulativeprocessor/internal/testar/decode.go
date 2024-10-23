@@ -16,7 +16,7 @@
 //	err := Read(data, &into)
 //
 // See [Read] and [Parser] for examples.
-package testar // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar"
+package testar // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar"
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ import (
 
 	"golang.org/x/tools/txtar"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar/crlf"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar/crlf"
 )
 
 // Read archive data into the fields of struct *T

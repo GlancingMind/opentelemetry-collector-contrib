@@ -1,11 +1,11 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkametricsreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kafkametricsreceiver
 
 go 1.22.0
 
 require (
 	github.com/IBM/sarama v1.43.3
 	github.com/google/go-cmp v0.6.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/kafka v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/config/configtls v1.18.0
@@ -82,7 +82,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka => ../../internal/kafka
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/kafka => ../../internal/kafka
 
 // see https://github.com/distribution/distribution/issues/3590
 exclude github.com/docker/distribution v2.8.0+incompatible

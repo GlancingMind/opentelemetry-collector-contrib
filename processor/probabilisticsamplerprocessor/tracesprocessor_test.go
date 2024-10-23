@@ -22,8 +22,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/idutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/idutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/sampling"
 )
 
 // defaultHashSeed is used throughout to ensure that the HashSeed is real

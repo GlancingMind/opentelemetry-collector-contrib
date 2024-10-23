@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("oracledb")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/oracledbreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/oracledbreceiver"
 )
 
 const (

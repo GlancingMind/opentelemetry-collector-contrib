@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor
+module github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor
 
 go 1.22.0
 
@@ -6,9 +6,9 @@ require (
 	github.com/distribution/reference v0.6.0
 	github.com/google/go-cmp v0.6.0
 	github.com/google/uuid v1.6.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8stest v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8sconfig v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8stest v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/client v1.18.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -128,7 +128,7 @@ require (
 	sigs.k8s.io/yaml v1.4.0 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig => ./../../internal/k8sconfig
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8sconfig => ./../../internal/k8sconfig
 
 // openshift removed all tags from their repo, use the pseudoversion from the release-3.9 branch HEAD
 replace github.com/openshift/api v3.9.0+incompatible => github.com/openshift/api v0.0.0-20180801171038-322a19404e37
@@ -139,15 +139,15 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8stest => ../../internal/k8stest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8stest => ../../internal/k8stest
 
 // ambiguous import: found package cloud.google.com/go/compute/metadata in multiple modules
 replace cloud.google.com/go v0.54.0 => cloud.google.com/go v0.110.10
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

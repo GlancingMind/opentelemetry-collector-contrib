@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension
 
 go 1.22.0
 

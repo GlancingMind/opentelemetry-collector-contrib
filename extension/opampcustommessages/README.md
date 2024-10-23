@@ -2,7 +2,7 @@
 
 ## Overview
 
-This modules contains interfaces and shared code for sending and receiving [custom messages](https://github.com/open-telemetry/opamp-spec/blob/main/specification.md#custom-messages) via OpAMP.
+This modules contains interfaces and shared code for sending and receiving [custom messages](https://github.com/GlancingMind/opamp-spec/blob/main/specification.md#custom-messages) via OpAMP.
 
 ## Usage
 
@@ -42,7 +42,7 @@ After obtaining a handler for the custom capability, you can send and receive me
 
 #### Sending a message
 
-To send a message, you can use the SendMessage method. Since only one custom message can be scheduled to send at a time, the error returned should be checked if it's [ErrCustomMessagePending](https://pkg.go.dev/github.com/open-telemetry/opamp-go@v0.14.0/client/types#pkg-variables), and wait on the returned channel to attempt sending the message again.
+To send a message, you can use the SendMessage method. Since only one custom message can be scheduled to send at a time, the error returned should be checked if it's [ErrCustomMessagePending](https://pkg.go.dev/github.com/GlancingMind/opamp-go@v0.14.0/client/types#pkg-variables), and wait on the returned channel to attempt sending the message again.
 
 ```go
 for {

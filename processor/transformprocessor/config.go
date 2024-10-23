@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package transformprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor"
+package transformprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor"
 
 import (
 	"errors"
@@ -11,18 +11,18 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/traces"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/logs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/traces"
 )
 
 var (
 	flatLogsFeatureGate = featuregate.GlobalRegistry().MustRegister("transform.flatten.logs", featuregate.StageAlpha,
 		featuregate.WithRegisterDescription("Flatten log data prior to transformation so every record has a unique copy of the resource and scope. Regroups logs based on resource and scope after transformations."),
 		featuregate.WithRegisterFromVersion("v0.103.0"),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32080#issuecomment-2120764953"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32080#issuecomment-2120764953"),
 	)
 	errFlatLogsGateDisabled = errors.New("'flatten_data' requires the 'transform.flatten.logs' feature gate to be enabled")
 )

@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package common // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
+package common // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/transformprocessor/internal/common"
 
 import (
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlresource"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlscope"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlresource"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlscope"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
 )
 
 func ResourceFunctions() map[string]ottl.Factory[ottlresource.TransformContext] {

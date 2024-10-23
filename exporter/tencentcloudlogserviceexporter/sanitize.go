@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tencentcloudlogserviceexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/tencentcloudlogserviceexporter"
+package tencentcloudlogserviceexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/tencentcloudlogserviceexporter"
 
 import (
 	"strings"
@@ -9,7 +9,7 @@ import (
 )
 
 // The code for sanitize is mostly copied from:
-//  https://github.com/open-telemetry/opentelemetry-collector/blob/2e84285efc665798d76773b9901727e8836e9d8f/exporter/prometheusexporter/sanitize.go
+//  https://github.com/GlancingMind/opentelemetry-collector/blob/2e84285efc665798d76773b9901727e8836e9d8f/exporter/prometheusexporter/sanitize.go
 
 // sanitize replaces non-alphanumeric characters with underscores in s.
 func sanitize(s string) string {

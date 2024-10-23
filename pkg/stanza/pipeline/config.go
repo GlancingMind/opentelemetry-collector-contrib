@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package pipeline // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/pipeline"
+package pipeline // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/pipeline"
 
 import (
 	"fmt"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/errors"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/errors"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 // Config is the configuration of a pipeline.

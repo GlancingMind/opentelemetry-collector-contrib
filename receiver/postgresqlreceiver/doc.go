@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package postgresqlreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/postgresqlreceiver"
+package postgresqlreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/postgresqlreceiver"

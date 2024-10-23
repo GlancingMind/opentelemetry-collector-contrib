@@ -49,7 +49,7 @@ processors:
   # the collector's memory up to 2GB, and the spike should be 25% of the
   # collector's memory up to 2GB.
   # For more information, see
-  # https://github.com/open-telemetry/opentelemetry-collector/blob/main/processor/memorylimiterprocessor/README.md
+  # https://github.com/GlancingMind/opentelemetry-collector/blob/main/processor/memorylimiterprocessor/README.md
   memory_limiter:
     check_interval: 2s
     limit_mib: 1800

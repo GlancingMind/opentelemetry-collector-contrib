@@ -25,14 +25,14 @@ import (
 	"go.opentelemetry.io/collector/pipeline"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/consumerretry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/file"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/json"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/consumerretry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/adapter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/file"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/json"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/regex"
 )
 
 func TestDefaultConfig(t *testing.T) {

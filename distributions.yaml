@@ -3,6 +3,6 @@
 # - The distribution is open source and maintained by the OpenTelemetry project.
 # - The link must point to a publicly accessible repository.
  - name: core
-   url: https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol
+   url: https://github.com/GlancingMind/opentelemetry-collector-releases/tree/main/distributions/otelcol
  - name: contrib
-   url: https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol-contrib
+   url: https://github.com/GlancingMind/opentelemetry-collector-releases/tree/main/distributions/otelcol-contrib

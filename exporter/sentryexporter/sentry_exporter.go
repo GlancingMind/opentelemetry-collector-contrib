@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package sentryexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sentryexporter"
+package sentryexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sentryexporter"
 
 import (
 	"context"
@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.18.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 )
 
 const (
@@ -29,7 +29,7 @@ const (
 	otelSentryExporterName    = "sentry.opentelemetry"
 )
 
-// See OpenTelemetry span statuses in https://github.com/open-telemetry/opentelemetry-proto/blob/6cf77b2f544f6bc7fe1e4b4a8a52e5a42cb50ead/opentelemetry/proto/trace/v1/trace.proto#L303
+// See OpenTelemetry span statuses in https://github.com/GlancingMind/opentelemetry-proto/blob/6cf77b2f544f6bc7fe1e4b4a8a52e5a42cb50ead/opentelemetry/proto/trace/v1/trace.proto#L303
 
 // OpenTelemetry span status can be Unset, Ok, Error. HTTP and Grpc codes contained in tags can make it more detailed.
 
@@ -293,7 +293,7 @@ func convertToSentrySpan(span ptrace.Span, library pcommon.InstrumentationScope,
 // from the name, attributes and SpanKind of an otel span based onSemantic Conventions
 // described by the open telemetry specification.
 //
-// See https://github.com/open-telemetry/opentelemetry-specification/tree/5b78ee1/specification/trace/semantic_conventions
+// See https://github.com/GlancingMind/opentelemetry-specification/tree/5b78ee1/specification/trace/semantic_conventions
 // for more details about the semantic conventions.
 func generateSpanDescriptors(name string, attrs pcommon.Map, spanKind ptrace.SpanKind) (op string, description string) {
 	var opBuilder strings.Builder

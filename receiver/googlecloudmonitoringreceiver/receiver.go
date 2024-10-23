@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package googlecloudmonitoringreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver"
+package googlecloudmonitoringreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver"
 
 import (
 	"context"
@@ -21,7 +21,7 @@ import (
 	"google.golang.org/genproto/googleapis/api/metric"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver/internal"
 )
 
 type monitoringReceiver struct {

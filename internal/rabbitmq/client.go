@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package rabbitmq // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/rabbitmq"
+package rabbitmq // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/rabbitmq"
 
 import (
 	"context"

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package identity // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+package identity // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
 
 import (
 	"hash"
@@ -9,7 +9,7 @@ import (
 
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil"
 )
 
 type resource = Resource

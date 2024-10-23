@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusremotewritereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver"
+package prometheusremotewritereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver"
 
 import (
 	"context"
@@ -11,7 +11,7 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver/internal/metadata"
 )
 
 // NewFactory creates a new Prometheus receiver factory.

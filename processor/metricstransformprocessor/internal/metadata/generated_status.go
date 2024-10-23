@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("metricstransform")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricstransformprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/metricstransformprocessor"
 )
 
 const (

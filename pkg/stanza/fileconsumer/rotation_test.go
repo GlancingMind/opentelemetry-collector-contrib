@@ -19,15 +19,15 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/filetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/filetest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/testutil"
 )
 
 const windowsOS = "windows"
 
 func TestCopyTruncate(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	tempDir := t.TempDir()
 	cfg := NewConfig().includeDir(tempDir)
@@ -89,7 +89,7 @@ func TestCopyTruncate(t *testing.T) {
 
 func TestMoveCreate(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	tempDir := t.TempDir()
 	cfg := NewConfig().includeDir(tempDir)
@@ -319,7 +319,7 @@ func TestRotatedOutOfPatternMoveCreate(t *testing.T) {
 // detect that our old handle is stale and not attempt to read from it.
 func TestRotatedOutOfPatternCopyTruncate(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	t.Parallel()
 
@@ -373,7 +373,7 @@ func TestRotatedOutOfPatternCopyTruncate(t *testing.T) {
 // any new writes are picked up
 func TestTruncateThenWrite(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	t.Parallel()
 
@@ -418,7 +418,7 @@ func TestTruncateThenWrite(t *testing.T) {
 // written to the truncated file
 func TestCopyTruncateWriteBoth(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	t.Parallel()
 
@@ -456,7 +456,7 @@ func TestCopyTruncateWriteBoth(t *testing.T) {
 
 func TestFileMovedWhileOff_BigFiles(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	t.Parallel()
 

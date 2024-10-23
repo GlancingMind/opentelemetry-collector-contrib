@@ -19,8 +19,8 @@ import (
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/testing/protocmp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
 )
 
 func TestResourceToOC(t *testing.T) {

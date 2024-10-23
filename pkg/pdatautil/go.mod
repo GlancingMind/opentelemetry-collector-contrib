@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil
 
 go 1.22.0
 

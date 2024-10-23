@@ -3,7 +3,7 @@
 
 //go:generate ../../../../../.tools/genqlient
 
-package githubscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
+package githubscraper // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
 
 import (
 	"context"
@@ -18,7 +18,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
 )
 
 var errClientNotInitErr = errors.New("http client not initialized")
@@ -126,7 +126,7 @@ func (ghs *githubScraper) scrape(ctx context.Context) (pmetric.Metrics, error) {
 			// Iterate through the refs (branches) populating the Branch focused
 			// metrics
 			for _, branch := range branches {
-				// See https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
+				// See https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
 				// for more information as to why we do not emit metrics for
 				// the default branch (trunk) nor any branch with no changes to
 				// it.
@@ -134,7 +134,7 @@ func (ghs *githubScraper) scrape(ctx context.Context) (pmetric.Metrics, error) {
 					continue
 				}
 
-				// See https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
+				// See https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/receiver/githubreceiver/internal/scraper/githubscraper/README.md#github-limitations
 				// for more information as to why `BehindBy` and `AheadBy` are
 				// swapped.
 				ghs.mb.RecordVcsRepositoryRefRevisionsAheadDataPoint(now, int64(branch.Compare.BehindBy), branch.Repository.Name, branch.Name, refType)

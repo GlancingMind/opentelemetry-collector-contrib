@@ -19,13 +19,13 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/attrs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/emittest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/filetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/attrs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/emittest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/filetest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/reader"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/testutil"
 )
 
 // TestDefaultBehaviors
@@ -326,11 +326,11 @@ func TestStartAtEnd(t *testing.T) {
 // the logs from all the files ever targeted by that symlink.
 func TestSymlinkedFiles(t *testing.T) {
 	if runtime.GOARCH == "arm64" {
-		t.Skip("Failing consistently on ARM64. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/34494")
+		t.Skip("Failing consistently on ARM64. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/34494")
 	}
 
 	if runtime.GOOS == "windows" {
-		t.Skip("Time sensitive tests disabled for now on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32715#issuecomment-2107737828")
+		t.Skip("Time sensitive tests disabled for now on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32715#issuecomment-2107737828")
 	}
 
 	t.Parallel()
@@ -378,7 +378,7 @@ func TestSymlinkedFiles(t *testing.T) {
 // beginning
 func TestStartAtEndNewFile(t *testing.T) {
 	if runtime.GOOS == windowsOS {
-		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16331")
+		t.Skip("Rotation tests have been flaky on Windows. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16331")
 	}
 	t.Parallel()
 

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package githubreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver"
+package githubreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver"
 
 import (
 	"context"
@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
 )
 
 // This file implements a factory for the github receiver

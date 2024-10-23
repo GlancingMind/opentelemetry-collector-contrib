@@ -284,4 +284,4 @@ resourceLogs:
             timeUnixNano: "1677821346000000000"
             traceId: ""
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver

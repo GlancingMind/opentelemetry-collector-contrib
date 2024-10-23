@@ -19,7 +19,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/sampling"
 )
 
 func TestNewLogs(t *testing.T) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package solacereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver"
+package solacereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver"
 
 import (
 	"errors"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
 )
 
 // tracesUnmarshaller deserializes the message body.

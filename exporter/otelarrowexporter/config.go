@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otelarrowexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter"
+package otelarrowexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter"
 
 import (
 	"fmt"
 	"strings"
 	"time"
 
-	"github.com/open-telemetry/otel-arrow/pkg/config"
+	"github.com/GlancingMind/otel-arrow/pkg/config"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/configcompression"
 	"go.opentelemetry.io/collector/config/configgrpc"
@@ -17,8 +17,8 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"google.golang.org/grpc"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
 )
 
 // Config defines configuration for OTLP exporter.
@@ -35,7 +35,7 @@ type Config struct {
 	configgrpc.ClientConfig `mapstructure:",squash"` // squash ensures fields are correctly decoded in embedded struct.
 
 	// Experimental: This configuration is at the early stage of development and may change without backward compatibility
-	// until https://github.com/open-telemetry/opentelemetry-collector/issues/8122 is resolved
+	// until https://github.com/GlancingMind/opentelemetry-collector/issues/8122 is resolved
 	BatcherConfig exporterbatcher.Config `mapstructure:"batcher"`
 
 	// Arrow includes settings specific to OTel Arrow.

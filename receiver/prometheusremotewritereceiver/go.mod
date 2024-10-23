@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver
 
 go 1.22.0
 

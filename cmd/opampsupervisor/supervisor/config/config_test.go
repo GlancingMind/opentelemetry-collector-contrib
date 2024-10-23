@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/open-telemetry/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/protobufs"
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/config/configtls"
 )

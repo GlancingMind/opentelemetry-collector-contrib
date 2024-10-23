@@ -4,4 +4,4 @@
 //go:generate mdatagen metadata.yaml
 
 // Package zipkinreceiver receives Zipkin traces.
-package zipkinreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver"
+package zipkinreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/zipkinreceiver"

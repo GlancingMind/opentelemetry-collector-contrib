@@ -1,12 +1,12 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otelarrowexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter"
+package otelarrowexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter"
 
 import (
 	"context"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/configcompression"
 	"go.opentelemetry.io/collector/config/configgrpc"
@@ -18,10 +18,10 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"google.golang.org/grpc"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 )
 
 // NewFactory creates a factory for OTLP exporter.

@@ -3,7 +3,7 @@
 
 //go:build linux
 
-package journald // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/journald"
+package journald // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/journald"
 
 import (
 	"context"
@@ -16,7 +16,7 @@ import (
 	jsoniter "github.com/json-iterator/go"
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 const waitDuration = 1 * time.Second

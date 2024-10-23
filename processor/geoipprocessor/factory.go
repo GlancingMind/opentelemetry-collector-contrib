@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package geoipprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor"
+package geoipprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor"
 
 import (
 	"context"
@@ -14,9 +14,9 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	semconv "go.opentelemetry.io/otel/semconv/v1.25.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
-	maxmind "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
+	maxmind "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
 )
 
 var (

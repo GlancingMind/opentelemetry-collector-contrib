@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("wavefront")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/wavefrontreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/wavefrontreceiver"
 )
 
 const (

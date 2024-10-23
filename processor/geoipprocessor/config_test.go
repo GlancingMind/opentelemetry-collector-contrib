@@ -14,9 +14,9 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/otelcol/otelcoltest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
-	maxmind "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
+	maxmind "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
 )
 
 func TestLoadConfig(t *testing.T) {

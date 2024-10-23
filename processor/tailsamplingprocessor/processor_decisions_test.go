@@ -15,8 +15,8 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/metric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/cache"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/cache"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
 )
 
 func TestSamplingPolicyTypicalPath(t *testing.T) {

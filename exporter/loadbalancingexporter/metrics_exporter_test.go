@@ -31,9 +31,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.27.0"
 	"gopkg.in/yaml.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
 )
 
 const (
@@ -679,7 +679,7 @@ func TestBuildExporterConfigUnknown(t *testing.T) {
 	require.NoError(t, err)
 
 	factories.Exporters[metadata.Type] = NewFactory()
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	cfg, err := otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "test-build-exporter-config.yaml"), factories)
 	require.NoError(t, err)
@@ -733,11 +733,11 @@ func TestBatchWithTwoMetrics(t *testing.T) {
 }
 
 func TestRollingUpdatesWhenConsumeMetrics(t *testing.T) {
-	t.Skip("Flaky Test - See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/13331")
+	t.Skip("Flaky Test - See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/13331")
 	ts, tb := getTelemetryAssets(t)
 
 	// this test is based on the discussion in the following issue for this exporter:
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/1690
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/1690
 	// prepare
 
 	// simulate rolling updates, the dns resolver should resolve in the following order

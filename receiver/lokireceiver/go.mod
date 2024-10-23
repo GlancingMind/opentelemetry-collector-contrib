@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/lokireceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/lokireceiver
 
 go 1.22.0
 
@@ -8,12 +8,12 @@ require (
 	github.com/golang/snappy v0.0.4
 	github.com/grafana/loki/pkg/push v0.0.0-20240514112848-a1b1eeb09583
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/loki v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus v0.112.0 // indirect
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/component/componentstatus v0.112.0
@@ -100,21 +100,21 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/loki => ../../pkg/translator/loki
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/loki => ../../pkg/translator/loki
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../pkg/translator/prometheus
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../pkg/translator/prometheus
 
 retract (
 	v0.76.2
 	v0.76.1
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

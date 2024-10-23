@@ -21,8 +21,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 )
 
 func BenchmarkExporter(b *testing.B) {

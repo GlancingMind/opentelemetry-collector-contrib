@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package awsemfexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsemfexporter"
+package awsemfexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/awsemfexporter"
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/exp/maps"
 
-	aws "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/metrics"
+	aws "github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/metrics"
 )
 
 const (
@@ -86,14 +86,14 @@ type numberDataPointSlice struct {
 // histogramDataPointSlice is a wrapper for pmetric.HistogramDataPointSlice
 type histogramDataPointSlice struct {
 	// Todo:(khanhntd) Calculate delta value for count and sum value with histogram
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/18245
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/18245
 	deltaMetricMetadata
 	pmetric.HistogramDataPointSlice
 }
 
 type exponentialHistogramDataPointSlice struct {
 	// TODO: Calculate delta value for count and sum value with exponential histogram
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/18245
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/18245
 	deltaMetricMetadata
 	pmetric.ExponentialHistogramDataPointSlice
 }
@@ -433,7 +433,7 @@ func getDataPoints(pmd pmetric.Metric, metadata cWMetricMetadata, logger *zap.Lo
 		// In order to ensure metrics are sent as deltas, we check the receiver attribute (which can be injected by
 		// attribute processor) from resource metrics. If it exists, and equals to prometheus, the sum and count will be
 		// converted.
-		// For more information: https://github.com/open-telemetry/opentelemetry-collector/blob/main/receiver/prometheusreceiver/DESIGN.md#summary
+		// For more information: https://github.com/GlancingMind/opentelemetry-collector/blob/main/receiver/prometheusreceiver/DESIGN.md#summary
 		metricMetadata.adjustToDelta = metadata.receiver == prometheusReceiver
 		dps = summaryDataPointSlice{
 			metricMetadata,

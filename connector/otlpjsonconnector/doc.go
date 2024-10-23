@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package otlpjsonconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/otlpjsonconnector"
+package otlpjsonconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/otlpjsonconnector"

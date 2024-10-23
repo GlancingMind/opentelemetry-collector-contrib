@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package influxdbreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/influxdbreceiver"
+package influxdbreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/influxdbreceiver"
 
 import (
 	"context"
@@ -22,7 +22,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/receiverhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/sanitize"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/sanitize"
 )
 
 type metricsReceiver struct {

@@ -19,12 +19,12 @@ import (
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlresource"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/goldendataset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlresource"
 )
 
 type metricNameTest struct {

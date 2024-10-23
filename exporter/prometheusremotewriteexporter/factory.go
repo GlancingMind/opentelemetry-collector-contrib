@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusremotewriteexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
+package prometheusremotewriteexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
 
 import (
 	"context"
@@ -15,8 +15,8 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/resourcetotelemetry"
 )
 
 var retryOn429FeatureGate = featuregate.GlobalRegistry().MustRegister(
@@ -48,7 +48,7 @@ func createMetricsExporter(ctx context.Context, set exporter.Settings,
 	}
 
 	// Don't allow users to configure the queue.
-	// See https://github.com/open-telemetry/opentelemetry-collector/issues/2949.
+	// See https://github.com/GlancingMind/opentelemetry-collector/issues/2949.
 	// Prometheus remote write samples needs to be in chronological
 	// order for each timeseries. If we shard the incoming metrics
 	// without considering this limitation, we experience

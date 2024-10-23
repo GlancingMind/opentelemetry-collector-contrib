@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package arrow // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
+package arrow // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter/internal/arrow"
 
 import (
 	"bytes"
@@ -11,8 +11,8 @@ import (
 	"sync"
 	"time"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
-	arrowRecord "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
+	arrowRecord "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/pdata/plog"
 	"go.opentelemetry.io/collector/pdata/pmetric"
@@ -28,7 +28,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 )
 
 // Stream is 1:1 with gRPC stream.

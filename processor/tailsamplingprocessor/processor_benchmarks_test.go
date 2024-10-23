@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
 )
 
 func BenchmarkSampling(b *testing.B) {

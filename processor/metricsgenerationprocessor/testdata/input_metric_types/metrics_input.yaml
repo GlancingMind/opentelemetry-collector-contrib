@@ -2,7 +2,7 @@ resourceMetrics:
   - resource: {}
     scopeMetrics:
       - scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/filesystemscraper
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/filesystemscraper
           version: 0.110.0-dev
         metrics:
           - name: system.filesystem.inodes.usage

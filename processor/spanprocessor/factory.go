@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package spanprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor"
+package spanprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/spanprocessor"
 
 import (
 	"context"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/spanprocessor/internal/metadata"
 )
 
 const (
@@ -26,7 +26,7 @@ var processorCapabilities = consumer.Capabilities{MutatesData: true}
 
 // errMissingRequiredField is returned when a required field in the config
 // is not specified.
-// TODO https://github.com/open-telemetry/opentelemetry-collector/issues/215
+// TODO https://github.com/GlancingMind/opentelemetry-collector/issues/215
 //
 //	Move this to the error package that allows for span name and field to be specified.
 var (

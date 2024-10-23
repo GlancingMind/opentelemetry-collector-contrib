@@ -1,9 +1,9 @@
 # Metric Context
 
-The Metric Context is a Context implementation for [pdata Metric](https://github.com/open-telemetry/opentelemetry-collector/tree/main/pdata/pmetric), the collector's internal representation for OTLP metrics.  This Context should be used when interacting with individual OTLP metrics.
+The Metric Context is a Context implementation for [pdata Metric](https://github.com/GlancingMind/opentelemetry-collector/tree/main/pdata/pmetric), the collector's internal representation for OTLP metrics.  This Context should be used when interacting with individual OTLP metrics.
 
 ## Paths
-In general, the Metric Context supports accessing pdata using the field names from the [metrics proto](https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
+In general, the Metric Context supports accessing pdata using the field names from the [metrics proto](https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
 
 The following paths are supported.
 
@@ -29,9 +29,9 @@ The following paths are supported.
 
 ## Enums
 
-The Metrics Context supports the enum names from the [metrics proto](https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto).
+The Metrics Context supports the enum names from the [metrics proto](https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto).
 
-In addition, it also supports an enum for metrics data type, with the numeric value being [defined by pdata](https://github.com/open-telemetry/opentelemetry-collector/blob/main/pdata/pmetric/metrics.go).
+In addition, it also supports an enum for metrics data type, with the numeric value being [defined by pdata](https://github.com/GlancingMind/opentelemetry-collector/blob/main/pdata/pmetric/metrics.go).
 
 | Enum Symbol                            | Value |
 |----------------------------------------|-------|

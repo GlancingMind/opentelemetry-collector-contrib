@@ -16,9 +16,9 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
-	egress_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
-	receive_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/receive/v1"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	egress_v1 "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
+	receive_v1 "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/receive/v1"
 )
 
 // Validate entire unmarshal flow

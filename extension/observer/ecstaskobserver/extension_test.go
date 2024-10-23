@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/component/componenttest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/ecsutil/ecsutiltest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/ecsutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/ecsutil/ecsutiltest"
 )
 
 func TestEndpointsFromTaskMetadata(t *testing.T) {

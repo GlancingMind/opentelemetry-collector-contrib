@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package jaeger // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+package jaeger // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger"
 
 import (
 	"fmt"
@@ -12,8 +12,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.9.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/idutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/idutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
 )
 
 var blankJaegerThriftSpan = new(jaeger.Span)

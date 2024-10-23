@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlpjsonconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/otlpjsonconnector"
+package otlpjsonconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/otlpjsonconnector"
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"go.opentelemetry.io/collector/connector"
 	"go.opentelemetry.io/collector/consumer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/otlpjsonconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/otlpjsonconnector/internal/metadata"
 )
 
 // NewFactory returns a ConnectorFactory.

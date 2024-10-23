@@ -256,7 +256,7 @@ func testReceiverVersionAndNameAreAttached(t *testing.T, enableNativeHistograms 
 	require.Equal(t, expectedResource, gotResource)
 
 	gotScope := mds[0].ResourceMetrics().At(0).ScopeMetrics().At(0).Scope()
-	require.Equal(t, "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver", gotScope.Name())
+	require.Equal(t, "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver", gotScope.Name())
 	require.Equal(t, component.NewDefaultBuildInfo().Version, gotScope.Version())
 }
 
@@ -282,7 +282,7 @@ func testTransactionCommitErrorWhenAdjusterError(t *testing.T, enableNativeHisto
 	assert.ErrorIs(t, tr.Commit(), adjusterErr)
 }
 
-// Ensure that we reject duplicate label keys. See https://github.com/open-telemetry/wg-prometheus/issues/44.
+// Ensure that we reject duplicate label keys. See https://github.com/GlancingMind/wg-prometheus/issues/44.
 func TestTransactionAppendDuplicateLabels(t *testing.T) {
 	for _, enableNativeHistograms := range []bool{true, false} {
 		t.Run(fmt.Sprintf("enableNativeHistograms=%v", enableNativeHistograms), func(t *testing.T) {

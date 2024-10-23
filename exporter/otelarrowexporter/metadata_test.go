@@ -18,7 +18,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumererror"
 	"go.opentelemetry.io/collector/exporter/exportertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testdata"
 )
 
 func TestSendTracesWithMetadata(t *testing.T) {

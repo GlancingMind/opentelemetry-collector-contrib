@@ -14,13 +14,13 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.27.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottltest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/ottlspan"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/ottltest"
 )
 
 func createConfig(matchType filterset.MatchType) *filterset.Config {

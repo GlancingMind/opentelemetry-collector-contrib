@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opencensus // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus"
+package opencensus // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/opencensus"
 
 import (
 	"strconv"
@@ -14,7 +14,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
 )
 
 type ocInferredResourceType struct {
@@ -28,23 +28,23 @@ type ocInferredResourceType struct {
 // NOTE: defined in the priority order (first match wins)
 var labelPresenceToResourceType = []ocInferredResourceType{
 	{
-		// See https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/container.md
+		// See https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/container.md
 		labelKeyPresent: conventions.AttributeContainerName,
 		resourceType:    resourcekeys.ContainerType,
 	},
 	{
-		// See https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/k8s.md#pod
+		// See https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/k8s.md#pod
 		labelKeyPresent: conventions.AttributeK8SPodName,
 		// NOTE: OpenCensus is using "k8s" rather than "k8s.pod" for Pod
 		resourceType: resourcekeys.K8SType,
 	},
 	{
-		// See https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/host.md
+		// See https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/host.md
 		labelKeyPresent: conventions.AttributeHostName,
 		resourceType:    resourcekeys.HostType,
 	},
 	{
-		// See https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud.md
+		// See https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/semantic_conventions/cloud.md
 		labelKeyPresent: conventions.AttributeCloudProvider,
 		resourceType:    resourcekeys.CloudType,
 	},

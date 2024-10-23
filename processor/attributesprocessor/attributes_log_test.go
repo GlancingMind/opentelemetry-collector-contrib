@@ -14,11 +14,11 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/attraction"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/attraction"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
 )
 
 // Common structure for all the Tests

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/awss3receiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/awss3receiver
 
 go 1.22.0
 
@@ -7,8 +7,8 @@ require (
 	github.com/aws/aws-sdk-go-v2/config v1.28.0
 	github.com/aws/aws-sdk-go-v2/feature/s3/manager v1.17.33
 	github.com/aws/aws-sdk-go-v2/service/s3 v1.66.0
-	github.com/open-telemetry/opamp-go v0.15.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages v0.112.0
+	github.com/GlancingMind/opamp-go v0.15.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/confmap v1.18.0
@@ -74,4 +74,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages => ../../extension/opampcustommessages
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages => ../../extension/opampcustommessages

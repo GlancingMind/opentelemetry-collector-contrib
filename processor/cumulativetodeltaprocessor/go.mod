@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor
+module github.com/GlancingMind/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/confmap v1.18.0
@@ -58,9 +58,9 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter => ../../internal/filter
 
 retract (
 	v0.76.2
@@ -68,10 +68,10 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl => ../../pkg/ottl
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl => ../../pkg/ottl
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

@@ -19,7 +19,7 @@ import (
 	"go.uber.org/zap/zapcore"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	prometheustranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+	prometheustranslator "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus"
 )
 
 type mockAccumulator struct {

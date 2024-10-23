@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package netstats // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+package netstats // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 
 import "google.golang.org/grpc"
 

@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package pdatautil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/pdatautil"
+package pdatautil // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/pdatautil"
 
 import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil"
 )
 
 // FlattenResourceLogs moves each LogRecord onto a dedicated ResourceLogs and ScopeLogs.

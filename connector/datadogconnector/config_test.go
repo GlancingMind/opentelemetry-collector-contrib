@@ -9,7 +9,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	datadogconfig "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/datadog/config"
+	datadogconfig "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/datadog/config"
 )
 
 func TestValidate(t *testing.T) {

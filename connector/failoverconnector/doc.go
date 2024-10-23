@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package failoverconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/failoverconnector"
+package failoverconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/failoverconnector"

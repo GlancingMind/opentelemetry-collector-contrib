@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package solacereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver"
+package solacereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver"
 
 import (
 	"context"
@@ -16,8 +16,8 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
-	egress_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	egress_v1 "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
 )
 
 type brokerTraceEgressUnmarshallerV1 struct {

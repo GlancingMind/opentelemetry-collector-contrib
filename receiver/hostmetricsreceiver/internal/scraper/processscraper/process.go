@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package processscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
+package processscraper // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
 
 import (
 	"context"
@@ -17,7 +17,7 @@ import (
 	"github.com/shirou/gopsutil/v4/process"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/metadata"
 )
 
 // processMetadata stores process related metadata along
@@ -56,7 +56,7 @@ func (m *processMetadata) buildResource(rb *metadata.ResourceBuilder) pcommon.Re
 		rb.SetProcessCommand(m.command.command)
 		if m.command.commandLineSlice != nil {
 			// TODO insert slice here once this is supported by the data model
-			// (see https://github.com/open-telemetry/opentelemetry-collector/pull/1142)
+			// (see https://github.com/GlancingMind/opentelemetry-collector/pull/1142)
 			rb.SetProcessCommandLine(strings.Join(m.command.commandLineSlice, " "))
 		} else {
 			rb.SetProcessCommandLine(m.command.commandLine)

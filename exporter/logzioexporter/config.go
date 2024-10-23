@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logzioexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter"
+package logzioexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/logzioexporter"
 
 import (
 	"errors"
@@ -36,21 +36,21 @@ func (c *Config) Validate() error {
 // CheckAndWarnDeprecatedOptions Is checking for soon deprecated configuration options (queue_max_length, queue_capacity, drain_interval, custom_endpoint) log a warning message and map to the relevant updated option
 func (c *Config) checkAndWarnDeprecatedOptions(logger hclog.Logger) {
 	if c.QueueCapacity != 0 {
-		logger.Warn("You are using the deprecated `queue_capacity` option that will be removed in the next release; use exporter helper configuration instead: https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/exporterhelper/README.md")
+		logger.Warn("You are using the deprecated `queue_capacity` option that will be removed in the next release; use exporter helper configuration instead: https://github.com/GlancingMind/opentelemetry-collector/blob/main/exporter/exporterhelper/README.md")
 	}
 	// Warn and map queue_max_length -> QueueSettings.QueueSize
 	if c.QueueMaxLength != 0 {
-		logger.Warn("You are using the deprecated `queue_max_length` option that will be removed in the next release; use exporter helper `queue_size` configuration instead: https://github.com/open-telemetry/opentelemetry-collector/blob/main/exporter/exporterhelper/README.md")
+		logger.Warn("You are using the deprecated `queue_max_length` option that will be removed in the next release; use exporter helper `queue_size` configuration instead: https://github.com/GlancingMind/opentelemetry-collector/blob/main/exporter/exporterhelper/README.md")
 		c.QueueSettings.Enabled = true
 		logger.Warn("Mapping `queue_max_length` -> `QueueSettings.QueueSize`")
 		c.QueueSettings.QueueSize = c.QueueMaxLength
 	}
 	if c.DrainInterval != 0 {
-		logger.Warn("You are using the deprecated `drain_interval` option that will be removed in the next release; use batch processor `timeout` configuration instead: https://github.com/open-telemetry/opentelemetry-collector/tree/main/processor/batchprocessor#batch-processor")
+		logger.Warn("You are using the deprecated `drain_interval` option that will be removed in the next release; use batch processor `timeout` configuration instead: https://github.com/GlancingMind/opentelemetry-collector/tree/main/processor/batchprocessor#batch-processor")
 	}
 	// Warn and map CustomEndpoint -> Endpoint
 	if c.CustomEndpoint != "" {
-		logger.Warn("You are using the deprecated `custom_endpoint` option that will be removed in the next release; please use `endpoint` configuration instead: https://github.com/open-telemetry/opentelemetry-collector/tree/main/config/confighttp")
+		logger.Warn("You are using the deprecated `custom_endpoint` option that will be removed in the next release; please use `endpoint` configuration instead: https://github.com/GlancingMind/opentelemetry-collector/tree/main/config/confighttp")
 		logger.Warn("Mapping `custom_endpoint` -> `Endpoint`")
 		c.ClientConfig.Endpoint = c.CustomEndpoint
 	}

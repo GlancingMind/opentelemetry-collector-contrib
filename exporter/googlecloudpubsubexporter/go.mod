@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlecloudpubsubexporter
+module github.com/GlancingMind/opentelemetry-collector-contrib/exporter/googlecloudpubsubexporter
 
 go 1.22.0
 

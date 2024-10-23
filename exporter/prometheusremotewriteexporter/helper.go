@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusremotewriteexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
+package prometheusremotewriteexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
 
 import (
 	"errors"
@@ -99,8 +99,8 @@ func convertTimeseriesToRequest(tsArray []prompb.TimeSeries) *prompb.WriteReques
 	return &prompb.WriteRequest{
 		// Prometheus requires time series to be sorted by Timestamp to avoid out of order problems.
 		// See:
-		// * https://github.com/open-telemetry/wg-prometheus/issues/10
-		// * https://github.com/open-telemetry/opentelemetry-collector/issues/2315
+		// * https://github.com/GlancingMind/wg-prometheus/issues/10
+		// * https://github.com/GlancingMind/opentelemetry-collector/issues/2315
 		Timeseries: orderBySampleTimestamp(tsArray),
 	}
 }

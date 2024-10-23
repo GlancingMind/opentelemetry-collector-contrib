@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	internaltime "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/internal/time"
+	internaltime "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/internal/time"
 )
 
 func TestExcludeOlderThanFilter(t *testing.T) {

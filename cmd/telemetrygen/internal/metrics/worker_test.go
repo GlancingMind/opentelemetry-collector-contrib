@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/telemetrygen/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/telemetrygen/internal/common"
 )
 
 const (

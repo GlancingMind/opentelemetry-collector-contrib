@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package logging // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/contexts/internal/logging"
+package logging // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/contexts/internal/logging"
 
 import (
 	"encoding/hex"

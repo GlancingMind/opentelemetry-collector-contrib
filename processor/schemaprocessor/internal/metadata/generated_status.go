@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("schema")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/schemaprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/schemaprocessor"
 )
 
 const (

@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("ack")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/ackextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/ackextension"
 )
 
 const (

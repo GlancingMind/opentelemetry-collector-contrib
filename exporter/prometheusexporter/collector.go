@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
+package prometheusexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusexporter"
 
 import (
 	"encoding/hex"
@@ -15,7 +15,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.25.0"
 	"go.uber.org/zap"
 
-	prometheustranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+	prometheustranslator "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus"
 )
 
 var (

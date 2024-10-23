@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/metadata"
 )
 
 type fakeRestClient struct {
@@ -55,7 +55,7 @@ func requireMetricsOk(t *testing.T, mds []pmetric.Metrics) {
 			requireResourceOk(t, rm.Resource())
 			for j := 0; j < rm.ScopeMetrics().Len(); j++ {
 				ilm := rm.ScopeMetrics().At(j)
-				require.Equal(t, "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver", ilm.Scope().Name())
+				require.Equal(t, "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver", ilm.Scope().Name())
 				for k := 0; k < ilm.Metrics().Len(); k++ {
 					requireMetricOk(t, ilm.Metrics().At(k))
 				}

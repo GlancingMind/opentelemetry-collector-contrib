@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package loadbalancingexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
+package loadbalancingexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/loadbalancingexporter"
 
 import (
 	"context"
@@ -28,7 +28,7 @@ import (
 	"k8s.io/utils/strings/slices"
 	"sigs.k8s.io/controller-runtime/pkg/client/config"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/loadbalancingexporter/internal/metadata"
 )
 
 var _ resolver = (*k8sResolver)(nil)

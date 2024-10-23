@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otelarrowreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
+package otelarrowreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver"
 
 import (
 	"context"
 	"errors"
 	"sync"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
-	arrowRecord "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
+	arrowRecord "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/component/componentstatus"
 	"go.opentelemetry.io/collector/config/configgrpc"
@@ -23,13 +23,13 @@ import (
 	"go.uber.org/zap"
 	"google.golang.org/grpc"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/admission"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/trace"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/admission"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/logs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/trace"
 )
 
 // otelArrowReceiver is the type that exposes Trace and Metrics reception.

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/cmd/githubgen
+module github.com/GlancingMind/opentelemetry-collector-contrib/cmd/githubgen
 
 go 1.22.0
 

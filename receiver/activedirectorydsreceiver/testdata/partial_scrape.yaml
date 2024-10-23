@@ -290,5 +290,5 @@ resourceMetrics:
                   timeUnixNano: "1000000"
             unit: '{threads}'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/activedirectorydsreceiver
           version: latest

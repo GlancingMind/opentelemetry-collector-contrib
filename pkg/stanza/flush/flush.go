@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package flush // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/flush"
+package flush // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/flush"
 
 import (
 	"bufio"
 	"time"
 
-	internaltime "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/internal/time"
+	internaltime "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/internal/time"
 )
 
 type State struct {

@@ -24,8 +24,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest/observer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/idbatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/idbatcher"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
 )
 
 const (
@@ -227,7 +227,7 @@ func TestConcurrentTraceArrival(t *testing.T) {
 	}()
 
 	// Limit the concurrency here to avoid creating too many goroutines and hit
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9126
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/9126
 	concurrencyLimiter := make(chan struct{}, 128)
 	defer close(concurrencyLimiter)
 	for _, batch := range batches {
@@ -338,7 +338,7 @@ func TestSequentialTraceMapSize(t *testing.T) {
 }
 
 func TestConcurrentTraceMapSize(t *testing.T) {
-	t.Skip("Flaky test, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/9126")
+	t.Skip("Flaky test, see https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/9126")
 	_, batches := generateIDsAndBatches(210)
 	const maxSize = 100
 	var wg sync.WaitGroup

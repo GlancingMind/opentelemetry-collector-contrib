@@ -39,5 +39,5 @@ resourceMetrics:
             name: k8s.node.allocatable_memory
             unit: By
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver
           version: latest

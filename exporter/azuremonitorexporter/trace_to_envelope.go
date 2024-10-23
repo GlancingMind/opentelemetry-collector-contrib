@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package azuremonitorexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/azuremonitorexporter"
+package azuremonitorexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/azuremonitorexporter"
 
 // Contains code common to both trace and metrics exporters
 
@@ -18,7 +18,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.12.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 )
 
 const (
@@ -265,12 +265,12 @@ func spanEventToMessageData(spanEvent ptrace.SpanEvent) *contracts.MessageData {
 }
 
 func getFormattedHTTPStatusValues(statusCode int64) (statusAsString string, success bool) {
-	// see https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#status
+	// see https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#status
 	return strconv.FormatInt(statusCode, 10), statusCode >= 100 && statusCode <= 399
 }
 
 // Maps HTTP Server Span to AppInsights RequestData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#semantic-conventions-for-http-spans
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#semantic-conventions-for-http-spans
 func fillRequestDataHTTP(span ptrace.Span, data *contracts.RequestData) {
 	attrs := copyAndExtractHTTPAttributes(span.Attributes(), data.Properties)
 
@@ -287,7 +287,7 @@ func fillRequestDataHTTP(span ptrace.Span, data *contracts.RequestData) {
 	sb.WriteString(" ")
 
 	// Use httpRoute if available otherwise fallback to the span name
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#name
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#name
 	if attrs.HTTPRoute != "" {
 		sb.WriteString(prefixIfNecessary(attrs.HTTPRoute, "/"))
 	} else {
@@ -348,7 +348,7 @@ func fillRequestDataHTTP(span ptrace.Span, data *contracts.RequestData) {
 
 	// data.Source should be the client ip if available or fallback to net.peer.ip
 	// https://github.com/microsoft/ApplicationInsights-Home/blob/f1f9f619d74557c8db3dbde4b49c4193e10d8a81/EndpointSpecs/Schemas/Bond/RequestData.bond#L28
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
 	if attrs.HTTPClientIP != "" {
 		data.Source = attrs.HTTPClientIP
 	} else if attrs.NetworkAttributes.NetPeerIP != "" {
@@ -357,7 +357,7 @@ func fillRequestDataHTTP(span ptrace.Span, data *contracts.RequestData) {
 }
 
 // Maps HTTP Client Span to AppInsights RemoteDependencyData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md
 func fillRemoteDependencyDataHTTP(span ptrace.Span, data *contracts.RemoteDependencyData) {
 	attrs := copyAndExtractHTTPAttributes(span.Attributes(), data.Properties)
 
@@ -373,7 +373,7 @@ func fillRemoteDependencyDataHTTP(span ptrace.Span, data *contracts.RemoteDepend
 	sb.WriteString(attrs.HTTPMethod)
 
 	// Use httpRoute if available otherwise fallback to the HTTP method
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#name
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#name
 	if attrs.HTTPRoute != "" {
 		sb.WriteString(" ")
 		sb.WriteString(attrs.HTTPRoute)
@@ -445,7 +445,7 @@ func fillRemoteDependencyDataHTTP(span ptrace.Span, data *contracts.RemoteDepend
 }
 
 // Maps RPC Server Span to AppInsights RequestData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/rpc.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/rpc.md
 func fillRequestDataRPC(span ptrace.Span, data *contracts.RequestData) {
 	attrs := copyAndExtractRPCAttributes(span.Attributes(), data.Properties)
 
@@ -471,7 +471,7 @@ func fillRequestDataRPC(span ptrace.Span, data *contracts.RequestData) {
 }
 
 // Maps RPC Client Span to AppInsights RemoteDependencyData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/rpc.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/rpc.md
 func fillRemoteDependencyDataRPC(span ptrace.Span, data *contracts.RemoteDependencyData) {
 	attrs := copyAndExtractRPCAttributes(span.Attributes(), data.Properties)
 
@@ -497,7 +497,7 @@ func getRPCStatusCodeAsString(rpcAttributes *RPCAttributes) (statusCodeAsString 
 }
 
 // Maps Database Client Span to AppInsights RemoteDependencyData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/database.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/database.md
 func fillRemoteDependencyDataDatabase(span ptrace.Span, data *contracts.RemoteDependencyData) {
 	attrs := copyAndExtractDatabaseAttributes(span.Attributes(), data.Properties)
 
@@ -515,7 +515,7 @@ func fillRemoteDependencyDataDatabase(span ptrace.Span, data *contracts.RemoteDe
 }
 
 // Maps Messaging Consumer/Server Span to AppInsights RequestData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md
 func fillRequestDataMessaging(span ptrace.Span, data *contracts.RequestData) {
 	attrs := copyAndExtractMessagingAttributes(span.Attributes(), data.Properties)
 
@@ -530,7 +530,7 @@ func fillRequestDataMessaging(span ptrace.Span, data *contracts.RequestData) {
 }
 
 // Maps Messaging Producer/Client Span to AppInsights RemoteDependencyData
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md
 func fillRemoteDependencyDataMessaging(span ptrace.Span, data *contracts.RemoteDependencyData) {
 	attrs := copyAndExtractMessagingAttributes(span.Attributes(), data.Properties)
 
@@ -680,7 +680,7 @@ func mapIncomingSpanToType(attributeMap pcommon.Map) spanType {
 	return unknownSpanType
 }
 
-// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/api.md#set-status
+// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/api.md#set-status
 func getDefaultFormattedSpanStatus(spanStatus ptrace.Status) (statusCodeAsString string, success bool) {
 	code := spanStatus.Code()
 

@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package spanmetricsconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector"
+package spanmetricsconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector"
 
 import (
 	"context"
@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metadata"
 )
 
 const (
@@ -31,7 +31,7 @@ func init() {
 		legacyMetricNamesFeatureGateID,
 		featuregate.StageAlpha, // Alpha because we want it disabled by default.
 		featuregate.WithRegisterDescription("When enabled, connector uses legacy metric names."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33227"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33227"),
 	)
 }
 

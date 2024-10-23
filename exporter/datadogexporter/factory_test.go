@@ -26,7 +26,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metadata"
 )
 
 var _ inframetadata.Pusher = (*testPusher)(nil)

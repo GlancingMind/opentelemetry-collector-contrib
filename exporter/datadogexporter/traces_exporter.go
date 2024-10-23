@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package datadogexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
+package datadogexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter"
 
 import (
 	"context"
@@ -28,10 +28,10 @@ import (
 	"go.uber.org/zap"
 	zorkian "gopkg.in/zorkian/go-datadog-api.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/hostmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/scrub"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/hostmetadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/scrub"
 )
 
 var traceCustomHTTPFeatureGate = featuregate.GlobalRegistry().MustRegister(

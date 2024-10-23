@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package matcher // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
+package matcher // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
 
 import (
 	"errors"
@@ -11,8 +11,8 @@ import (
 
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/filter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/finder"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/filter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/finder"
 )
 
 const (
@@ -30,7 +30,7 @@ var mtimeSortTypeFeatureGate = featuregate.GlobalRegistry().MustRegister(
 	"filelog.mtimeSortType",
 	featuregate.StageAlpha,
 	featuregate.WithRegisterDescription("When enabled, allows usage of `ordering_criteria.mode` = `mtime`."),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27812"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/27812"),
 )
 
 type Criteria struct {

@@ -7,9 +7,9 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/open-telemetry/opamp-go/protobufs"
-	"github.com/open-telemetry/opamp-go/server"
-	serverTypes "github.com/open-telemetry/opamp-go/server/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/server"
+	serverTypes "github.com/GlancingMind/opamp-go/server/types"
 )
 
 type flattenedSettings struct {

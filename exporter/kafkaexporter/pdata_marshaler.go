@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package kafkaexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter"
+package kafkaexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/kafkaexporter"
 
 import (
 	"github.com/IBM/sarama"
@@ -9,9 +9,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/pdata/ptrace"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchpersignal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil"
 )
 
 type pdataLogsMarshaler struct {

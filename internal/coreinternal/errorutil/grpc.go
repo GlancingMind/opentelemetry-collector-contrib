@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package errorutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
+package errorutil // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
 
 import (
 	"go.opentelemetry.io/collector/consumer/consumererror"
@@ -13,7 +13,7 @@ func GrpcError(err error) error {
 	s, ok := status.FromError(err)
 	if !ok {
 		// Default to a retryable error
-		// https://github.com/open-telemetry/opentelemetry-proto/blob/main/docs/specification.md#failures
+		// https://github.com/GlancingMind/opentelemetry-proto/blob/main/docs/specification.md#failures
 		code := codes.Unavailable
 		if consumererror.IsPermanent(err) {
 			// non-retryable error

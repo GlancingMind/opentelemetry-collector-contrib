@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package maxmind // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
+package maxmind // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider/maxmindprovider"
 
 import (
 	"context"
@@ -12,8 +12,8 @@ import (
 	"github.com/oschwald/geoip2-golang"
 	"go.opentelemetry.io/otel/attribute"
 
-	conventions "github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
+	conventions "github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/convention"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/geoipprocessor/internal/provider"
 )
 
 var (

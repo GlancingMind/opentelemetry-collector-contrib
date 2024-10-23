@@ -29,8 +29,8 @@ import (
 	"go.uber.org/zap/zaptest/observer"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/pdatautil"
 )
 
 const (
@@ -231,7 +231,7 @@ func verifyExplicitHistogramDataPoints(t testing.TB, dps pmetric.HistogramDataPo
 		// Verify bucket counts.
 
 		// The bucket counts should be 1 greater than the explicit bounds as documented in:
-		// https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto.
+		// https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto.
 		assert.Equal(t, dp.ExplicitBounds().Len()+1, dp.BucketCounts().Len())
 
 		// Find the bucket index where the 11ms duration should belong in.

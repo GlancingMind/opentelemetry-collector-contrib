@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package kubeletstatsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver"
+package kubeletstatsreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver"
 
 import (
 	"context"
@@ -14,10 +14,10 @@ import (
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	kube "github.com/open-telemetry/opentelemetry-collector-contrib/internal/kubelet"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/kubelet"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8sconfig"
+	kube "github.com/GlancingMind/opentelemetry-collector-contrib/internal/kubelet"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/kubelet"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kubeletstatsreceiver/internal/metadata"
 )
 
 const (
@@ -30,7 +30,7 @@ var enableCPUUsageMetrics = featuregate.GlobalRegistry().MustRegister(
 	featuregate.StageAlpha,
 	featuregate.WithRegisterDescription("When enabled the container.cpu.utilization, k8s.pod.cpu.utilization and k8s.node.cpu.utilization metrics will be replaced by the container.cpu.usage, k8s.pod.cpu.usage and k8s.node.cpu.usage"),
 	featuregate.WithRegisterFromVersion("v0.110.0"),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27885"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/27885"),
 )
 
 var defaultMetricGroups = []kubelet.MetricGroup{

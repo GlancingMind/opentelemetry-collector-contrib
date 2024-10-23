@@ -3,14 +3,14 @@
 
 //go:build windows
 
-package windows // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/windows"
+package windows // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/windows"
 
 import (
 	"fmt"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 func init() {

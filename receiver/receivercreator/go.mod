@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/receivercreator
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/receivercreator
 
 go 1.22.0
 
 require (
 	github.com/expr-lang/expr v1.16.9
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
 	github.com/spf13/cast v1.7.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -52,7 +52,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
 	github.com/prometheus/client_golang v1.20.5 // indirect
@@ -121,13 +121,13 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer => ../../extension/observer
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer => ../../extension/observer
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
 
 retract (
 	v0.76.2
@@ -135,4 +135,4 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden

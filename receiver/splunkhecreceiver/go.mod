@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkhecreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/splunkhecreceiver
 
 go 1.22.0
 
@@ -6,12 +6,12 @@ require (
 	github.com/google/uuid v1.6.0
 	github.com/gorilla/mux v1.8.1
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/ackextension v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/ackextension v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/component/componentstatus v0.112.0
@@ -50,9 +50,9 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchperresourceattr v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.21 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/rs/cors v1.11.1 // indirect
@@ -90,19 +90,19 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../exporter/splunkhecexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../exporter/splunkhecexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../../internal/splunk
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk => ../../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../pkg/batchperresourceattr
 
 retract (
 	v0.76.2
@@ -110,8 +110,8 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/ackextension => ../../extension/ackextension
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/ackextension => ../../extension/ackextension

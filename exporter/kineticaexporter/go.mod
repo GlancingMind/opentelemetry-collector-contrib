@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kineticaexporter
+module github.com/GlancingMind/opentelemetry-collector-contrib/exporter/kineticaexporter
 
 go 1.22.0
 

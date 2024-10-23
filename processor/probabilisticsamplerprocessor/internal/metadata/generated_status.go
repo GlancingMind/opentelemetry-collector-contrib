@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("probabilistic_sampler")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
 )
 
 const (

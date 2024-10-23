@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/clickhouseexporter/internal"
+package internal // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/clickhouseexporter/internal"
 
 import (
 	"context"
@@ -129,7 +129,7 @@ func convertExemplars(exemplars pmetric.ExemplarSlice) (clickhouse.ArraySet, cli
 	return attrs, times, values, traceIDs, spanIDs
 }
 
-// https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto#L358
+// https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/metrics/v1/metrics.proto#L358
 // define two types for one datapoint value, clickhouse only use one value of float64 to store them
 func getValue(intValue int64, floatValue float64, dataType any) float64 {
 	switch t := dataType.(type) {

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package traceutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+package traceutil // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 
 import (
 	"encoding/hex"
@@ -12,7 +12,7 @@ import (
 
 // SpanKindStr returns a string representation of the SpanKind as it's defined in the proto.
 // The function provides old behavior of ptrace.SpanKind.String() to support graceful adoption of
-// https://github.com/open-telemetry/opentelemetry-collector/pull/6250.
+// https://github.com/GlancingMind/opentelemetry-collector/pull/6250.
 func SpanKindStr(sk ptrace.SpanKind) string {
 	switch sk {
 	case ptrace.SpanKindUnspecified:
@@ -33,7 +33,7 @@ func SpanKindStr(sk ptrace.SpanKind) string {
 
 // StatusCodeStr returns a string representation of the StatusCode as it's defined in the proto.
 // The function provides old behavior of ptrace.StatusCode.String() to support graceful adoption of
-// https://github.com/open-telemetry/opentelemetry-collector/pull/6250.
+// https://github.com/GlancingMind/opentelemetry-collector/pull/6250.
 func StatusCodeStr(sk ptrace.StatusCode) string {
 	switch sk {
 	case ptrace.StatusCodeUnset:

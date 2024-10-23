@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("webhookevent")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/webhookeventreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/webhookeventreceiver"
 )
 
 const (

@@ -27,5 +27,5 @@ resourceMetrics:
             name: metric1
             unit: By
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/snmpreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/snmpreceiver
           version: latest

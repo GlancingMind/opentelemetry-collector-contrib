@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("resourcedetection")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor"
 )
 
 const (

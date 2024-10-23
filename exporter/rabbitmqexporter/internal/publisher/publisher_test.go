@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/rabbitmq"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/rabbitmq"
 )
 
 const (

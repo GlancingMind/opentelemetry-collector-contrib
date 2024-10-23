@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
+package internal // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/receiverhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
-	mdata "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus"
+	mdata "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver/internal/metadata"
 )
 
 type resourceKey struct {
@@ -108,8 +108,8 @@ func (t *transaction) Append(_ storage.SeriesRef, ls labels.Labels, atMs int64, 
 	}
 
 	// Any datapoint with duplicate labels MUST be rejected per:
-	// * https://github.com/open-telemetry/wg-prometheus/issues/44
-	// * https://github.com/open-telemetry/opentelemetry-collector/issues/3407
+	// * https://github.com/GlancingMind/wg-prometheus/issues/44
+	// * https://github.com/GlancingMind/opentelemetry-collector/issues/3407
 	// as Prometheus rejects such too as of version 2.16.0, released on 2020-02-13.
 	if dupLabel, hasDup := ls.HasDuplicateLabelNames(); hasDup {
 		return 0, fmt.Errorf("invalid sample: non-unique label names: %q", dupLabel)
@@ -262,8 +262,8 @@ func (t *transaction) AppendHistogram(_ storage.SeriesRef, ls labels.Labels, atM
 	}
 
 	// Any datapoint with duplicate labels MUST be rejected per:
-	// * https://github.com/open-telemetry/wg-prometheus/issues/44
-	// * https://github.com/open-telemetry/opentelemetry-collector/issues/3407
+	// * https://github.com/GlancingMind/wg-prometheus/issues/44
+	// * https://github.com/GlancingMind/opentelemetry-collector/issues/3407
 	// as Prometheus rejects such too as of version 2.16.0, released on 2020-02-13.
 	if dupLabel, hasDup := ls.HasDuplicateLabelNames(); hasDup {
 		return 0, fmt.Errorf("invalid sample: non-unique label names: %q", dupLabel)
@@ -420,7 +420,7 @@ func (t *transaction) getJobAndInstance(labels labels.Labels) (*resourceKey, err
 	// with the transaction.
 	// this can be the case for, e.g., aggregated metrics coming from a federate endpoint
 	// that represent the whole cluster, rather than an individual workload.
-	// See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32555 for reference
+	// See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32555 for reference
 	if target, ok := scrape.TargetFromContext(t.ctx); ok {
 		if job == "" {
 			job = target.GetValue(model.JobLabel)

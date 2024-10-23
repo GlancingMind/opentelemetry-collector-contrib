@@ -3,7 +3,7 @@
 
 //go:build windows
 
-package sqlserverreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver"
+package sqlserverreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver"
 
 import (
 	"context"
@@ -16,8 +16,8 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/winperfcounters"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/winperfcounters"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver/internal/metadata"
 )
 
 // SQL Server Perf Counter (PC) Scraper. This is used to scrape metrics from Windows Perf Counters.

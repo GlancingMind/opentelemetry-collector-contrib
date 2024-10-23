@@ -18,7 +18,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.opentelemetry.io/collector/exporter/exportertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/logzioexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/logzioexporter/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

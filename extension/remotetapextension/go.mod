@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/remotetapextension
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/remotetapextension
 
 go 1.22.0
 

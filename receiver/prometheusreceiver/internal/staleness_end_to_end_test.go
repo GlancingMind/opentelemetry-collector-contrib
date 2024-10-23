@@ -33,14 +33,14 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver"
 )
 
 // Test that staleness markers are emitted for timeseries that intermittently disappear.
 // This test runs the entire collector and end-to-end scrapes then checks with the
 // Prometheus remotewrite exporter that staleness markers are emitted per timeseries.
-// See https://github.com/open-telemetry/opentelemetry-collector/issues/3413
+// See https://github.com/GlancingMind/opentelemetry-collector/issues/3413
 func TestStalenessMarkersEndToEnd(t *testing.T) {
 	if testing.Short() {
 		t.Skip("This test can take a long time")

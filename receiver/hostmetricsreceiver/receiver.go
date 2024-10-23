@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package hostmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
+package hostmetricsreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	metadataPkg "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
+	metadataPkg "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
 )
 
 const entityType = "host"

@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package processscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
+package processscraper // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
 
 import (
 	"time"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/metadata"
 )
 
 // Config relating to Process Metric Scraper.
@@ -28,7 +28,7 @@ type Config struct {
 
 	// MuteProcessNameError is a flag that will mute the error encountered when trying to read a process name the
 	// collector does not have permission to read.
-	// See https://github.com/open-telemetry/opentelemetry-collector/issues/3004 for more information.
+	// See https://github.com/GlancingMind/opentelemetry-collector/issues/3004 for more information.
 	// This flag is ignored when MuteProcessAllErrors is set to true as all errors are muted.
 	MuteProcessNameError bool `mapstructure:"mute_process_name_error,omitempty"`
 

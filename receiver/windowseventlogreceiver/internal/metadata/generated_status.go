@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("windowseventlog")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowseventlogreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/windowseventlogreceiver"
 )
 
 const (

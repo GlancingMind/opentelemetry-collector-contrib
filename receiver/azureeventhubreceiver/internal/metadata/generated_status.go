@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("azureeventhub")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureeventhubreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/azureeventhubreceiver"
 )
 
 const (

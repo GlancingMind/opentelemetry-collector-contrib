@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metricstransformprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricstransformprocessor"
+package metricstransformprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/metricstransformprocessor"
 
 import (
 	"regexp"
@@ -11,7 +11,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
 )
 
 type metricsTransformProcessor struct {

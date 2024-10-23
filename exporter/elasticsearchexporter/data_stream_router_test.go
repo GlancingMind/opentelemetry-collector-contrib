@@ -40,13 +40,13 @@ func createRouteTests(dsType string) []routeTestCase {
 		{
 			name:      "default with receiver scope name",
 			otel:      false,
-			scopeName: "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/cpuscraper",
+			scopeName: "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/cpuscraper",
 			want:      renderWantRoute(dsType, "hostmetricsreceiver", false),
 		},
 		{
 			name:      "otel with receiver scope name",
 			otel:      true,
-			scopeName: "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/cpuscraper",
+			scopeName: "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/cpuscraper",
 			want:      renderWantRoute(dsType, "hostmetricsreceiver", true),
 		},
 		{

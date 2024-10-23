@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("nsxt")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/nsxtreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/nsxtreceiver"
 )
 
 const (

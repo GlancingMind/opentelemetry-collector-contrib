@@ -15,7 +15,7 @@ resourceMetrics:
             name: sqlserver.page.buffer_cache.hit_ratio
             unit: '%'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -33,7 +33,7 @@ resourceMetrics:
             name: sqlserver.processes.blocked
             unit: '{processes}'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -51,7 +51,7 @@ resourceMetrics:
             name: sqlserver.user.connection.count
             unit: '{connections}'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -69,7 +69,7 @@ resourceMetrics:
             name: sqlserver.lock.wait.rate
             unit: '{requests}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -87,7 +87,7 @@ resourceMetrics:
             name: sqlserver.resource_pool.disk.throttled.read.rate
             unit: '{reads}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -105,7 +105,7 @@ resourceMetrics:
             name: sqlserver.resource_pool.disk.throttled.write.rate
             unit: '{writes}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -123,7 +123,7 @@ resourceMetrics:
             name: sqlserver.resource_pool.disk.throttled.write.rate
             unit: '{writes}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -141,7 +141,7 @@ resourceMetrics:
             name: sqlserver.resource_pool.disk.throttled.read.rate
             unit: '{reads}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -159,7 +159,7 @@ resourceMetrics:
             name: sqlserver.batch.request.rate
             unit: '{requests}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -177,7 +177,7 @@ resourceMetrics:
             name: sqlserver.batch.sql_compilation.rate
             unit: '{compilations}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest
   - resource:
       attributes:
@@ -195,5 +195,5 @@ resourceMetrics:
             name: sqlserver.batch.sql_recompilation.rate
             unit: '{compilations}/s'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver
           version: latest

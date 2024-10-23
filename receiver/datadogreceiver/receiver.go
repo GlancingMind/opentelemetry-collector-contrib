@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package datadogreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver"
+package datadogreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver"
 
 import (
 	"context"
@@ -21,8 +21,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/receiverhelper"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator/header"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator/header"
 )
 
 type datadogReceiver struct {

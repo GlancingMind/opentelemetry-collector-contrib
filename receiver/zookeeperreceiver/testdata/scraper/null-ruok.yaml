@@ -144,5 +144,5 @@ resourceMetrics:
                   timeUnixNano: "2000000"
             unit: '{znodes}'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zookeeperreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/zookeeperreceiver
           version: latest

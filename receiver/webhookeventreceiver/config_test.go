@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.uber.org/multierr"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/webhookeventreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/webhookeventreceiver/internal/metadata"
 )
 
 // only one validate check so far
@@ -112,7 +112,7 @@ func TestValidateConfig(t *testing.T) {
 }
 
 func TestLoadConfig(t *testing.T) {
-	t.Skip("skip temporarily to avoid a test failure on read_timeout with https://github.com/open-telemetry/opentelemetry-collector/pull/10275")
+	t.Skip("skip temporarily to avoid a test failure on read_timeout with https://github.com/GlancingMind/opentelemetry-collector/pull/10275")
 	t.Parallel()
 
 	cm, err := confmaptest.LoadConf(filepath.Join("testdata", "config.yaml"))

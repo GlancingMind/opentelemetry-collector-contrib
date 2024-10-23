@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package servicegraphconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/servicegraphconnector"
+package servicegraphconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/servicegraphconnector"
 
 import (
 	"context"
@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/servicegraphconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/servicegraphconnector/internal/metadata"
 )
 
 const (
@@ -32,20 +32,20 @@ func init() {
 		virtualNodeFeatureGateID,
 		featuregate.StageBeta,
 		featuregate.WithRegisterDescription("When enabled and setting `virtual_node_peer_attributes` is not empty, the connector looks for the presence of these attributes in span to create virtual server nodes."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/17196"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/17196"),
 	)
 	// TODO: Remove this feature gate when the legacy metric names are removed.
 	legacyMetricNamesFeatureGate = featuregate.GlobalRegistry().MustRegister(
 		legacyLatencyMetricNamesFeatureGateID,
 		featuregate.StageAlpha, // Alpha because we want it disabled by default.
 		featuregate.WithRegisterDescription("When enabled, connector uses legacy latency metric names."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/18743,https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16578"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/18743,https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16578"),
 	)
 	legacyLatencyUnitMsFeatureGate = featuregate.GlobalRegistry().MustRegister(
 		legacyLatencyUnitMs,
 		featuregate.StageAlpha, // Alpha because we want it disabled by default.
 		featuregate.WithRegisterDescription("When enabled, connector reports latency in milliseconds, instead of seconds."),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27488"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/27488"),
 	)
 }
 

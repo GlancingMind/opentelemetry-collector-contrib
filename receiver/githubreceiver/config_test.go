@@ -15,9 +15,9 @@ import (
 	"go.opentelemetry.io/collector/otelcol/otelcoltest"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/githubreceiver/internal/scraper/githubscraper"
 )
 
 func TestLoadConfig(t *testing.T) {
@@ -26,7 +26,7 @@ func TestLoadConfig(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Receivers[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	cfg, err := otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "config.yaml"), factories)
 
@@ -63,7 +63,7 @@ func TestLoadInvalidConfig_NoScrapers(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Receivers[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	_, err = otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "config-noscrapers.yaml"), factories)
 
@@ -76,7 +76,7 @@ func TestLoadInvalidConfig_InvalidScraperKey(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Receivers[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	_, err = otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "config-invalidscraperkey.yaml"), factories)
 

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package translator // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
+package translator // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver/internal/translator"
 
 import (
 	"fmt"
@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
 )
 
 const (
@@ -273,8 +273,8 @@ func getHistogramBounds(histIndex int) (float64, float64) {
 }
 
 // This equation for finding the lower bound of the exponential histogram bucket
-// Based on: https://github.com/open-telemetry/opentelemetry-go/blob/3a72c5ea94bf843beeaa044b0dda2ce4d627bb7b/sdk/metric/internal/aggregate/exponential_histogram.go#L122
-// See also: https://github.com/open-telemetry/opentelemetry-go/blob/3a72c5ea94bf843beeaa044b0dda2ce4d627bb7b/sdk/metric/internal/aggregate/exponential_histogram.go#L139
+// Based on: https://github.com/GlancingMind/opentelemetry-go/blob/3a72c5ea94bf843beeaa044b0dda2ce4d627bb7b/sdk/metric/internal/aggregate/exponential_histogram.go#L122
+// See also: https://github.com/GlancingMind/opentelemetry-go/blob/3a72c5ea94bf843beeaa044b0dda2ce4d627bb7b/sdk/metric/internal/aggregate/exponential_histogram.go#L139
 func histogramLowerBound(histIndex int) float64 {
 	inverseFactor := math.Ldexp(math.Ln2, -scale)
 	return math.Exp(float64(histIndex) * inverseFactor)

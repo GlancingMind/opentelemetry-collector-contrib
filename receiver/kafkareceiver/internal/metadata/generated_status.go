@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("kafka")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kafkareceiver"
 )
 
 const (

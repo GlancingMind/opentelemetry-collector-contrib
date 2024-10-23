@@ -4,4 +4,4 @@
 //go:generate mdatagen metadata.yaml
 
 // Package azuremonitorreceiver scrapes Azure Monitor API for available metrics.
-package azuremonitorreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azuremonitorreceiver"
+package azuremonitorreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/azuremonitorreceiver"

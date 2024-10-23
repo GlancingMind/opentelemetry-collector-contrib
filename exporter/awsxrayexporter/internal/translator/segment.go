@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package translator // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
+package translator // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
 
 import (
 	"crypto/rand"
@@ -20,8 +20,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.12.0"
 
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	awsxray "github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 )
 
 // AWS X-Ray acceptable values for origin field.
@@ -35,7 +35,7 @@ const (
 	OriginAppRunner  = "AWS::AppRunner::Service"
 )
 
-// x-ray only span attributes - https://github.com/open-telemetry/opentelemetry-java-contrib/pull/802
+// x-ray only span attributes - https://github.com/GlancingMind/opentelemetry-java-contrib/pull/802
 const (
 	awsLocalService    = "aws.local.service"
 	awsRemoteService   = "aws.remote.service"

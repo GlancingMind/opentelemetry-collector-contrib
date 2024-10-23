@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/maps"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/maps"
 )
 
 const (

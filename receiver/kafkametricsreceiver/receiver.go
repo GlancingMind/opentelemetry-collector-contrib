@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package kafkametricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkametricsreceiver"
+package kafkametricsreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kafkametricsreceiver"
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/kafka"
 )
 
 type createKafkaScraper func(context.Context, Config, *sarama.Config, receiver.Settings) (scraperhelper.Scraper, error)

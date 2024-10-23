@@ -3,14 +3,14 @@
 
 //go:build !linux
 
-package journald // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/journald"
+package journald // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/journald"
 
 import (
 	"errors"
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
 )
 
 func (c Config) Build(_ component.TelemetrySettings) (operator.Operator, error) {

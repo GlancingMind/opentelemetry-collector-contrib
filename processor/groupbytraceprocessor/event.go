@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package groupbytraceprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbytraceprocessor"
+package groupbytraceprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/groupbytraceprocessor"
 
 import (
 	"context"
@@ -17,7 +17,7 @@ import (
 	"go.opentelemetry.io/otel/metric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbytraceprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/groupbytraceprocessor/internal/metadata"
 )
 
 const (

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package system // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system"
+package system // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system"
 
 import (
 	"context"
@@ -17,9 +17,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/system"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/metadataproviders/system"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/system/internal/metadata"
 )
 
 var (
@@ -29,7 +29,7 @@ var (
 		featuregate.WithRegisterDescription("Change type of host.cpu.stepping to string."),
 		featuregate.WithRegisterFromVersion("v0.95.0"),
 		featuregate.WithRegisterToVersion("v0.110.0"),
-		featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/semantic-conventions/issues/664"),
+		featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/semantic-conventions/issues/664"),
 	)
 )
 
@@ -201,7 +201,7 @@ func setHostCPUInfo(d *Detector, cpuInfo cpu.InfoStat) {
 
 	// For windows, this field is left blank. See https://github.com/shirou/gopsutil/blob/v3.23.9/cpu/cpu_windows.go#L113
 	// Skip setting modelId if the field is blank.
-	// ISSUE: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27675
+	// ISSUE: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/27675
 	if cpuInfo.Model != "" {
 		d.rb.SetHostCPUModelID(cpuInfo.Model)
 	}

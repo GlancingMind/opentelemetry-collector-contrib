@@ -2,9 +2,9 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package opampcustommessages contains interfaces and shared code for sending and receiving custom messages via OpAMP.
-package opampcustommessages // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages"
+package opampcustommessages // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages"
 
-import "github.com/open-telemetry/opamp-go/protobufs"
+import "github.com/GlancingMind/opamp-go/protobufs"
 
 // CustomCapabilityRegisterOptions represents extra options that can be use in CustomCapabilityRegistry.Register
 type CustomCapabilityRegisterOptions struct {
@@ -48,7 +48,7 @@ type CustomCapabilityHandler interface {
 	//
 	// Only one message can be sent at a time. If SendCustomMessage has been already called
 	// for any capability, and the message is still pending (in progress)
-	// then subsequent calls to SendCustomMessage will return github.com/open-telemetry/opamp-go/types.ErrCustomMessagePending
+	// then subsequent calls to SendCustomMessage will return github.com/GlancingMind/opamp-go/types.ErrCustomMessagePending
 	// and a channel that will be closed when the pending message is sent.
 	// To ensure that the previous send is complete and it is safe to send another CustomMessage,
 	// the caller should wait for the returned channel to be closed before attempting to send another custom message.

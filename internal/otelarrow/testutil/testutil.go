@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package testutil // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testutil"
+package testutil // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testutil"
 
 import (
 	"encoding/binary"

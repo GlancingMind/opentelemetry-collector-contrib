@@ -367,7 +367,7 @@ func TestEndpointWithPort(t *testing.T) {
 
 func TestFailedExporterInRing(t *testing.T) {
 	// this test is based on the discussion in the original PR for this exporter:
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/1542#discussion_r521268180
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/pull/1542#discussion_r521268180
 	// prepare
 	ts, tb := getTelemetryAssets(t)
 	cfg := &Config{

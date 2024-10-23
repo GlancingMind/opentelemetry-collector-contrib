@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tailsamplingprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
+package tailsamplingprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
 
 import (
 	"context"
@@ -21,12 +21,12 @@ import (
 	"go.opentelemetry.io/otel/metric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/timeutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/cache"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/idbatcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/timeutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/cache"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/idbatcher"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor/internal/telemetry"
 )
 
 // policy combines a sampling policy evaluator with the destinations to be

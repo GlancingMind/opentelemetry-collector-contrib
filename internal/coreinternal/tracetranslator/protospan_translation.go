@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracetranslator // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+package tracetranslator // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
 
 import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
@@ -39,7 +39,7 @@ const (
 )
 
 // StatusCodeFromHTTP takes an HTTP status code and return the appropriate OpenTelemetry status code
-// See: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#status
+// See: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#status
 func StatusCodeFromHTTP(httpStatusCode int64) ptrace.StatusCode {
 	if httpStatusCode >= 100 && httpStatusCode < 399 {
 		return ptrace.StatusCodeUnset

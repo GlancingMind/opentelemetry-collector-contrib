@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("honeycombmarker")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/honeycombmarkerexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/honeycombmarkerexporter"
 )
 
 const (

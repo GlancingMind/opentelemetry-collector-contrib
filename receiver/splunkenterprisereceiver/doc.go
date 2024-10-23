@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package splunkenterprisereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkenterprisereceiver"
+package splunkenterprisereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/splunkenterprisereceiver"

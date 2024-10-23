@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("prometheus")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusexporter"
 )
 
 const (

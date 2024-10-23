@@ -27,8 +27,8 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
 )
 
 func TestConnectorStart(t *testing.T) {
@@ -646,7 +646,7 @@ func TestExtraDimensionsLabels(t *testing.T) {
 
 func TestVirtualNodeServerLabels(t *testing.T) {
 	if runtime.GOOS == "windows" {
-		t.Skip("skipping test on Windows, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33836")
+		t.Skip("skipping test on Windows, see https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33836")
 	}
 
 	virtualNodeDimensions := []string{"peer.service", "db.system", "messaging.system"}
@@ -694,7 +694,7 @@ func TestVirtualNodeServerLabels(t *testing.T) {
 
 func TestVirtualNodeClientLabels(t *testing.T) {
 	if runtime.GOOS == "windows" {
-		t.Skip("skipping test on Windows, see https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33836")
+		t.Skip("skipping test on Windows, see https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33836")
 	}
 
 	virtualNodeDimensions := []string{"peer.service", "db.system", "messaging.system"}

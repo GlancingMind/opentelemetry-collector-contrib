@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package openshift // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift"
+package openshift // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift"
 
 import (
 	"context"
@@ -12,9 +12,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.18.0"
 	"go.uber.org/zap"
 
-	ocp "github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/openshift"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift/internal/metadata"
+	ocp "github.com/GlancingMind/opentelemetry-collector-contrib/internal/metadataproviders/openshift"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift/internal/metadata"
 )
 
 const (
@@ -82,7 +82,7 @@ func (d *detector) Detect(ctx context.Context) (resource pcommon.Resource, schem
 	}
 
 	// TODO(frzifus): support conventions openshift and kubernetes cluster version.
-	// SEE: https://github.com/open-telemetry/opentelemetry-specification/issues/2913
+	// SEE: https://github.com/GlancingMind/opentelemetry-specification/issues/2913
 
 	return d.rb.Emit(), conventions.SchemaURL, nil
 }

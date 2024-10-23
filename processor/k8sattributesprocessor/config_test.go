@@ -13,9 +13,9 @@ import (
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 	"go.opentelemetry.io/collector/featuregate"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

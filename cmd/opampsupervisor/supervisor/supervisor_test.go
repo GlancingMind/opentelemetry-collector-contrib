@@ -18,16 +18,16 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/open-telemetry/opamp-go/client"
-	"github.com/open-telemetry/opamp-go/client/types"
-	"github.com/open-telemetry/opamp-go/protobufs"
-	serverTypes "github.com/open-telemetry/opamp-go/server/types"
+	"github.com/GlancingMind/opamp-go/client"
+	"github.com/GlancingMind/opamp-go/client/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
+	serverTypes "github.com/GlancingMind/opamp-go/server/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/zap"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
 )
 
 func setupSupervisorConfig(t *testing.T) config.Supervisor {

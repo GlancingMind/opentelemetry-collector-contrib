@@ -480,7 +480,7 @@ metrics:
     attributes: []
     enabled: true
   # These metrics are JVM metrics, collected from /_nodes/stats
-  # See https://github.com/open-telemetry/opentelemetry-java-contrib/blob/main/jmx-metrics/docs/target-systems/jvm.md
+  # See https://github.com/GlancingMind/opentelemetry-java-contrib/blob/main/jmx-metrics/docs/target-systems/jvm.md
   jvm.classes.loaded:
     description: The number of loaded classes
     unit: "1"

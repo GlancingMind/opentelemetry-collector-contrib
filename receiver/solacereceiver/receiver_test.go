@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package solacereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver"
+package solacereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver"
 
 import (
 	"context"
@@ -22,7 +22,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
 )
 
 // connectAndReceive with connect failure
@@ -764,7 +764,7 @@ func TestReceiverFlowControlDelayedRetry(t *testing.T) {
 			receiver, messagingService, unmarshaller, tt := newReceiver(t)
 			delay := 50 * time.Millisecond
 			// Increase delay on windows due to tick granularity
-			// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/17197
+			// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/17197
 			if runtime.GOOS == "windows" {
 				delay = 500 * time.Millisecond
 			}
@@ -991,7 +991,7 @@ func TestReceiverFlowControlDelayedRetryMultipleRetries(t *testing.T) {
 	// we won't wait 10 seconds since we will interrupt well before
 	retryInterval := 50 * time.Millisecond
 	// Increase delay on windows due to tick granularity
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/19409
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/19409
 	if runtime.GOOS == "windows" {
 		retryInterval = 500 * time.Millisecond
 	}

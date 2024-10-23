@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package pod // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/pod"
+package pod // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/pod"
 
 import (
 	"strings"
@@ -17,14 +17,14 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/maps"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/constants"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/container"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/gvk"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/service"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/utils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/maps"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/constants"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/container"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/gvk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/service"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/k8sclusterreceiver/internal/utils"
 )
 
 const (

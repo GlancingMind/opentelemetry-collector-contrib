@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheus // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+package prometheus // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus"
 
 import (
 	"strings"
@@ -13,7 +13,7 @@ import (
 
 // The map to translate OTLP units to Prometheus units
 // OTLP metrics use the c/s notation as specified at https://ucum.org/ucum.html
-// (See also https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/semantic_conventions/README.md#instrument-units)
+// (See also https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/metrics/semantic_conventions/README.md#instrument-units)
 // Prometheus best practices for units: https://prometheus.io/docs/practices/naming/#base-units
 // OpenMetrics specification for units: https://github.com/OpenObservability/OpenMetrics/blob/main/specification/OpenMetrics.md#units-and-base-units
 var unitMap = map[string]string{
@@ -69,7 +69,7 @@ var normalizeNameGate = featuregate.GlobalRegistry().MustRegister(
 	"pkg.translator.prometheus.NormalizeName",
 	featuregate.StageBeta,
 	featuregate.WithRegisterDescription("Controls whether metrics names are automatically normalized to follow Prometheus naming convention"),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/8950"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/8950"),
 )
 
 // BuildCompliantName builds a Prometheus-compliant metric name for the specified metric
@@ -148,7 +148,7 @@ func normalizeName(metric pmetric.Metric, namespace string) string {
 
 	// Append _ratio for metrics with unit "1"
 	// Some Otel receivers improperly use unit "1" for counters of objects
-	// See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues?q=is%3Aissue+some+metric+units+don%27t+follow+otel+semantic+conventions
+	// See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues?q=is%3Aissue+some+metric+units+don%27t+follow+otel+semantic+conventions
 	// Until these issues have been fixed, we're appending `_ratio` for gauges ONLY
 	// Theoretically, counters could be ratios as well, but it's absurd (for mathematical reasons)
 	if metric.Unit() == "1" && metric.Type() == pmetric.MetricTypeGauge {
@@ -174,7 +174,7 @@ func normalizeName(metric pmetric.Metric, namespace string) string {
 // TrimPromSuffixes trims type and unit prometheus suffixes from a metric name.
 // Following the [OpenTelemetry specs] for converting Prometheus Metric points to OTLP.
 //
-// [OpenTelemetry specs]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/data-model.md#metric-metadata
+// [OpenTelemetry specs]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/metrics/data-model.md#metric-metadata
 func TrimPromSuffixes(promName string, metricType pmetric.MetricType, unit string) string {
 	nameTokens := strings.Split(promName, "_")
 	if len(nameTokens) == 1 {

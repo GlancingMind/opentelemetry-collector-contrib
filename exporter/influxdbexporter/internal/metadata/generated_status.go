@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("influxdb")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/influxdbexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/influxdbexporter"
 )
 
 const (

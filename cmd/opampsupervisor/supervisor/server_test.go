@@ -8,8 +8,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/open-telemetry/opamp-go/protobufs"
-	serverTypes "github.com/open-telemetry/opamp-go/server/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
+	serverTypes "github.com/GlancingMind/opamp-go/server/types"
 	"github.com/stretchr/testify/require"
 )
 

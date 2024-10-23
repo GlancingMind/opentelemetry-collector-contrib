@@ -14,7 +14,7 @@ The `tcp_input` operator listens for logs on one or more TCP connections. The op
 | `attributes`                            | {}                   | A map of `key: value` pairs to add to the entry's attributes. |
 | `one_log_per_packet`                    | false               | Skip log tokenization, set to true if logs contains one log per record and multiline is not used.  This will improve performance. |
 | `resource`                              | {}                   | A map of `key: value` pairs to add to the entry's resource. |
-| `add_attributes`                        | false                | Adds `net.*` attributes according to [semantic convention][https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/span-general.md#general-network-connection-attributes]. |
+| `add_attributes`                        | false                | Adds `net.*` attributes according to [semantic convention][https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/span-general.md#general-network-connection-attributes]. |
 | `multiline`                     |                  | A `multiline` configuration block. See below for details. |
 | `preserve_leading_whitespaces`          | false                | Whether to preserve leading whitespaces.                                                                                                                                                                                                                         |
 | `preserve_trailing_whitespaces`         | false                | Whether to preserve trailing whitespaces.                                                                                                                                                                                                                            |
@@ -23,7 +23,7 @@ The `tcp_input` operator listens for logs on one or more TCP connections. The op
 #### TLS Configuration
 
 The `tcp_input` operator supports TLS, disabled by default.
-config more detail [opentelemetry-collector#configtls](https://github.com/open-telemetry/opentelemetry-collector/tree/main/config/configtls#tls-configuration-settings).
+config more detail [opentelemetry-collector#configtls](https://github.com/GlancingMind/opentelemetry-collector/tree/main/config/configtls#tls-configuration-settings).
 
 | Field             | Default          | Description                                                                                                                                           |
 | ---               | ---              | ---                                                                                                                                                   |

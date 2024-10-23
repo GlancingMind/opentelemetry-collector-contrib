@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package netstats // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+package netstats // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 
 import (
 	"context"
@@ -44,7 +44,7 @@ const (
 	// CompSize is used for compressed size histogram metrics.
 	CompSize = "compressed_size"
 
-	scopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	scopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 )
 
 // NetworkReporter is a helper to add network-level observability to

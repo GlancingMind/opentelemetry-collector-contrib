@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package awsxrayexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
+package awsxrayexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 
 import (
 	"context"
@@ -16,10 +16,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil"
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/awsutil"
+	awsxray "github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray/telemetry"
 )
 
 const (

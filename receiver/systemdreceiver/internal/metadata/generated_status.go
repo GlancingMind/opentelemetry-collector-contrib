@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("systemd")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/systemdreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/systemdreceiver"
 )
 
 const (

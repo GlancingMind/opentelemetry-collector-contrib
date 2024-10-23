@@ -3,7 +3,7 @@
 
 //go:build windows
 
-package windowsperfcountersreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver"
+package windowsperfcountersreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver"
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/windowsperfcountersreceiver/internal/metadata"
 )
 
 // createMetricsReceiver creates a metrics receiver based on provided config.

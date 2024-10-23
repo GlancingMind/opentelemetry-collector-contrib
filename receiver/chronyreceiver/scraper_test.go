@@ -15,8 +15,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/chrony"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/chrony"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/chronyreceiver/internal/metadata"
 )
 
 type mockClient struct {
@@ -58,7 +58,7 @@ func TestChronyScraper(t *testing.T) {
 				rMetrics := metrics.ResourceMetrics().AppendEmpty()
 
 				metric := rMetrics.ScopeMetrics().AppendEmpty()
-				metric.Scope().SetName("github.com/open-telemetry/opentelemetry-collector-contrib/receiver/chronyreceiver")
+				metric.Scope().SetName("github.com/GlancingMind/opentelemetry-collector-contrib/receiver/chronyreceiver")
 				metric.Scope().SetVersion("latest")
 
 				m := metric.Metrics().AppendEmpty()

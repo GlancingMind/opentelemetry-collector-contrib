@@ -1,6 +1,6 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
-package vcenterreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver"
+package vcenterreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver"
 import (
 	"context"
 	"fmt"
@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/vcenterreceiver/internal/metadata"
 )
 
 var _ receiver.Metrics = (*vcenterMetricScraper)(nil)

@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("datadog")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/connector/datadogconnector"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/connector/datadogconnector"
 )
 
 const (

@@ -1,11 +1,11 @@
 # Log Context
 
-The Log Context is a Context implementation for [pdata Logs](https://github.com/open-telemetry/opentelemetry-collector/tree/main/pdata/plog), the collector's internal representation for OTLP log data.  This Context should be used when interacted with OTLP logs.
+The Log Context is a Context implementation for [pdata Logs](https://github.com/GlancingMind/opentelemetry-collector/tree/main/pdata/plog), the collector's internal representation for OTLP log data.  This Context should be used when interacted with OTLP logs.
 
 ## Paths
-In general, the Log Context supports accessing pdata using the field names from the [logs proto](https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/logs/v1/logs.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
+In general, the Log Context supports accessing pdata using the field names from the [logs proto](https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/logs/v1/logs.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
 
-All TraceIDs and SpanIDs are returned as pdata [SpanID](https://github.com/open-telemetry/opentelemetry-collector/blob/main/pdata/pcommon/spanid.go) and [TraceID](https://github.com/open-telemetry/opentelemetry-collector/blob/main/pdata/pcommon/traceid.go) types.  Use the [SpanID function](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#spanid) and [TraceID function](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#traceid) when interacting with pdata representations of SpanID and TraceID.  When checking for nil, instead check against an empty byte slice (`SpanID(0x0000000000000000)` and `TraceID(0x00000000000000000000000000000000)`).
+All TraceIDs and SpanIDs are returned as pdata [SpanID](https://github.com/GlancingMind/opentelemetry-collector/blob/main/pdata/pcommon/spanid.go) and [TraceID](https://github.com/GlancingMind/opentelemetry-collector/blob/main/pdata/pcommon/traceid.go) types.  Use the [SpanID function](https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#spanid) and [TraceID function](https://github.com/GlancingMind/opentelemetry-collector-contrib/blob/main/pkg/ottl/ottlfuncs/README.md#traceid) when interacting with pdata representations of SpanID and TraceID.  When checking for nil, instead check against an empty byte slice (`SpanID(0x0000000000000000)` and `TraceID(0x00000000000000000000000000000000)`).
 
 The following paths are supported.
 
@@ -44,7 +44,7 @@ The following paths are supported.
 
 ## Enums
 
-The Log Context supports the enum names from the [logs proto](https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/logs/v1/logs.proto).
+The Log Context supports the enum names from the [logs proto](https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/logs/v1/logs.proto).
 
 | Enum Symbol                 | Value |
 |-----------------------------|-------|

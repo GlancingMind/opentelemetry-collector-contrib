@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
+package prometheusreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver"
 
 import (
 	"errors"
@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/collector/confmap"
 	"gopkg.in/yaml.v2"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver/targetallocator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver/targetallocator"
 )
 
 // Config defines configuration for Prometheus receiver.
@@ -75,8 +75,8 @@ func (cfg *PromConfig) Unmarshal(componentParser *confmap.Conf) error {
 func (cfg *PromConfig) Validate() error {
 	// Reject features that Prometheus supports but that the receiver doesn't support:
 	// See:
-	// * https://github.com/open-telemetry/opentelemetry-collector/issues/3863
-	// * https://github.com/open-telemetry/wg-prometheus/issues/3
+	// * https://github.com/GlancingMind/opentelemetry-collector/issues/3863
+	// * https://github.com/GlancingMind/wg-prometheus/issues/3
 	unsupportedFeatures := make([]string, 0, 4)
 	if len(cfg.RemoteWriteConfigs) != 0 {
 		unsupportedFeatures = append(unsupportedFeatures, "remote_write")

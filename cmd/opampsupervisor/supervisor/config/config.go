@@ -16,7 +16,7 @@ import (
 	"github.com/knadh/koanf/parsers/yaml"
 	"github.com/knadh/koanf/providers/file"
 	"github.com/knadh/koanf/v2"
-	"github.com/open-telemetry/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/protobufs"
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.uber.org/zap/zapcore"
 )
@@ -190,7 +190,7 @@ type AgentDescription struct {
 
 type Telemetry struct {
 	// TODO: Add more telemetry options
-	// Issue here: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/35582
+	// Issue here: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/35582
 	Logs Logs `mapstructure:"logs"`
 }
 

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package elasticsearchexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
+package elasticsearchexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
 
 import (
 	"bytes"
@@ -22,9 +22,9 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	semconv "go.opentelemetry.io/collector/semconv/v1.22.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/exphistogram"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/exphistogram"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 )
 
 // resourceAttrsConversionMap contains conversions for resource-level attributes
@@ -81,7 +81,7 @@ type mappingModel interface {
 //
 // Field deduplication and dedotting of attributes is supported by the encodeModel.
 //
-// See: https://github.com/open-telemetry/oteps/blob/master/text/logs/0097-log-data-model.md
+// See: https://github.com/GlancingMind/oteps/blob/master/text/logs/0097-log-data-model.md
 type encodeModel struct {
 	dedot bool
 	mode  MappingMode
@@ -182,7 +182,7 @@ func (m *encodeModel) encodeLogOTelMode(resource pcommon.Resource, resourceSchem
 
 func setOTelLogBody(doc *objmodel.Document, body pcommon.Value, attributes pcommon.Map) {
 	// Determine if this log record is an event, as they are mapped differently
-	// https://github.com/open-telemetry/semantic-conventions/blob/main/docs/general/events.md
+	// https://github.com/GlancingMind/semantic-conventions/blob/main/docs/general/events.md
 	_, isEvent := attributes.Get("event.name")
 
 	switch body.Type() {
@@ -353,7 +353,7 @@ func (m *encodeModel) upsertMetricDataPointValueOTelMode(documents map[uint32]ob
 		document.Add("metrics."+metric.Name(), objmodel.ValueFromAttribute(value))
 	}
 	// TODO: support quantiles
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/34561
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/34561
 
 	// DynamicTemplate returns the name of dynamic template that applies to the metric and data point,
 	// so that the field is indexed into Elasticsearch with the correct mapping. The name should correspond to a
@@ -375,7 +375,7 @@ func newSummaryDataPoint(dp pmetric.SummaryDataPoint) summaryDataPoint {
 
 func (dp summaryDataPoint) Value() (pcommon.Value, error) {
 	// TODO: Add support for quantiles
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/34561
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/34561
 	vm := pcommon.NewValueMap()
 	m := vm.Map()
 	m.PutDouble("sum", dp.Sum())
@@ -899,7 +899,7 @@ func encodeLogTimestampECSMode(document *objmodel.Document, record plog.LogRecor
 	document.AddTimestamp("@timestamp", record.ObservedTimestamp())
 }
 
-// TODO use https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/internal/exp/metrics/identity
+// TODO use https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/internal/exp/metrics/identity
 func metricECSHash(timestamp pcommon.Timestamp, attributes pcommon.Map) uint32 {
 	hasher := fnv.New32a()
 

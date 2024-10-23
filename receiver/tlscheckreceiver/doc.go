@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package tlscheckreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/tlscheckreceiver"
+package tlscheckreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/tlscheckreceiver"

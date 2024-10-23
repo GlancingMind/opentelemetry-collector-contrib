@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/syslogexporter
+module github.com/GlancingMind/opentelemetry-collector-contrib/exporter/syslogexporter
 
 go 1.22.0
 

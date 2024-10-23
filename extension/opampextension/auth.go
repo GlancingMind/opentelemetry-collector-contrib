@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opampextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampextension"
+package opampextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampextension"
 
 import (
 	"bytes"
@@ -60,7 +60,7 @@ func makeHeadersFunc(logger *zap.Logger, serverCfg *OpAMPServer, host component.
 	return func(h http.Header) http.Header {
 		// This is a workaround while websocket authentication is being worked on.
 		// Currently, we are waiting on the auth module to be stabilized.
-		// See for more info: https://github.com/open-telemetry/opentelemetry-collector/issues/10864
+		// See for more info: https://github.com/GlancingMind/opentelemetry-collector/issues/10864
 		dummyReq, err := http.NewRequest("GET", "http://example.com", nil)
 		if err != nil {
 			logger.Error("Failed to create dummy request for authentication.", zap.Error(err))

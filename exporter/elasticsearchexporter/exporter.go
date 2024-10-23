@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package elasticsearchexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
+package elasticsearchexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter"
 
 import (
 	"bytes"
@@ -20,7 +20,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter/internal/objmodel"
 )
 
 type elasticsearchExporter struct {

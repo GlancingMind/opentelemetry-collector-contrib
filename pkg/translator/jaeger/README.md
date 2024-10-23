@@ -7,7 +7,7 @@ then the rule in this document MUST be used.
 
 Jaeger accepts spans in the following formats:
 
-* OpenTelemetry Protocol (OTLP), defined in [opentelemetry-proto](https://github.com/open-telemetry/opentelemetry-proto)
+* OpenTelemetry Protocol (OTLP), defined in [opentelemetry-proto](https://github.com/GlancingMind/opentelemetry-proto)
 * Thrift `Batch`, defined in [jaeger-idl/.../jaeger.thrift](https://github.com/jaegertracing/jaeger-idl/blob/main/thrift/jaeger.thrift), accepted via UDP or HTTP
 * Protobuf `Batch`, defined in [jaeger-idl/.../model.proto](https://github.com/jaegertracing/jaeger-idl/blob/main/proto/api_v2/model.proto), accepted via gRPC
 
@@ -15,7 +15,7 @@ See also:
 
 * [Jaeger APIs](https://www.jaegertracing.io/docs/latest/apis/)
 
-[common-mapping-rules]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md
+[common-mapping-rules]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md
 
 ## Summary
 
@@ -40,9 +40,9 @@ and Jaeger.
 | Span.DroppedLinksCount     | Add to Span.tags | same | See [Dropped Links Count][dropped-links-count] for tag name to use. |
 | Span.Status                | Add to Span.tags | same | See [Status](#status) for tag names to use. |
 
-[dropped-attributes-count]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-attributes-count
-[dropped-events-count]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-events-count
-[dropped-links-count]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-links-count
+[dropped-attributes-count]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-attributes-count
+[dropped-events-count]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-events-count
+[dropped-links-count]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#dropped-links-count
 
 ## Mappings
 
@@ -56,11 +56,11 @@ single process and exporters need to handle this case accordingly.
 
 Critically, Jaeger backend depends on `Span.Process.ServiceName` to identify the service
 that produced the spans. That field MUST be populated from the `service.name` attribute
-of the [`service` resource](https://github.com/open-telemetry/semantic-conventions/blob/main/docs/resource/README.md#service).
+of the [`service` resource](https://github.com/GlancingMind/semantic-conventions/blob/main/docs/resource/README.md#service).
 If no `service.name` is contained in a Span's Resource, that field MUST be populated from the
 [default][default-resource] `Resource`.
 
-[default-resource]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/resource/sdk.md#sdk-provided-resource-attributes
+[default-resource]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/resource/sdk.md#sdk-provided-resource-attributes
 
 ### IDs
 
@@ -128,7 +128,7 @@ with nanosecond precision using `google.protobuf.Timestamp` and
 The Status is recorded as Span tags. See [Status][span-status] for
 tag names to use.
 
-[span-status]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#span-status
+[span-status]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/common/mapping-to-non-otlp.md#span-status
 
 #### Error flag
 
@@ -144,7 +144,7 @@ Primitive types MUST be represented by the corresponding types of Jaeger tags.
 Array values MUST be serialized to string like a JSON list as mentioned in
 [semantic conventions][semantic-conventions].
 
-[semantic-conventions]: https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/overview.md#semantic-conventions
+[semantic-conventions]: https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/overview.md#semantic-conventions
 
 ### Links
 

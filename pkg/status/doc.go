@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package status // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status"
+package status // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status"

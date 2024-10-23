@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter
+module github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter
 
 go 1.22.0
 
 require (
 	github.com/klauspost/compress v1.17.11
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/config/configauth v0.112.0
@@ -93,4 +93,4 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/sumologicextension => ../../extension/sumologicextension
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/sumologicextension => ../../extension/sumologicextension

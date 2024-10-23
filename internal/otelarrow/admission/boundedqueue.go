@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package admission // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/admission"
+package admission // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/admission"
 
 import (
 	"context"
@@ -38,7 +38,7 @@ func NewBoundedQueue(tp trace.TracerProvider, maxLimitBytes, maxLimitWaiters int
 		maxLimitBytes:   maxLimitBytes,
 		maxLimitWaiters: maxLimitWaiters,
 		waiters:         orderedmap.New[uuid.UUID, waiter](),
-		tracer:          tp.Tracer("github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow"),
+		tracer:          tp.Tracer("github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow"),
 	}
 }
 

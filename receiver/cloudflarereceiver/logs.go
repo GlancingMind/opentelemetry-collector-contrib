@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package cloudflarereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver"
+package cloudflarereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver"
 
 import (
 	"bytes"
@@ -25,8 +25,8 @@ import (
 	rcvr "go.opentelemetry.io/collector/receiver"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/errorutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver/internal/metadata"
 )
 
 type logsReceiver struct {

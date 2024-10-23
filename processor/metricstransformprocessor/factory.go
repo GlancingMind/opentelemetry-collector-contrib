@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metricstransformprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricstransformprocessor"
+package metricstransformprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/metricstransformprocessor"
 
 import (
 	"context"
@@ -14,8 +14,8 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.opentelemetry.io/collector/processor/processorhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricstransformprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/metricstransformprocessor/internal/metadata"
 )
 
 var consumerCapabilities = consumer.Capabilities{MutatesData: true}

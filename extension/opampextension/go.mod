@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampextension
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampextension
 
 go 1.22.0
 
 require (
 	github.com/google/uuid v1.6.0
 	github.com/oklog/ulid/v2 v2.1.0
-	github.com/open-telemetry/opamp-go v0.17.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages v0.112.0
+	github.com/GlancingMind/opamp-go v0.17.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages v0.112.0
 	github.com/shirou/gopsutil/v4 v4.24.9
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -64,4 +64,4 @@ require (
 	google.golang.org/protobuf v1.35.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages => ../opampcustommessages
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages => ../opampcustommessages

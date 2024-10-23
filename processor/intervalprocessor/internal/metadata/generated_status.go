@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("interval")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/intervalprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/intervalprocessor"
 )
 
 const (

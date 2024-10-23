@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package sqlserverreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sqlserverreceiver"
+package sqlserverreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sqlserverreceiver"

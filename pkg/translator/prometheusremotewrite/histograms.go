@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusremotewrite // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite"
+package prometheusremotewrite // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite"
 
 import (
 	"fmt"
@@ -71,14 +71,14 @@ func exponentialToNativeHistogram(p pmetric.ExponentialHistogramDataPoint) (prom
 		// Thus we're explicitly saying UNKNOWN here, which is always safe.
 		// TODO: using created time stamp should be accurate, but we
 		// need to know here if it was used for the detection.
-		// Ref: https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/28663#issuecomment-1810577303
+		// Ref: https://github.com/GlancingMind/opentelemetry-collector-contrib/pull/28663#issuecomment-1810577303
 		// Counter reset detection in Prometheus: https://github.com/prometheus/prometheus/blob/f997c72f294c0f18ca13fa06d51889af04135195/tsdb/chunkenc/histogram.go#L232
 		ResetHint: prompb.Histogram_UNKNOWN,
 		Schema:    scale,
 
 		ZeroCount: &prompb.Histogram_ZeroCountInt{ZeroCountInt: p.ZeroCount()},
 		// TODO use zero_threshold, if set, see
-		// https://github.com/open-telemetry/opentelemetry-proto/pull/441
+		// https://github.com/GlancingMind/opentelemetry-proto/pull/441
 		ZeroThreshold: defaultZeroThreshold,
 
 		PositiveSpans:  pSpans,

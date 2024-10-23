@@ -109,7 +109,7 @@ resourceMetrics:
             name: aerospike.node.memory.free
             unit: '%'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/aerospikereceiver
           version: latest
   - resource:
       attributes:
@@ -734,5 +734,5 @@ resourceMetrics:
               isMonotonic: true
             unit: '{transactions}'
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/aerospikereceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/aerospikereceiver
           version: latest

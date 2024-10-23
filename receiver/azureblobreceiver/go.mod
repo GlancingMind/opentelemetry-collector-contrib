@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureblobreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/azureblobreceiver
 
 go 1.22.0
 
@@ -7,7 +7,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.16.0
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.8.0
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.4.1
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/config/configopaque v1.18.0
@@ -144,7 +144,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
 
 retract (
 	v0.76.2

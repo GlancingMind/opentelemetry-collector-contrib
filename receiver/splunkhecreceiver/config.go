@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package splunkhecreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkhecreceiver"
+package splunkhecreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/splunkhecreceiver"
 
 import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/confighttp"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 type SplittingStrategy string

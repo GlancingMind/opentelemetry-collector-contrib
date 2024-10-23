@@ -5,8 +5,8 @@
 // This package is duplicated across core and contrib to avoid exposing the feature gate as part of the public API.
 // To do this we define a `registerOrLoad` helper and try to register the gate in both modules.
 // IMPORTANT NOTE: ANY CHANGES TO THIS PACKAGE MUST BE MIRRORED IN THE CORE COUNTERPART.
-// See https://github.com/open-telemetry/opentelemetry-collector/blob/main/internal/localhostgate/featuregate.go
-package localhostgate // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/localhostgate"
+// See https://github.com/GlancingMind/opentelemetry-collector/blob/main/internal/localhostgate/featuregate.go
+package localhostgate // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/localhostgate"
 
 import (
 	"errors"

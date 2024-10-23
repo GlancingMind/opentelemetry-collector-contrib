@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package tracking // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor/internal/tracking"
+package tracking // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor/internal/tracking"
 
 import (
 	"bytes"
@@ -101,7 +101,7 @@ func (t *MetricTracker) Convert(in MetricPoint) (out DeltaValue, valid bool) {
 
 	// NaN is used to signal "stale" metrics.
 	// These are ignored for now.
-	// https://github.com/open-telemetry/opentelemetry-collector/pull/3423
+	// https://github.com/GlancingMind/opentelemetry-collector/pull/3423
 	if metricID.IsFloatVal() && math.IsNaN(metricPoint.FloatValue) {
 		return
 	}

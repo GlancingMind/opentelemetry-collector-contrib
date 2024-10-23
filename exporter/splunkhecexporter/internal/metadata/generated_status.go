@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("splunk_hec")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter"
 )
 
 const (

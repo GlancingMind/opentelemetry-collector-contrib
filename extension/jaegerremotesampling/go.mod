@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/jaegerremotesampling
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/jaegerremotesampling
 
 go 1.22.0
 
@@ -6,7 +6,7 @@ require (
 	github.com/fortytw2/leaktest v1.3.0
 	github.com/jaegertracing/jaeger v1.62.0
 	github.com/jonboulle/clockwork v0.4.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/component/componentstatus v0.112.0
@@ -90,4 +90,4 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../internal/common

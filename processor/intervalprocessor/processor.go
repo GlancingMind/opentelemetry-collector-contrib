@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package intervalprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/intervalprocessor"
+package intervalprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/intervalprocessor"
 
 import (
 	"context"
@@ -16,8 +16,8 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics/identity"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/intervalprocessor/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics/identity"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/intervalprocessor/internal/metrics"
 )
 
 var _ processor.Metrics = (*Processor)(nil)

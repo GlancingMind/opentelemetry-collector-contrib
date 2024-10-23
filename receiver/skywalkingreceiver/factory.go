@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package skywalkingreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/skywalkingreceiver"
+package skywalkingreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/skywalkingreceiver"
 
 // This file implements factory for skywalking receiver.
 
@@ -18,9 +18,9 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/skywalkingreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/skywalkingreceiver/internal/metadata"
 )
 
 const (

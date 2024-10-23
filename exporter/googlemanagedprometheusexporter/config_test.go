@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package googlemanagedprometheusexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlemanagedprometheusexporter"
+package googlemanagedprometheusexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/googlemanagedprometheusexporter"
 
 import (
 	"path/filepath"
@@ -16,7 +16,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 	"go.opentelemetry.io/collector/otelcol/otelcoltest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/googlemanagedprometheusexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/googlemanagedprometheusexporter/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {
@@ -25,7 +25,7 @@ func TestLoadConfig(t *testing.T) {
 
 	factory := NewFactory()
 	factories.Exporters[metadata.Type] = factory
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	cfg, err := otelcoltest.LoadConfigAndValidate(filepath.Join("testdata", "config.yaml"), factories)
 

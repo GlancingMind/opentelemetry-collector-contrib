@@ -21,7 +21,7 @@ import (
 	"go.opentelemetry.io/collector/exporter/exportertest"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/testdata"
 )
 
 const (

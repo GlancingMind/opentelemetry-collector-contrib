@@ -31,7 +31,7 @@ import (
 	semconv "go.opentelemetry.io/collector/semconv/v1.6.1"
 	"google.golang.org/protobuf/proto"
 
-	datadogconfig "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/datadog/config"
+	datadogconfig "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/datadog/config"
 )
 
 func setupTestMain(m *testing.M) {

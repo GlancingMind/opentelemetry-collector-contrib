@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package coralogixprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/coralogixprocessor"
+package coralogixprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/coralogixprocessor"
 
 import (
 	"context"
@@ -10,7 +10,7 @@ import (
 	"go.opentelemetry.io/collector/consumer"
 	"go.opentelemetry.io/collector/processor"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/coralogixprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/coralogixprocessor/internal/metadata"
 )
 
 // NewFactory returns a new factory for the Span processor.

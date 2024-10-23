@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otlpjsonfilereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver"
+package otlpjsonfilereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver"
 
 import (
 	"context"
@@ -22,10 +22,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/testdata"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/attrs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/attrs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otlpjsonfilereceiver/internal/metadata"
 )
 
 func TestDefaultConfig(t *testing.T) {

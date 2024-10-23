@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"gopkg.in/yaml.v3"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/datatest/compare"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/data/datatest/compare"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatocumulativeprocessor/internal/testar"
 )
 
 func TestProcessor(t *testing.T) {

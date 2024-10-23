@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package ottlfuncs // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
+package ottlfuncs // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl/ottlfuncs"
 import (
 	"context"
 	"fmt"
@@ -9,7 +9,7 @@ import (
 	"github.com/ua-parser/uap-go/uaparser"
 	semconv "go.opentelemetry.io/collector/semconv/v1.25.0"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 type UserAgentArguments[K any] struct {

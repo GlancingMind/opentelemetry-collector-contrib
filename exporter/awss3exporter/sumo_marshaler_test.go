@@ -150,7 +150,7 @@ func TestAttributeValueToString(t *testing.T) {
 		{
 			// Format of a map entry:
 			// "     -> <key>: <type>(<value>)\n"
-			// Type names: https://github.com/open-telemetry/opentelemetry-collector/blob/ed8547a8e5d6ed527e6d54136cb2e137b954f888/pdata/pcommon/value.go#L32
+			// Type names: https://github.com/GlancingMind/opentelemetry-collector/blob/ed8547a8e5d6ed527e6d54136cb2e137b954f888/pdata/pcommon/value.go#L32
 			value: pcommon.NewValueMap(),
 			result: "{" +
 				"\"bool\":false," +

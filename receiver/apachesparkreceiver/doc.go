@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package apachesparkreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/apachesparkreceiver"
+package apachesparkreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/apachesparkreceiver"

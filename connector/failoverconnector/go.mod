@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/connector/failoverconnector
+module github.com/GlancingMind/opentelemetry-collector-contrib/connector/failoverconnector
 
 go 1.22.0
 

@@ -4,7 +4,7 @@
 
 1. Pre-requirements:
 ```shell
-kubectl apply -f https://github.com/open-telemetry/opentelemetry-operator/releases/latest/download/opentelemetry-operator.yaml
+kubectl apply -f https://github.com/GlancingMind/opentelemetry-operator/releases/latest/download/opentelemetry-operator.yaml
 ```
 
 2. Once the opentelemetry-operator is deployed, create the OpenTelemetry Collector (otelcol) instances, ServiceAccount and other necessary resources, run:

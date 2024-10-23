@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package filterprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor"
+package filterprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/filterprocessor"
 
 import (
 	"errors"
@@ -13,11 +13,11 @@ import (
 	"go.uber.org/multierr"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset/regexp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset/regexp"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 // Config defines configuration for Resource processor.
@@ -248,7 +248,7 @@ func (lmp LogMatchProperties) matchProperties() *filterconfig.MatchProperties {
 type LogSeverityNumberMatchProperties struct {
 	// Min is the minimum severity needed for the log record to match.
 	// This corresponds to the short names specified here:
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/data-model.md#displaying-severity
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/logs/data-model.md#displaying-severity
 	// this field is case-insensitive ("INFO" == "info")
 	Min logSeverity `mapstructure:"min"`
 

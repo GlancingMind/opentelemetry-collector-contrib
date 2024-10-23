@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/zipkinencodingextension
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/zipkinencodingextension
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/confmap v1.18.0
@@ -30,7 +30,7 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
 	github.com/openzipkin/zipkin-go v0.4.3 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	go.opentelemetry.io/collector/config/configtelemetry v0.112.0 // indirect
@@ -51,14 +51,14 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../../pkg/translator/zipkin
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../../pkg/translator/zipkin
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../../pkg/golden
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding => ../
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding => ../

@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package systemdreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/systemdreceiver"
+package systemdreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/systemdreceiver"

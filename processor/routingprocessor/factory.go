@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package routingprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/routingprocessor"
+package routingprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/routingprocessor"
 
 import (
 	"context"
@@ -13,8 +13,8 @@ import (
 	"go.opentelemetry.io/collector/processor"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/routingprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/routingprocessor/internal/metadata"
 )
 
 // NewFactory creates a factory for the routing processor.

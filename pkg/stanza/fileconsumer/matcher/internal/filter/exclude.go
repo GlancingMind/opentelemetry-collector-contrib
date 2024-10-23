@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package filter // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/filter"
+package filter // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/matcher/internal/filter"
 import (
 	"os"
 	"time"
 
 	"go.uber.org/multierr"
 
-	internaltime "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/internal/time"
+	internaltime "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/internal/time"
 )
 
 type excludeOlderThanOption struct {

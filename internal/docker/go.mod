@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker
+module github.com/GlancingMind/opentelemetry-collector-contrib/internal/docker
 
 go 1.22.0
 

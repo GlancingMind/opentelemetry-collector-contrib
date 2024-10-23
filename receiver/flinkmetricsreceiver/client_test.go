@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package flinkmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/flinkmetricsreceiver"
+package flinkmetricsreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/flinkmetricsreceiver"
 
 import (
 	"context"
@@ -22,7 +22,7 @@ import (
 	"go.opentelemetry.io/collector/config/configtls"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/flinkmetricsreceiver/internal/models"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/flinkmetricsreceiver/internal/models"
 )
 
 const (

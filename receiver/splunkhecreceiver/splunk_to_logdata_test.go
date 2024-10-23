@@ -16,7 +16,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.27.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 var defaultTestingHecConfig = &Config{

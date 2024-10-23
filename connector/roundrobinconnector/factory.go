@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package roundrobinconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/roundrobinconnector"
+package roundrobinconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/roundrobinconnector"
 
 import (
 	"context"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/connector"
 	"go.opentelemetry.io/collector/consumer"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/roundrobinconnector/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/roundrobinconnector/internal/metadata"
 )
 
 // NewFactory returns a ConnectorFactory.

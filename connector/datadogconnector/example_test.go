@@ -17,15 +17,15 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/otlpreceiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
 )
 
 func TestExamples(t *testing.T) {
 	t.Setenv("DD_API_KEY", "testvalue")
 	factories := newTestComponents(t)
 	const configFile = "./examples/config.yaml"
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	_, err := otelcoltest.LoadConfigAndValidate(configFile, factories)
 	require.NoError(t, err, "All yaml config must validate. Please ensure that all necessary component factories are added in newTestComponents()")

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package probabilisticsamplerprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
+package probabilisticsamplerprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor"
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/sampling"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/sampling"
 )
 
 type AttributeSource string

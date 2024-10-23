@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package k8sattributesprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor"
+package k8sattributesprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor"
 
 import (
 	"context"
@@ -11,8 +11,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/clientutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/clientutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
 )
 
 // extractPodIds returns pod identifier for first association matching all sources

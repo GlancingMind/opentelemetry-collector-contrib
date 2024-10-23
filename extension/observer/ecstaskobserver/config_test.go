@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecstaskobserver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/ecstaskobserver/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

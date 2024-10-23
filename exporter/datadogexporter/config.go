@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package datadogexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
+package datadogexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter"
 
 import (
 	"encoding"
@@ -9,7 +9,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap"
 
-	datadogconfig "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/datadog/config"
+	datadogconfig "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/datadog/config"
 )
 
 const (

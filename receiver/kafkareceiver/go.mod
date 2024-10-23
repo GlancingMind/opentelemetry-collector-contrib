@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/kafkareceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/kafkareceiver
 
 go 1.22.0
 
@@ -8,12 +8,12 @@ require (
 	github.com/gogo/protobuf v1.3.2
 	github.com/jaegertracing/jaeger v1.62.0
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/azure v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/kafkaexporter v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/kafka v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/azure v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0
 	github.com/openzipkin/zipkin-go v0.4.3
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -65,9 +65,9 @@ require (
 	github.com/mitchellh/reflectwalk v1.0.2 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/kafka/topic v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchpersignal v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/kafka/topic v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
 	github.com/pierrec/lz4/v4 v4.1.21 // indirect
 	github.com/pmezard/go-difflib v1.0.1-0.20181226105442-5d4384ee4fb2 // indirect
 	github.com/rcrowley/go-metrics v0.0.0-20201227073835-cf1acfcdf475 // indirect
@@ -98,17 +98,17 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchpersignal => ../../pkg/batchpersignal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchpersignal => ../../pkg/batchpersignal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/kafkaexporter => ../../exporter/kafkaexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/kafka => ../../internal/kafka
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/kafka => ../../internal/kafka
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../pkg/translator/jaeger
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../pkg/translator/zipkin
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../pkg/translator/zipkin
 
 retract (
 	v0.76.2
@@ -116,12 +116,12 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/kafka/topic => ../../pkg/kafka/topic
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/kafka/topic => ../../pkg/kafka/topic
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../pkg/golden
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/azure => ../../pkg/translator/azure
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/azure => ../../pkg/translator/azure

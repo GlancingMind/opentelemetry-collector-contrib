@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package zipkinv2 // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv2"
+package zipkinv2 // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin/zipkinv2"
 
 import (
 	"encoding/json"
@@ -16,10 +16,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.6.1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/idutils"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin/internal/zipkin"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/idutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/tracetranslator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin/internal/zipkin"
 )
 
 const (
@@ -174,7 +174,7 @@ func populateStatus(status ptrace.Status, zs *zipkinmodel.SpanModel, tags map[st
 
 	// Per specs, Span Status MUST be reported as a key-value pair in tags to Zipkin, unless it is UNSET.
 	// In the latter case it MUST NOT be reported.
-	// https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/sdk_exporters/zipkin.md#status
+	// https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/sdk_exporters/zipkin.md#status
 	if status.Code() == ptrace.StatusCodeUnset {
 		return
 	}

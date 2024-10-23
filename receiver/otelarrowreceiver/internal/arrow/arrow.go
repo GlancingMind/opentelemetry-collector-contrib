@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package arrow // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow"
+package arrow // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow"
 
 import (
 	"context"
@@ -15,8 +15,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
-	arrowRecord "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
+	arrowRecord "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record"
 	"go.opentelemetry.io/collector/client"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/configgrpc"
@@ -41,10 +41,10 @@ import (
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/admission"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
-	internalmetadata "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/admission"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	internalmetadata "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metadata"
 )
 
 const (
@@ -228,7 +228,7 @@ func (h *headerReceiver) combineHeaders(ctx context.Context, hdrsBytes []byte) (
 		// `from_context` rules b/c the stream uses background context.
 		// This allows static headers through.
 		//
-		// See https://github.com/open-telemetry/opentelemetry-collector/issues/6965
+		// See https://github.com/GlancingMind/opentelemetry-collector/issues/6965
 		lk := strings.ToLower(k)
 		if _, ok := h.tmpHdrs[lk]; !ok {
 			h.tmpHdrs[lk] = v

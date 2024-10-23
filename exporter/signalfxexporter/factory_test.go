@@ -22,8 +22,8 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/signalfxexporter/internal/translation"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden"
 )
 
 func TestCreateDefaultConfig(t *testing.T) {

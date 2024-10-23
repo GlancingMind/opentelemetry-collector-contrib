@@ -28,10 +28,10 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/storagetest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/scraperinttest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sqlquery"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/storage/storagetest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/scraperinttest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/sqlquery"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
 )
 
 const (
@@ -497,7 +497,7 @@ func TestPostgresqlIntegrationMetrics(t *testing.T) {
 // This test ensures the collector can connect to an Oracle DB, and properly get metrics. It's not intended to
 // test the receiver itself.
 func TestOracleDBIntegrationMetrics(t *testing.T) {
-	t.Skip("Skipping the test until https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/27577 is fixed")
+	t.Skip("Skipping the test until https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/27577 is fixed")
 	if runtime.GOARCH == "arm64" {
 		t.Skip("Incompatible with arm64")
 	}

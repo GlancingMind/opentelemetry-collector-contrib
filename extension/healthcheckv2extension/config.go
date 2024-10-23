@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package healthcheckv2extension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension"
+package healthcheckv2extension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension"
 
 import (
 	"errors"
@@ -10,9 +10,9 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/http"
 )
 
 const (

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package datadogexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
+package datadogexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter"
 
 import (
 	"context"
@@ -22,10 +22,10 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/hostmetadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/logs"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/internal/scrub"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/clientutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/hostmetadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/logs"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/internal/scrub"
 )
 
 const (

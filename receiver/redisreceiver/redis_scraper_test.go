@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/redisreceiver/internal/metadata"
 )
 
 func TestRedisRunnable(t *testing.T) {
@@ -33,7 +33,7 @@ func TestRedisRunnable(t *testing.T) {
 	rm := md.ResourceMetrics().At(0)
 	ilm := rm.ScopeMetrics().At(0)
 	il := ilm.Scope()
-	assert.Equal(t, "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/redisreceiver", il.Name())
+	assert.Equal(t, "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/redisreceiver", il.Name())
 }
 
 func TestNewReceiver_invalid_endpoint(t *testing.T) {

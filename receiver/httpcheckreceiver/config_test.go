@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package httpcheckreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/httpcheckreceiver"
+package httpcheckreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/httpcheckreceiver"
 
 import (
 	"fmt"

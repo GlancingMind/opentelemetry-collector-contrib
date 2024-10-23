@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("asapclient")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/asapauthextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/asapauthextension"
 )
 
 const (

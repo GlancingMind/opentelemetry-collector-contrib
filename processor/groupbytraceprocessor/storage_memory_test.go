@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/groupbytraceprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/groupbytraceprocessor/internal/metadata"
 )
 
 func TestMemoryCreateAndGetTrace(t *testing.T) {

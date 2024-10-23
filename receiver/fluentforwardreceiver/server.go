@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package fluentforwardreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver"
+package fluentforwardreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/fluentforwardreceiver"
 
 import (
 	"context"
@@ -15,7 +15,7 @@ import (
 	"github.com/tinylib/msgp/msgp"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/fluentforwardreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/fluentforwardreceiver/internal/metadata"
 )
 
 // The initial size of the read buffer. Messages can come in that are bigger

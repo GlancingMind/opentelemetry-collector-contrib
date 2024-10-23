@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("cloudflare")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver"
 )
 
 const (

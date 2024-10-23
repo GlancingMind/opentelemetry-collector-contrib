@@ -12,15 +12,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/component/componenttest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/tcp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/udp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/syslog"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/pipeline"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/split/splittest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/tcp"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/udp"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/syslog"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/pipeline"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/split/splittest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/testutil"
 )
 
 var (

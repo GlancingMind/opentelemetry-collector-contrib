@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("cassandra")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/cassandraexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/cassandraexporter"
 )
 
 const (

@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package splunkhecexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter"
+package splunkhecexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter"
 
 import (
 	"encoding/hex"
@@ -12,11 +12,11 @@ import (
 	"go.opentelemetry.io/collector/pdata/pcommon"
 	"go.opentelemetry.io/collector/pdata/plog"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk"
 )
 
 const (
-	// Keys are taken from https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/overview.md#trace-context-in-legacy-formats.
+	// Keys are taken from https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/logs/overview.md#trace-context-in-legacy-formats.
 	// spanIDFieldKey is the key used in log event for the span id (if any).
 	spanIDFieldKey = "span_id"
 	// traceIDFieldKey is the key used in the log event for the trace id (if any).

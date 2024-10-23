@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package servicegraphconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/servicegraphconnector"
+package servicegraphconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/servicegraphconnector"
 
 import (
 	"time"
@@ -25,7 +25,7 @@ type Config struct {
 	// - failed
 	// - connection_type
 	// The dimensions will be fetched from the span's attributes. Examples of some conventionally used attributes:
-	// https://github.com/open-telemetry/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
+	// https://github.com/GlancingMind/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
 	Dimensions []string `mapstructure:"dimensions"`
 
 	// Store contains the config for the in-memory store used to find requests between services by pairing spans.

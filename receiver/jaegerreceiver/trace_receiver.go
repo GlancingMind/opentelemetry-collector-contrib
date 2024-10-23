@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package jaegerreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver"
+package jaegerreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/jaegerreceiver"
 
 import (
 	"context"
@@ -37,7 +37,7 @@ import (
 	"go.uber.org/multierr"
 	"google.golang.org/grpc"
 
-	jaegertranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger"
+	jaegertranslator "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger"
 )
 
 // configuration defines the behavior and the ports that

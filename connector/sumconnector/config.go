@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package sumconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/sumconnector"
+package sumconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/sumconnector"
 
 import (
 	"errors"
@@ -10,8 +10,8 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterottl"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterottl"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl"
 )
 
 // Config for the connector

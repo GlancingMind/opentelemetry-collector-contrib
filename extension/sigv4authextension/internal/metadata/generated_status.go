@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("sigv4auth")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/sigv4authextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/sigv4authextension"
 )
 
 const (

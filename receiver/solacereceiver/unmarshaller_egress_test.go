@@ -15,8 +15,8 @@ import (
 	"go.opentelemetry.io/otel/sdk/metric/metricdata"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
-	egress_v1 "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/metadata"
+	egress_v1 "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/solacereceiver/internal/model/egress/v1"
 )
 
 // msgWithAdditionalSpan is an EgressSpanMsg with one EgressSpan of type 1 (future proofing)

@@ -10,9 +10,9 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/config"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/cmd/opampsupervisor/supervisor/telemetry"
 )
 
 func main() {

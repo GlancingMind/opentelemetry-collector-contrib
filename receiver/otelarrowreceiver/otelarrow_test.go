@@ -15,8 +15,8 @@ import (
 	"testing"
 	"time"
 
-	arrowpb "github.com/open-telemetry/otel-arrow/api/experimental/arrow/v1"
-	arrowRecord "github.com/open-telemetry/otel-arrow/pkg/otel/arrow_record"
+	arrowpb "github.com/GlancingMind/otel-arrow/api/experimental/arrow/v1"
+	arrowRecord "github.com/GlancingMind/otel-arrow/pkg/otel/arrow_record"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/client"
@@ -46,10 +46,10 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testdata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow/mock"
-	componentMetadata "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testdata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/arrow/mock"
+	componentMetadata "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver/internal/metadata"
 )
 
 const otlpReceiverName = "receiver_test"

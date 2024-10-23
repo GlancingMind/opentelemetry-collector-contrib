@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/sqlquery
+module github.com/GlancingMind/opentelemetry-collector-contrib/internal/sqlquery
 
 go 1.22.0
 

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/googlecloudmonitoringreceiver
 
 go 1.22.0
 

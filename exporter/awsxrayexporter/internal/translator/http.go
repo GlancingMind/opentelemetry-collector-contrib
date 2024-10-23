@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package translator // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
+package translator // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/awsxrayexporter/internal/translator"
 
 import (
 	"net"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/ptrace"
 	conventions "go.opentelemetry.io/collector/semconv/v1.12.0"
 
-	awsxray "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray"
+	awsxray "github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray"
 )
 
 const (
@@ -185,7 +185,7 @@ func extractResponseSizeFromAttributes(attributes pcommon.Map) int64 {
 
 func constructClientURL(urlParts map[string]string) string {
 	// follows OpenTelemetry specification-defined combinations for client spans described in
-	// https://github.com/open-telemetry/semantic-conventions/blob/main/docs/http/http-spans.md#http-client
+	// https://github.com/GlancingMind/semantic-conventions/blob/main/docs/http/http-spans.md#http-client
 
 	url, ok := urlParts[conventions.AttributeHTTPURL]
 	if ok {
@@ -224,7 +224,7 @@ func constructClientURL(urlParts map[string]string) string {
 
 func constructServerURL(urlParts map[string]string) string {
 	// follows OpenTelemetry specification-defined combinations for server spans described in
-	// https://github.com/open-telemetry/semantic-conventions/blob/main/docs/http/http-spans.md#http-server
+	// https://github.com/GlancingMind/semantic-conventions/blob/main/docs/http/http-spans.md#http-server
 
 	url, ok := urlParts[conventions.AttributeHTTPURL]
 	if ok {

@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin
 
 go 1.22.0
 
 require (
 	github.com/jaegertracing/jaeger v1.62.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0
 	github.com/openzipkin/zipkin-go v0.4.3
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/pdata v1.18.0
@@ -33,7 +33,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
 
 retract (
 	v0.76.2
@@ -41,8 +41,8 @@ retract (
 	v0.65.0
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../golden

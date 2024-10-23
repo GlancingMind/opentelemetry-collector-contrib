@@ -21,9 +21,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.12.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/awsutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray/telemetry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/xray/telemetry/telemetrytest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/awsutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray/telemetry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/xray/telemetry/telemetrytest"
 )
 
 func TestTraceExport(t *testing.T) {

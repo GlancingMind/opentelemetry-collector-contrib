@@ -1,5 +1,5 @@
 name: core
-url: https://github.com/open-telemetry/opentelemetry-collector-releases/tree/main/distributions/otelcol
+url: https://github.com/GlancingMind/opentelemetry-collector-releases/tree/main/distributions/otelcol
 maintainers: []
 components:
     exporter:

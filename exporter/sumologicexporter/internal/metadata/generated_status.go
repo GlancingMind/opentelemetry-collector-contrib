@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("sumologic")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter"
 )
 
 const (

@@ -132,5 +132,5 @@ resourceMetrics:
             name: splunk.server.introspection.queues.current.bytes
             unit: By
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkenterprisereceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/splunkenterprisereceiver
           version: latest

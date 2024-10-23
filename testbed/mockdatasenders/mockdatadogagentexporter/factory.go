@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package mockdatadogagentexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/mockdatasenders/mockdatadogagentexporter"
+package mockdatadogagentexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/testbed/mockdatasenders/mockdatadogagentexporter"
 
 import (
 	"context"
@@ -42,7 +42,7 @@ func CreateTracesExporter(
 ) (exporter.Traces, error) {
 	c := cfg.(*Config)
 	if c.Endpoint == "" {
-		// TODO https://github.com/open-telemetry/opentelemetry-collector/issues/215
+		// TODO https://github.com/GlancingMind/opentelemetry-collector/issues/215
 		return nil, errors.New("exporter config requires a non-empty 'endpoint'")
 	}
 

@@ -3,7 +3,7 @@
 
 //go:build linux
 
-package namedpipereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/namedpipereceiver"
+package namedpipereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/namedpipereceiver"
 
 import (
 	"context"
@@ -20,10 +20,10 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/receiver/receivertest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/consumerretry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/namedpipe"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/consumerretry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/adapter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/namedpipe"
 )
 
 func TestDefaultConfig(t *testing.T) {

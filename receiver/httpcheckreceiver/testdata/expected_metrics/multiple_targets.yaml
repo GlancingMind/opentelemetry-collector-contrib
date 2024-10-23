@@ -184,5 +184,5 @@ resourceMetrics:
                   timeUnixNano: "2000000"
             unit: "1"
         scope:
-          name: github.com/open-telemetry/opentelemetry-collector-contrib/receiver/httpcheckreceiver
+          name: github.com/GlancingMind/opentelemetry-collector-contrib/receiver/httpcheckreceiver
           version: latest

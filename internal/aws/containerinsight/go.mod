@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/containerinsight
+module github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/containerinsight
 
 go 1.22.0
 

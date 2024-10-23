@@ -14,8 +14,8 @@ import (
 	"go.opentelemetry.io/collector/confmap"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/dockerobserver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/docker"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/dockerobserver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/docker"
 )
 
 var version = "1.40"

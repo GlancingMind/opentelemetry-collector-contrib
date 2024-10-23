@@ -3,7 +3,7 @@
 
 //go:generate mdatagen metadata.yaml
 
-package googleclientauthextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension"
+package googleclientauthextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/googleclientauthextension"
 
 import (
 	"context"
@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/extension"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/googleclientauthextension/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/googleclientauthextension/internal/metadata"
 )
 
 func NewFactory() extension.Factory {

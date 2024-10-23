@@ -1,14 +1,14 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package testhelpers // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status/testhelpers"
+package testhelpers // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status/testhelpers"
 
 import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/component/componentstatus"
 	"go.opentelemetry.io/collector/pipeline"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status"
 )
 
 // PipelineMetadata groups together component and instance IDs for a hypothetical pipeline used

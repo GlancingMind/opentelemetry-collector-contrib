@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package grpc // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
+package grpc // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/grpc"
 
 import (
 	"context"
@@ -12,8 +12,8 @@ import (
 	"google.golang.org/grpc"
 	healthpb "google.golang.org/grpc/health/grpc_health_v1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status"
 )
 
 type Server struct {

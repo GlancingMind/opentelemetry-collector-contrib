@@ -3,7 +3,7 @@
 
 //go:build !windows
 
-package testbed // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+package testbed // import "github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 
 import (
 	"os"

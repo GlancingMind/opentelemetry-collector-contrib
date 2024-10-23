@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 // Package logdedupprocessor provides a processor that counts logs as metrics.
-package logdedupprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/logdedupprocessor"
+package logdedupprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/logdedupprocessor"
 
 import (
 	"errors"

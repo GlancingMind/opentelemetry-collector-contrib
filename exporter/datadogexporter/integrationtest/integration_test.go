@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package integrationtest // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter/integrationtest"
+package integrationtest // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter/integrationtest"
 
 import (
 	"bytes"
@@ -45,10 +45,10 @@ import (
 	apitrace "go.opentelemetry.io/otel/trace"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/datadogconnector"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/datadogexporter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/datadogconnector"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/datadogexporter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/tailsamplingprocessor"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver"
 )
 
 // seriesSlice represents an unmarshalled series payload
@@ -186,7 +186,7 @@ func getIntegrationTestComponents(t *testing.T) otelcol.Factories {
 }
 
 func getIntegrationTestCollector(t *testing.T, cfgFile string, factories otelcol.Factories) *otelcol.Collector {
-	// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33594
+	// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33594
 	// nolint:staticcheck
 	_, err := otelcoltest.LoadConfigAndValidate(cfgFile, factories)
 	require.NoError(t, err, "All yaml config must be valid.")

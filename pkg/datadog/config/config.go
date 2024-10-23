@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package config // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/datadog/config"
+package config // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/datadog/config"
 
 import (
 	"errors"
@@ -212,7 +212,7 @@ var removedSettings = []renameError{
 // Error implements the error interface.
 func (e renameError) Error() string {
 	return fmt.Sprintf(
-		"%q was removed in favor of %q. See https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/%d",
+		"%q was removed in favor of %q. See https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/%d",
 		e.oldName,
 		e.newName,
 		e.issueNumber,

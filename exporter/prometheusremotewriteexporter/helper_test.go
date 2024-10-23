@@ -141,8 +141,8 @@ func Benchmark_batchTimeSeries(b *testing.B) {
 // Ensure that before a prompb.WriteRequest is created, that the points per TimeSeries
 // are sorted by Timestamp value, to prevent Prometheus from barfing when it gets poorly
 // sorted values. See issues:
-// * https://github.com/open-telemetry/wg-prometheus/issues/10
-// * https://github.com/open-telemetry/opentelemetry-collector/issues/2315
+// * https://github.com/GlancingMind/wg-prometheus/issues/10
+// * https://github.com/GlancingMind/opentelemetry-collector/issues/2315
 func TestEnsureTimeseriesPointsAreSortedByTimestamp(t *testing.T) {
 	outOfOrder := []prompb.TimeSeries{
 		{

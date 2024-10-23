@@ -3,7 +3,7 @@
 receivers:
   # The OTLP receiver is the most common receiver. It is the default way to send data from
   # OpenTelemetry instrumentation libraries. Documentation on this receiver is available here:
-  # https://github.com/open-telemetry/opentelemetry-collector/tree/main/receiver/otlpreceiver#readme
+  # https://github.com/GlancingMind/opentelemetry-collector/tree/main/receiver/otlpreceiver#readme
   otlp:
     # Protocols defines the protocols enabled for this receiver. At least one protocol of choice must
     # be enabled.
@@ -63,7 +63,7 @@ receivers:
       container.blockio.io_serviced_recursive:
         enabled: true
 
-  # Read more about the filelog receiver here https://github.com/open-telemetry/opentelemetry-collector-contrib/tree/main/receiver/filelogreceiver.
+  # Read more about the filelog receiver here https://github.com/GlancingMind/opentelemetry-collector-contrib/tree/main/receiver/filelogreceiver.
   filelog:
     include_file_path: true
     poll_interval: 500ms
@@ -85,7 +85,7 @@ receivers:
 # Read more about processors here: https://opentelemetry.io/docs/collector/configuration/#processors
 #
 # Some processors are recommended in all pipelines:
-# https://github.com/open-telemetry/opentelemetry-collector/tree/main/processor#recommended-processors
+# https://github.com/GlancingMind/opentelemetry-collector/tree/main/processor#recommended-processors
 processors:
   # The batch processor batches telemetry data into larger payloads.
   # It is necessary for the Datadog traces exporter to work optimally,
@@ -353,8 +353,8 @@ exporters:
 
       ## @param span_name_as_resource_name - use OpenTelemetry semantic convention for span naming - optional
       ## Option created to maintain similarity with the OpenTelemetry semantic conventions as discussed in the issue below.
-      ## https://github.com/open-telemetry/opentelemetry-specification/tree/main/specification/trace/semantic_conventions
-      ## https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/1909
+      ## https://github.com/GlancingMind/opentelemetry-specification/tree/main/specification/trace/semantic_conventions
+      ## https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/1909
       #
       # span_name_as_resource_name: true
 
@@ -456,7 +456,7 @@ exporters:
       ## @param dump_payloads - bool - optional
       ## If set to true, payloads will be dumped when logging level is set to debug. Please note that
       ## This may result in an escaping loop if a filelog receiver is watching the collector log output.
-      ## See: https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/16380
+      ## See: https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/16380
       ## Note: this config option does not apply when the `exporter.datadogexporter.UseLogsAgentExporter` feature flag is enabled (now enabled by default).
       ## Deprecated since v0.107.0: This config option is not supported in the Datadog Agent logs pipeline.
       #

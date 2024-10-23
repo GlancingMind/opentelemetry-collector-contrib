@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package metricsgenerationprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/metricsgenerationprocessor"
+package metricsgenerationprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/metricsgenerationprocessor"
 
 import (
 	"context"
@@ -17,7 +17,7 @@ var matchAttributes = featuregate.GlobalRegistry().MustRegister(
 	"metricsgeneration.MatchAttributes",
 	featuregate.StageAlpha,
 	featuregate.WithRegisterDescription("When enabled, the metric calculations will only be done between data points whose attributes match."),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/35425"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/35425"),
 	featuregate.WithRegisterFromVersion("v0.112.0"),
 )
 

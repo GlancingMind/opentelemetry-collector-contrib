@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package coralogixprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/coralogixprocessor"
+package coralogixprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/coralogixprocessor"

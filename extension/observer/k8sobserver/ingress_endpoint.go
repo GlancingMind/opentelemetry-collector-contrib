@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package k8sobserver // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/k8sobserver"
+package k8sobserver // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/k8sobserver"
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 
 	v1 "k8s.io/api/networking/v1"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer"
 )
 
 // convertIngressToEndpoints converts a ingress instance into a slice of endpoints. The endpoints

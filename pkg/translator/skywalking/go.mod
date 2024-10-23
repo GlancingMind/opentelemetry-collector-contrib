@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/skywalking
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/skywalking
 
 go 1.22.0
 

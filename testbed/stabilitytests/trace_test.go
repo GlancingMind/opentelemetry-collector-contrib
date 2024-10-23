@@ -14,11 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datareceivers"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/datasenders"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
-	scenarios "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/tests"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/datareceivers"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/datasenders"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
+	scenarios "github.com/GlancingMind/opentelemetry-collector-contrib/testbed/tests"
 )
 
 var (

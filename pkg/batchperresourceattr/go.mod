@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchperresourceattr
 
 go 1.22.0
 

@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("namedpipe")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/namedpipereceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/namedpipereceiver"
 )
 
 const (

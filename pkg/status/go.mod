@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status
 
 go 1.22.0
 

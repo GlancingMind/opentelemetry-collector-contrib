@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package exceptionsconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/exceptionsconnector"
+package exceptionsconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/exceptionsconnector"
 
 import (
 	"fmt"
@@ -27,7 +27,7 @@ type Config struct {
 	// - span.kind
 	// - status.code
 	// The dimensions will be fetched from the span's attributes. Examples of some conventionally used attributes:
-	// https://github.com/open-telemetry/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
+	// https://github.com/GlancingMind/opentelemetry-collector/blob/main/model/semconv/opentelemetry.go.
 	Dimensions []Dimension `mapstructure:"dimensions"`
 	// Exemplars defines the configuration for exemplars.
 	Exemplars Exemplars `mapstructure:"exemplars"`

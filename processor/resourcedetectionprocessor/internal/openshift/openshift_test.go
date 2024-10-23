@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package openshift // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift"
+package openshift // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift"
 
 import (
 	"context"
@@ -13,9 +13,9 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.18.0"
 	"go.uber.org/zap/zaptest"
 
-	ocp "github.com/open-telemetry/opentelemetry-collector-contrib/internal/metadataproviders/openshift"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift/internal/metadata"
+	ocp "github.com/GlancingMind/opentelemetry-collector-contrib/internal/metadataproviders/openshift"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/resourcedetectionprocessor/internal/openshift/internal/metadata"
 )
 
 type providerResponse struct {

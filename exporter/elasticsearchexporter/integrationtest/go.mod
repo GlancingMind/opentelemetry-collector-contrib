@@ -1,15 +1,15 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter/integrationtest
+module github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter/integrationtest
 
 go 1.22.0
 
 require (
 	github.com/elastic/go-docappender/v2 v2.3.0
 	github.com/gorilla/mux v1.8.1
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/filestorage v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/testbed v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/storage/filestorage v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/testbed v0.112.0
 	github.com/shirou/gopsutil/v4 v4.24.9
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -92,24 +92,24 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mostynb/go-grpc-compression v1.2.3 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/connector/routingconnector v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/opencensusexporter v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/syslogexporter v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/zipkinexporter v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/pdatautil v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/syslogreceiver v0.112.0 // indirect
-	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/connector/routingconnector v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/opencensusexporter v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/syslogexporter v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/exporter/zipkinexporter v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/opencensus v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/receiver/jaegerreceiver v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/receiver/opencensusreceiver v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/receiver/syslogreceiver v0.112.0 // indirect
+	github.com/GlancingMind/opentelemetry-collector-contrib/receiver/zipkinreceiver v0.112.0 // indirect
 	github.com/openzipkin/zipkin-go v0.4.3 // indirect
 	github.com/pierrec/lz4/v4 v4.1.21 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
@@ -212,96 +212,96 @@ require (
 	howett.net/plist v1.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/elasticsearchexporter => ../
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/elasticsearchexporter => ../
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage => ../../../extension/storage
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/storage => ../../../extension/storage
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/storage/filestorage => ../../../extension/storage/filestorage
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/storage/filestorage => ../../../extension/storage/filestorage
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/testbed => ../../../testbed
+replace github.com/GlancingMind/opentelemetry-collector-contrib/testbed => ../../../testbed
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/opencensusexporter => ../../opencensusexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/opencensusexporter => ../../opencensusexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/syslogexporter => ../../syslogexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/syslogexporter => ../../syslogexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/zipkinexporter => ../../zipkinexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/zipkinexporter => ../../zipkinexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../../internal/common
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal => ../../../internal/coreinternal
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../../internal/sharedcomponent
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent => ../../../internal/sharedcomponent
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden => ../../../pkg/golden
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden => ../../../pkg/golden
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../../../pkg/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../../../pkg/pdatautil
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza => ../../../pkg/stanza
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza => ../../../pkg/stanza
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../../pkg/translator/jaeger
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/jaeger => ../../../pkg/translator/jaeger
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../../pkg/translator/opencensus
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/opencensus => ../../../pkg/translator/opencensus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../../pkg/translator/zipkin
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/zipkin => ../../../pkg/translator/zipkin
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/jaegerreceiver => ../../../receiver/jaegerreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/jaegerreceiver => ../../../receiver/jaegerreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/opencensusreceiver => ../../../receiver/opencensusreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/opencensusreceiver => ../../../receiver/opencensusreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/syslogreceiver => ../../../receiver/syslogreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/syslogreceiver => ../../../receiver/syslogreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver => ../../../receiver/zipkinreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/zipkinreceiver => ../../../receiver/zipkinreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/signalfxreceiver => ../../../receiver/signalfxreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/signalfxreceiver => ../../../receiver/signalfxreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata => ../../../pkg/experimentalmetricmetadata
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/experimentalmetricmetadata => ../../../pkg/experimentalmetricmetadata
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../../../receiver/prometheusreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusreceiver => ../../../receiver/prometheusreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver => ../../../receiver/carbonreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/carbonreceiver => ../../../receiver/carbonreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/testbed/mockdatasenders/mockdatadogagentexporter => ../../../testbed/mockdatasenders/mockdatadogagentexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/testbed/mockdatasenders/mockdatadogagentexporter => ../../../testbed/mockdatasenders/mockdatadogagentexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../../../pkg/translator/prometheusremotewrite
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite => ../../../pkg/translator/prometheusremotewrite
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/splunk => ../../../internal/splunk
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/splunk => ../../../internal/splunk
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/signalfxexporter => ../../signalfxexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/signalfxexporter => ../../signalfxexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../../pkg/batchperresourceattr
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/batchperresourceattr => ../../../pkg/batchperresourceattr
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/datadogreceiver => ../../../receiver/datadogreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/datadogreceiver => ../../../receiver/datadogreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sapmexporter => ../../sapmexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sapmexporter => ../../sapmexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/carbonexporter => ../../carbonexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/carbonexporter => ../../carbonexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../splunkhecexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/splunkhecexporter => ../../splunkhecexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter => ../../prometheusexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusexporter => ../../prometheusexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest => ../../../pkg/pdatatest
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest => ../../../pkg/pdatatest
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/signalfx => ../../../pkg/translator/signalfx
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/signalfx => ../../../pkg/translator/signalfx
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/splunkhecreceiver => ../../../receiver/splunkhecreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/splunkhecreceiver => ../../../receiver/splunkhecreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../../pkg/translator/prometheus
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus => ../../../pkg/translator/prometheus
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/receiver/sapmreceiver => ../../../receiver/sapmreceiver
+replace github.com/GlancingMind/opentelemetry-collector-contrib/receiver/sapmreceiver => ../../../receiver/sapmreceiver
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../../../pkg/resourcetotelemetry
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/resourcetotelemetry => ../../../pkg/resourcetotelemetry
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../../prometheusremotewriteexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/prometheusremotewriteexporter => ../../prometheusremotewriteexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/ackextension => ../../../extension/ackextension
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/ackextension => ../../../extension/ackextension
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector => ../../../connector/spanmetricsconnector
+replace github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector => ../../../connector/spanmetricsconnector
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl => ../../../pkg/ottl
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/ottl => ../../../pkg/ottl
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/connector/routingconnector => ../../../connector/routingconnector
+replace github.com/GlancingMind/opentelemetry-collector-contrib/connector/routingconnector => ../../../connector/routingconnector
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/exp/metrics => ../../../internal/exp/metrics
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/exp/metrics => ../../../internal/exp/metrics
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/pdatautil => ../../../internal/pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/pdatautil => ../../../internal/pdatautil

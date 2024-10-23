@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package otelarrowexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter"
+package otelarrowexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter"
 
 import (
 	"context"
@@ -24,8 +24,8 @@ import (
 	"go.uber.org/multierr"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/netstats"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/netstats"
 )
 
 var (
@@ -180,7 +180,7 @@ func (e *metadataExporter) getOrCreateExporter(ctx context.Context, s attribute.
 }
 
 // getAttrSet is code taken from the core collector's batchprocessor multibatch logic.
-// https://github.com/open-telemetry/opentelemetry-collector/blob/v0.107.0/processor/batchprocessor/batch_processor.go#L298
+// https://github.com/GlancingMind/opentelemetry-collector/blob/v0.107.0/processor/batchprocessor/batch_processor.go#L298
 func (e *metadataExporter) getAttrSet(ctx context.Context, keys []string) (attribute.Set, metadata.MD) {
 	// Get each metadata key value, form the corresponding
 	// attribute set for use as a map lookup key.

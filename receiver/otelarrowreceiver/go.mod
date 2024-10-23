@@ -1,12 +1,12 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/otelarrowreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/otelarrowreceiver
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow v0.112.0
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
-	github.com/open-telemetry/otel-arrow v0.29.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent v0.112.0
+	github.com/GlancingMind/otel-arrow v0.29.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/client v1.18.0
 	go.opentelemetry.io/collector/component v0.112.0
@@ -93,10 +93,10 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow => ../../internal/otelarrow
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow => ../../internal/otelarrow
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent => ../../internal/sharedcomponent
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/exporter/otelarrowexporter => ../../exporter/otelarrowexporter
+replace github.com/GlancingMind/opentelemetry-collector-contrib/exporter/otelarrowexporter => ../../exporter/otelarrowexporter
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/grpcutil => ../../internal/grpcutil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/grpcutil => ../../internal/grpcutil

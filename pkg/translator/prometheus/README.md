@@ -1,6 +1,6 @@
 # Prometheus Normalization
 
-[OpenTelemetry's metric semantic convention](https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/metrics/semantic_conventions/README.md) is not compatible with [Prometheus' own metrics naming convention](https://prometheus.io/docs/practices/naming/). This module provides centralized functions to convert OpenTelemetry metrics to Prometheus-compliant metrics. These functions are used by the following components for Prometheus:
+[OpenTelemetry's metric semantic convention](https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/metrics/semantic_conventions/README.md) is not compatible with [Prometheus' own metrics naming convention](https://prometheus.io/docs/practices/naming/). This module provides centralized functions to convert OpenTelemetry metrics to Prometheus-compliant metrics. These functions are used by the following components for Prometheus:
 
 * [prometheusreceiver](../../../receiver/prometheusreceiver/)
 * [prometheusexporter](../../../exporter/prometheusexporter/)
@@ -12,7 +12,7 @@
 
 > **Warning**
 >
-> This feature can be controlled with [feature gate](https://github.com/open-telemetry/opentelemetry-collector/tree/main/featuregate) `pkg.translator.prometheus.NormalizeName`. It is currently enabled by default (beta stage).
+> This feature can be controlled with [feature gate](https://github.com/GlancingMind/opentelemetry-collector/tree/main/featuregate) `pkg.translator.prometheus.NormalizeName`. It is currently enabled by default (beta stage).
 >
 >  Example of how to disable it:
 > ```shell-session

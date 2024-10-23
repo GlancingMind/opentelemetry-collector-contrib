@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package spanmetricsconnector // import "github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector"
+package spanmetricsconnector // import "github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector"
 
 import (
 	"bytes"
@@ -20,11 +20,11 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.27.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/cache"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
-	utilattri "github.com/open-telemetry/opentelemetry-collector-contrib/internal/pdatautil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/cache"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/connector/spanmetricsconnector/internal/metrics"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	utilattri "github.com/GlancingMind/opentelemetry-collector-contrib/internal/pdatautil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil"
 )
 
 const (

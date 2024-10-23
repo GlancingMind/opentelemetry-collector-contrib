@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package publisher // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/publisher"
+package publisher // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/rabbitmqexporter/internal/publisher"
 
 import (
 	"context"
@@ -12,7 +12,7 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 	"go.uber.org/zap"
 
-	otelrabbitmq "github.com/open-telemetry/opentelemetry-collector-contrib/internal/rabbitmq"
+	otelrabbitmq "github.com/GlancingMind/opentelemetry-collector-contrib/internal/rabbitmq"
 )
 
 type DialConfig struct {

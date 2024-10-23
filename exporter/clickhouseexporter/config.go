@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package clickhouseexporter // import "github.com/open-telemetry/opentelemetry-collector-contrib/exporter/clickhouseexporter"
+package clickhouseexporter // import "github.com/GlancingMind/opentelemetry-collector-contrib/exporter/clickhouseexporter"
 
 import (
 	"database/sql"
@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/config/configretry"
 	"go.opentelemetry.io/collector/exporter/exporterhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/clickhouseexporter/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/clickhouseexporter/internal"
 )
 
 // Config defines configuration for Elastic exporter.

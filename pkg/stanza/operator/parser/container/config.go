@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package container // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/parser/container"
+package container // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/parser/container"
 
 import (
 	"fmt"
@@ -11,11 +11,11 @@ import (
 	"go.opentelemetry.io/collector/featuregate"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/entry"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/errors"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/transformer/recombine"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/entry"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/errors"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/helper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/transformer/recombine"
 )
 
 const (
@@ -29,7 +29,7 @@ var removeOriginalTimeField = featuregate.GlobalRegistry().MustRegister(
 	removeOriginalTimeFieldFeatureFlag,
 	featuregate.StageBeta,
 	featuregate.WithRegisterDescription("When enabled, deletes the original `time` field from the Log Attributes. Time is parsed to Timestamp field, which should be used instead."),
-	featuregate.WithRegisterReferenceURL("https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33389"),
+	featuregate.WithRegisterReferenceURL("https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33389"),
 )
 
 func init() {
@@ -88,7 +88,7 @@ func (c Config) Build(set component.TelemetrySettings) (operator.Operator, error
 	}
 
 	if !removeOriginalTimeField.IsEnabled() {
-		// https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/33389
+		// https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/33389
 		set.Logger.Info("`time` log record attribute will be removed in a future release. Switch now using the feature gate.",
 			zap.String("attribute", "time"),
 			zap.String("feature gate", removeOriginalTimeFieldFeatureFlag),

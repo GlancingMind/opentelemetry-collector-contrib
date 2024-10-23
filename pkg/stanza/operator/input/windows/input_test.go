@@ -3,7 +3,7 @@
 
 //go:build windows
 
-package windows // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/windows"
+package windows // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/windows"
 
 import (
 	"errors"
@@ -15,7 +15,7 @@ import (
 	"go.uber.org/zap"
 	"golang.org/x/sys/windows"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/testutil"
 )
 
 func newTestInput() *Input {

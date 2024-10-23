@@ -22,11 +22,11 @@ import (
 	"go.opentelemetry.io/collector/config/confighttp"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
-	internalhelpers "github.com/open-telemetry/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/testhelpers"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/status/testhelpers"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/common"
+	internalhelpers "github.com/GlancingMind/opentelemetry-collector-contrib/extension/healthcheckv2extension/internal/testhelpers"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/status/testhelpers"
 )
 
 // These are used for the legacy test assertions

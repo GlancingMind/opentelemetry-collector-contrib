@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/pkg/golden
+module github.com/GlancingMind/opentelemetry-collector-contrib/pkg/golden
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/pdata v1.18.0
 	go.uber.org/goleak v1.3.0
@@ -27,4 +27,4 @@ require (
 	google.golang.org/protobuf v1.35.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatautil => ../pdatautil
+replace github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatautil => ../pdatautil

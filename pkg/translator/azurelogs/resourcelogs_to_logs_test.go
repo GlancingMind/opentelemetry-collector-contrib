@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package azurelogs // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/azurelogs"
+package azurelogs // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/azurelogs"
 
 import (
 	"encoding/json"
@@ -16,7 +16,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.22.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/plogtest"
 )
 
 var testBuildInfo = component.BuildInfo{

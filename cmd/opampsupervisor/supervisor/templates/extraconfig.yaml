@@ -5,7 +5,7 @@ service:
       encoding: json
     resource:
       # Set resource attributes suggested by the OpAMP spec.
-      # See https://github.com/open-telemetry/opamp-spec/blob/main/specification.md#agentdescription-message
+      # See https://github.com/GlancingMind/opamp-spec/blob/main/specification.md#agentdescription-message
       {{range $k, $v := .ResourceAttributes}}{{$k}}: "{{$v}}"
       {{end}}
   # Enable extension to allow the Supervisor to check health.

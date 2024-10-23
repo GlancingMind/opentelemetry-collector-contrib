@@ -10,7 +10,7 @@ In this example, we also include a test via telementrygen: a tool provided from 
 
 
 ## Data Encryption via TLS
-The OpenTelemetry Collector has detailed [documentation](https://github.com/open-telemetry/opentelemetry-collector/blob/main/config/configtls/README.md) on how to configure TLS. In this example, we enable TLS for receivers which leverages server configuration. 
+The OpenTelemetry Collector has detailed [documentation](https://github.com/GlancingMind/opentelemetry-collector/blob/main/config/configtls/README.md) on how to configure TLS. In this example, we enable TLS for receivers which leverages server configuration. 
 
 Example
 ```

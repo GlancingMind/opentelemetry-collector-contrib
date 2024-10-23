@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opampextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampextension"
+package opampextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampextension"
 
 import (
 	"context"
@@ -16,9 +16,9 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/oklog/ulid/v2"
-	"github.com/open-telemetry/opamp-go/client"
-	"github.com/open-telemetry/opamp-go/client/types"
-	"github.com/open-telemetry/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/client"
+	"github.com/GlancingMind/opamp-go/client/types"
+	"github.com/GlancingMind/opamp-go/protobufs"
 	"github.com/shirou/gopsutil/v4/host"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/component/componentstatus"
@@ -32,7 +32,7 @@ import (
 	"golang.org/x/text/language"
 	"gopkg.in/yaml.v3"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampcustommessages"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampcustommessages"
 )
 
 var _ extensioncapabilities.PipelineWatcher = (*opampAgent)(nil)
@@ -152,7 +152,7 @@ func (o *opampAgent) Shutdown(ctx context.Context) error {
 	o.logger.Debug("Stopping OpAMP client...")
 	err := o.opampClient.Stop(ctx)
 	// Opamp-go considers this an error, but the collector does not.
-	// https://github.com/open-telemetry/opamp-go/issues/255
+	// https://github.com/GlancingMind/opamp-go/issues/255
 	if err != nil && strings.EqualFold(err.Error(), "cannot stop because not started") {
 		return nil
 	}

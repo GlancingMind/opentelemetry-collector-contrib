@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("cumulativetodelta")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/cumulativetodeltaprocessor"
 )
 
 const (

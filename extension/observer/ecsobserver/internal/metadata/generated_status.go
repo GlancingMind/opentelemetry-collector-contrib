@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("ecs_observer")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/ecsobserver"
 )
 
 const (

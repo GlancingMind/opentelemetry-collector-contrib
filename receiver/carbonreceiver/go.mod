@@ -1,9 +1,9 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/carbonreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/carbonreceiver
 
 go 1.22.0
 
 require (
-	github.com/open-telemetry/opentelemetry-collector-contrib/internal/common v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/internal/common v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/component/componentstatus v0.112.0
@@ -57,7 +57,7 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/internal/common => ../../internal/common
+replace github.com/GlancingMind/opentelemetry-collector-contrib/internal/common => ../../internal/common
 
 retract (
 	v0.76.2

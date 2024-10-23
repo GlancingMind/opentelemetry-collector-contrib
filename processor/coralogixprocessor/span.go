@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package coralogixprocessor // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/coralogixprocessor"
+package coralogixprocessor // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/coralogixprocessor"
 
 import (
 	"context"

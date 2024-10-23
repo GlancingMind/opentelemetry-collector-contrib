@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package zstd // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
+package zstd // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/otelarrow/compression/zstd"
 
 import (
 	"sync"

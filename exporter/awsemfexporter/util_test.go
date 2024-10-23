@@ -12,7 +12,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.27.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/occonventions"
 )
 
 func TestReplacePatternValidTaskId(t *testing.T) {

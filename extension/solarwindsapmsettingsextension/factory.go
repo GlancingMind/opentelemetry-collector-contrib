@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package solarwindsapmsettingsextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension"
+package solarwindsapmsettingsextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension"
 
 import (
 	"context"
@@ -9,7 +9,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/extension"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension/internal/metadata"
 )
 
 func createExtension(_ context.Context, settings extension.Settings, cfg component.Config) (extension.Extension, error) {

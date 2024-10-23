@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package header // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/header"
+package header // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/fileconsumer/internal/header"
 
 import (
 	"bufio"
@@ -13,10 +13,10 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"golang.org/x/text/encoding"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/pipeline"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/split"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/trim"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/pipeline"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/split"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/trim"
 )
 
 type Config struct {

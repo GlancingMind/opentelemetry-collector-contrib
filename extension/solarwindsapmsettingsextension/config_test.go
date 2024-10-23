@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/config/configgrpc"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/solarwindsapmsettingsextension/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

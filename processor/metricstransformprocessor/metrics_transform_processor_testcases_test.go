@@ -8,7 +8,7 @@ import (
 
 	"go.opentelemetry.io/collector/pdata/pmetric"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/aggregateutil"
 )
 
 type metricsTransformTest struct {

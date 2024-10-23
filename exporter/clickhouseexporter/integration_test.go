@@ -26,7 +26,7 @@ func TestIntegration(t *testing.T) {
 		name  string
 		image string
 	}{
-		// TODO: Skipping due to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32530
+		// TODO: Skipping due to https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32530
 		// {
 		//	name:  "test clickhouse 24-alpine",
 		//	image: "clickhouse/clickhouse-server:24-alpine",

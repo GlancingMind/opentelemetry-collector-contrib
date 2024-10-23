@@ -1,13 +1,13 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package proxy // import "github.com/open-telemetry/opentelemetry-collector-contrib/internal/aws/proxy"
+package proxy // import "github.com/GlancingMind/opentelemetry-collector-contrib/internal/aws/proxy"
 
 import (
 	"go.opentelemetry.io/collector/config/confignet"
 	"go.opentelemetry.io/collector/config/configtls"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
 )
 
 // Config is the configuration for the local TCP proxy server.

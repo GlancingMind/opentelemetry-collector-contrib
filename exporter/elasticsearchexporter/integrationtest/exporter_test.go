@@ -12,8 +12,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/common/testutil"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/common/testutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 )
 
 func TestExporter(t *testing.T) {
@@ -41,7 +41,7 @@ func TestExporter(t *testing.T) {
 			{name: "batcher_disabled", batcherEnabled: ptrTo(false)},
 			{name: "batcher_disabled_es_intermittent_failure", batcherEnabled: ptrTo(false), mockESFailure: true},
 
-			/* TODO: Below tests should be enabled after https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/30792 is fixed
+			/* TODO: Below tests should be enabled after https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/30792 is fixed
 			{name: "collector_restarts", restartCollector: true},
 			{name: "collector_restart_with_es_intermittent_failure", mockESFailure: true, restartCollector: true},
 			*/

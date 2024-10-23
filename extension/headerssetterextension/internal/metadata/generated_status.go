@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("headers_setter")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/headerssetterextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/headerssetterextension"
 )
 
 const (

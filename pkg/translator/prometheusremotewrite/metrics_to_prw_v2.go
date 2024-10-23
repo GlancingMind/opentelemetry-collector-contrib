@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package prometheusremotewrite // import "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite"
+package prometheusremotewrite // import "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheusremotewrite"
 
 import (
 	"errors"
@@ -14,7 +14,7 @@ import (
 	"go.opentelemetry.io/collector/pdata/pmetric"
 	"go.uber.org/multierr"
 
-	prometheustranslator "github.com/open-telemetry/opentelemetry-collector-contrib/pkg/translator/prometheus"
+	prometheustranslator "github.com/GlancingMind/opentelemetry-collector-contrib/pkg/translator/prometheus"
 )
 
 // FromMetricsV2 converts pmetric.Metrics to Prometheus remote write format 2.0.

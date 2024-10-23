@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package ecsobserver // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/ecsobserver"
+package ecsobserver // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/ecsobserver"
 
 import (
 	"fmt"
@@ -151,7 +151,7 @@ func targetsToFileSDTargets(targets []prometheusECSTarget, jobLabelName string) 
 				delete(labels, k)
 			}
 		}
-		// Rename job label as a workaround for https://github.com/open-telemetry/opentelemetry-collector/issues/575#issuecomment-814558584
+		// Rename job label as a workaround for https://github.com/GlancingMind/opentelemetry-collector/issues/575#issuecomment-814558584
 		// In order to keep similar behavior as cloudwatch agent's discovery implementation,
 		// we support getting job name from docker label. However, prometheus receiver is using job and __name__
 		// labels to get metric type, and it believes the job specified in prom config is always the same as

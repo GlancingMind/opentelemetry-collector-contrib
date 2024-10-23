@@ -13,7 +13,7 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/extension/observer/cfgardenobserver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/extension/observer/cfgardenobserver/internal/metadata"
 )
 
 func TestLoadConfig(t *testing.T) {

@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/tlscheckreceiver
+module github.com/GlancingMind/opentelemetry-collector-contrib/receiver/tlscheckreceiver
 
 go 1.22.0
 

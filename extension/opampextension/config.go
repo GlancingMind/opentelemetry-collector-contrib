@@ -1,15 +1,15 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package opampextension // import "github.com/open-telemetry/opentelemetry-collector-contrib/extension/opampextension"
+package opampextension // import "github.com/GlancingMind/opentelemetry-collector-contrib/extension/opampextension"
 
 import (
 	"errors"
 	"net/url"
 	"time"
 
-	"github.com/open-telemetry/opamp-go/client"
-	"github.com/open-telemetry/opamp-go/protobufs"
+	"github.com/GlancingMind/opamp-go/client"
+	"github.com/GlancingMind/opamp-go/protobufs"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config/configopaque"
 	"go.opentelemetry.io/collector/config/configtls"

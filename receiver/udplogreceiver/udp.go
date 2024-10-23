@@ -1,16 +1,16 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package udplogreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/udplogreceiver"
+package udplogreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/udplogreceiver"
 
 import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/adapter"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/stanza/operator/input/udp"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/udplogreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/adapter"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/stanza/operator/input/udp"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/udplogreceiver/internal/metadata"
 )
 
 // NewFactory creates a factory for udp receiver

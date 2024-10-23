@@ -1,10 +1,10 @@
-module github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/jsonlogencodingextension
+module github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/jsonlogencodingextension
 
 go 1.22.0
 
 require (
 	github.com/json-iterator/go v1.1.12
-	github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding v0.112.0
+	github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding v0.112.0
 	github.com/stretchr/testify v1.9.0
 	go.opentelemetry.io/collector/component v0.112.0
 	go.opentelemetry.io/collector/confmap v1.18.0
@@ -45,4 +45,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding => ../
+replace github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding => ../

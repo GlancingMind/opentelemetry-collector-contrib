@@ -15,7 +15,7 @@ import (
 	"go.opentelemetry.io/collector/consumer/consumertest"
 	"go.opentelemetry.io/collector/processor/processortest"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/deltatorateprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/deltatorateprocessor/internal/metadata"
 )
 
 func TestType(t *testing.T) {

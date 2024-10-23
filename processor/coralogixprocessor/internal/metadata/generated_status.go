@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("coralogix")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/processor/coralogixprocessor"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/processor/coralogixprocessor"
 )
 
 const (

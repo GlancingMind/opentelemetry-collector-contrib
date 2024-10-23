@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package kube // import "github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
+package kube // import "github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/kube"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/k8sconfig"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/k8sconfig"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/processor/k8sattributesprocessor/internal/metadata"
 )
 
 var enableRFC3339Timestamp = featuregate.GlobalRegistry().MustRegister(

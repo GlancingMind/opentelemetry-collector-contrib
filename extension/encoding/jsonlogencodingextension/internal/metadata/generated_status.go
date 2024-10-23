@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("json_log_encoding")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/extension/encoding/jsonlogencodingextension"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/extension/encoding/jsonlogencodingextension"
 )
 
 const (

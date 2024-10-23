@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package azureeventhubreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureeventhubreceiver"
+package azureeventhubreceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/azureeventhubreceiver"
 
 import (
 	"context"
@@ -12,8 +12,8 @@ import (
 	"go.opentelemetry.io/collector/pipeline"
 	"go.opentelemetry.io/collector/receiver"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/sharedcomponent"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/azureeventhubreceiver/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/sharedcomponent"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/azureeventhubreceiver/internal/metadata"
 )
 
 var (

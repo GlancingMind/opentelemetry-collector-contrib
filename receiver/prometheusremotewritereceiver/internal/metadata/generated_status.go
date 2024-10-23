@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("prometheusremotewrite")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/prometheusremotewritereceiver"
 )
 
 const (

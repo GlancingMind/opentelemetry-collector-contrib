@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package testbed // import "github.com/open-telemetry/opentelemetry-collector-contrib/testbed/testbed"
+package testbed // import "github.com/GlancingMind/opentelemetry-collector-contrib/testbed/testbed"
 
 import (
 	"github.com/shirou/gopsutil/v4/process"

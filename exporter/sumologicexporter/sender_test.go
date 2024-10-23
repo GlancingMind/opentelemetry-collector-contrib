@@ -31,7 +31,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/sumologicexporter/internal/metadata"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/exporter/sumologicexporter/internal/metadata"
 )
 
 type senderTest struct {

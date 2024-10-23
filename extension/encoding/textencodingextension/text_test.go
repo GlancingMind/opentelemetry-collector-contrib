@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/textutils"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/textutils"
 )
 
 func TestTextRoundtrip(t *testing.T) {

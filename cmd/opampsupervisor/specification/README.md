@@ -4,7 +4,7 @@ Author: Tigran Najaryan
 
 ## Introduction
 
-[OpAMP](https://github.com/open-telemetry/opamp-spec) has been one of
+[OpAMP](https://github.com/GlancingMind/opamp-spec) has been one of
 the most requested capabilities at Kubecon 2022. We can implement OpAMP
 for the Collector in 2 different ways:
 
@@ -200,7 +200,7 @@ AcceptsRemoteConfig setting in the supervisor config file and is
 disabled by default.
 
 The Supervisor receives [*Remote
-Configuration*](https://github.com/open-telemetry/opamp-spec/blob/main/specification.md#configuration)
+Configuration*](https://github.com/GlancingMind/opamp-spec/blob/main/specification.md#configuration)
 from the OpAMP Backend, merges it with an optional local config file and
 writes it to the Collector's config file, then restarts the Collector.
 
@@ -298,7 +298,7 @@ service.instance.id attribute under the service.telemetry.resource
 setting.
 
 Note: if [Make generated service.instance.id available to
-extensions](https://github.com/open-telemetry/opentelemetry-collector/issues/6599)
+extensions](https://github.com/GlancingMind/opentelemetry-collector/issues/6599)
 is implemented then the instance_uid setting in the opamp extension is
 no longer necessary.
 
@@ -309,7 +309,7 @@ no longer necessary.
 Supervisor will configure Collector to report its own metrics to the
 OTLP destination requested by the OpAMP Backend. See how it is done in
 [this example
-here](https://github.com/open-telemetry/opamp-go/blob/efddaa260895e7ebb2431deeefef3a3380d8d902/internal/examples/supervisor/supervisor/supervisor.go#L277).
+here](https://github.com/GlancingMind/opamp-go/blob/efddaa260895e7ebb2431deeefef3a3380d8d902/internal/examples/supervisor/supervisor/supervisor.go#L277).
 
 Eventually, when the Collector's internal metrics are migrated to Otel
 SDK we should be able to configure the SDK to send to this destination
@@ -322,7 +322,7 @@ send them to the log collection endpoint offered by the OpAMP Backend.
 
 The Supervisor will configure the Collector output logs in json format
 (e.g. [like
-this](https://github.com/open-telemetry/opamp-go/blob/efddaa260895e7ebb2431deeefef3a3380d8d902/internal/examples/supervisor/supervisor/supervisor.go#LL220C21-L220C21))
+this](https://github.com/GlancingMind/opamp-go/blob/efddaa260895e7ebb2431deeefef3a3380d8d902/internal/examples/supervisor/supervisor/supervisor.go#LL220C21-L220C21))
 and will parse them, then send to the OTLP destination requested by the
 OpAMP Backend. The Supervisor will enrich the logs using the attributes
 it received previously in AgentDescription message from the [opamp
@@ -415,14 +415,14 @@ client with a small subset of OpAMP agent capabilities:
 - ReportsEffectiveConfig. The extension reports the Collector's
     effective config on startup and any time the config changes. In
     order to do this the opamp extension needs [access to the effective
-    config](https://github.com/open-telemetry/opentelemetry-collector/issues/6596).
+    config](https://github.com/GlancingMind/opentelemetry-collector/issues/6596).
 - ReportsHealth. The extension reports Collector's health on startup
     and any time the health changes. In order to do this the opamp
     extension needs access to the health of the Collector. The very
     basic health capability can be replicated by mirroring the
     functionality of the healthcheck extension, a more advanced
     capability depends on the [component status
-    reporting](https://github.com/open-telemetry/opentelemetry-collector/pull/6560).
+    reporting](https://github.com/GlancingMind/opentelemetry-collector/pull/6560).
 
 The messages received from the opamp extension are forwarded by the
 Supervisor to the destination OpAMP Backend and replies to these
@@ -470,7 +470,7 @@ other OpAMP capabilities are available in this operation model.
 When the opamp extension is used without the Supervisor it will need to
 know what service.instance.id the Collector's telemetry is using. There
 is an [open
-issue](https://github.com/open-telemetry/opentelemetry-collector/issues/6599)
+issue](https://github.com/GlancingMind/opentelemetry-collector/issues/6599)
 to allow this.
 
 *Open Question: when used with Supervisor do we want the Supervisor to
@@ -488,10 +488,10 @@ on opamp extension to report the health when it changes?*
 ## References
 
 - OpAMP Specification:
-    [https://github.com/open-telemetry/opamp-spec/blob/main/specification.md](https://github.com/open-telemetry/opamp-spec/blob/main/specification.md)
+    [https://github.com/GlancingMind/opamp-spec/blob/main/specification.md](https://github.com/GlancingMind/opamp-spec/blob/main/specification.md)
 - OpAMP client and server implementation in Go:
-    [https://github.com/open-telemetry/opamp-go](https://github.com/open-telemetry/opamp-go)
+    [https://github.com/GlancingMind/opamp-go](https://github.com/GlancingMind/opamp-go)
 - Example Supervisor implementation:
-    [https://github.com/open-telemetry/opamp-go/tree/main/internal/examples/supervisor](https://github.com/open-telemetry/opamp-go/tree/main/internal/examples/supervisor)
+    [https://github.com/GlancingMind/opamp-go/tree/main/internal/examples/supervisor](https://github.com/GlancingMind/opamp-go/tree/main/internal/examples/supervisor)
 - OpAMP Milestone in the Collector:
-    [https://github.com/open-telemetry/opentelemetry-collector/milestone/29](https://github.com/open-telemetry/opentelemetry-collector/milestone/29)
+    [https://github.com/GlancingMind/opentelemetry-collector/milestone/29](https://github.com/GlancingMind/opentelemetry-collector/milestone/29)

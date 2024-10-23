@@ -16,7 +16,7 @@ import (
 	conventions "go.opentelemetry.io/collector/semconv/v1.12.0"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/traceutil"
 )
 
 const (
@@ -91,7 +91,7 @@ var (
 )
 
 /*
-	https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
+	https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
 	We need to test the following attribute sets for HTTP Server Spans:
 	http.scheme, http.host, http.target
 	http.scheme, http.server_name, net.host.port, http.target
@@ -214,7 +214,7 @@ func TestHTTPServerSpanToRequestDataAttributeSet4(t *testing.T) {
 }
 
 /*
-	https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
+	https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/http.md#http-server-semantic-conventions
 	We need to test the following attribute sets for HTTP Client Spans:
 	http.url
 	http.scheme, http.host, http.target

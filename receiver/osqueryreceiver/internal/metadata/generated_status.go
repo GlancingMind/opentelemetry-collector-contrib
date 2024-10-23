@@ -8,7 +8,7 @@ import (
 
 var (
 	Type      = component.MustNewType("osquery")
-	ScopeName = "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/osqueryreceiver"
+	ScopeName = "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/osqueryreceiver"
 )
 
 const (

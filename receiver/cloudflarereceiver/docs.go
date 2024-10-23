@@ -3,4 +3,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package cloudflarereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/cloudflarereceiver"
+package cloudflarereceiver // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/cloudflarereceiver"

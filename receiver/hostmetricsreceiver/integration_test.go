@@ -14,15 +14,15 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.opentelemetry.io/collector/component"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/coreinternal/scraperinttest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/coreinternal/scraperinttest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/internal/filter/filterset"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/pkg/pdatatest/pmetrictest"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal"
+	"github.com/GlancingMind/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
 )
 
 func Test_ProcessScrape(t *testing.T) {
-	t.Skip("TODO: Skipping for now due to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32536")
+	t.Skip("TODO: Skipping for now due to https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32536")
 
 	expectedFile := filepath.Join("testdata", "e2e", "expected_process.yaml")
 	cmd := exec.Command("/bin/sleep", "300")
@@ -59,7 +59,7 @@ func Test_ProcessScrape(t *testing.T) {
 }
 
 func Test_ProcessScrapeWithCustomRootPath(t *testing.T) {
-	t.Skip("TODO: Skipping for now due to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32536")
+	t.Skip("TODO: Skipping for now due to https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32536")
 
 	expectedFile := filepath.Join("testdata", "e2e", "expected_process_separate_proc.yaml")
 
@@ -92,7 +92,7 @@ func Test_ProcessScrapeWithCustomRootPath(t *testing.T) {
 }
 
 func Test_ProcessScrapeWithBadRootPathAndEnvVar(t *testing.T) {
-	t.Skip("TODO: Skipping for now due to https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/32536")
+	t.Skip("TODO: Skipping for now due to https://github.com/GlancingMind/opentelemetry-collector-contrib/issues/32536")
 
 	expectedFile := filepath.Join("testdata", "e2e", "expected_process_separate_proc.yaml")
 	t.Setenv("HOST_PROC", filepath.Join("testdata", "e2e", "proc"))

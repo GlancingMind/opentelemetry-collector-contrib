@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package internal // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver/internal"
+package internal // import "github.com/GlancingMind/opentelemetry-collector-contrib/receiver/googlecloudpubsubreceiver/internal"
 
 import (
 	"bytes"
@@ -128,10 +128,10 @@ func TranslateLogEntry(_ context.Context, _ *zap.Logger, data []byte) (pcommon.R
 		// pass through to be translated according to the schema.
 		switch k {
 		// Unpack as suggested in the logs data model appendix
-		//   https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/logs/data-model-appendix.md#google-cloud-logging
+		//   https://github.com/GlancingMind/opentelemetry-specification/blob/main/specification/logs/data-model-appendix.md#google-cloud-logging
 		case "insertId":
 			// timestamp -> Attributes[“log.record.uid”]
-			// see: https://github.com/open-telemetry/semantic-conventions/blob/main/model/logs/general.yaml
+			// see: https://github.com/GlancingMind/semantic-conventions/blob/main/model/logs/general.yaml
 			var insertID string
 			err = json.Unmarshal(v, &insertID)
 			if err != nil {

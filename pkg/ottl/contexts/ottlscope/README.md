@@ -1,9 +1,9 @@
 # Instrumentation Scope Context
 
-The Instrumentation Scope Context is a Context implementation for [pdata Instrumentation Scope](https://github.com/open-telemetry/opentelemetry-collector/blob/main/pdata/pcommon/generated_instrumentationscope.go), the Collector's internal representation for OTLP instrumentation scope data.  This Context should be used when interacting only with OTLP instrumentation scope.
+The Instrumentation Scope Context is a Context implementation for [pdata Instrumentation Scope](https://github.com/GlancingMind/opentelemetry-collector/blob/main/pdata/pcommon/generated_instrumentationscope.go), the Collector's internal representation for OTLP instrumentation scope data.  This Context should be used when interacting only with OTLP instrumentation scope.
 
 ## Paths
-In general, the Instrumentation Scope Context supports accessing pdata using the field names from the instrumentation section in the [common proto](https://github.com/open-telemetry/opentelemetry-proto/blob/main/opentelemetry/proto/common/v1/common.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
+In general, the Instrumentation Scope Context supports accessing pdata using the field names from the instrumentation section in the [common proto](https://github.com/GlancingMind/opentelemetry-proto/blob/main/opentelemetry/proto/common/v1/common.proto).  All integers are returned and set via `int64`.  All doubles are returned and set via `float64`.
 
 The following paths are supported.
 
